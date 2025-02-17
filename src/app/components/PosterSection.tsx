@@ -35,7 +35,7 @@
   
 
 import Image from "next/image"
-import singapore from "../../../public/singapore.jpg"
+import singapore from "../../../Public/singapore.jpg"
 
 export default function PosterSection() {
   return (

@@ -34,7 +34,7 @@ export default function VideoSection() {
   const categories = ['All', 'Lectures', 'Sermons', 'Q&A']
 
   return (
-    <section className="py-24 bg-[url('/back2.jpg')] object-cover">
+    <section className=" bg-[url('/back2.jpg')] object-cover">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-12">Featured Lectures</h2>
         

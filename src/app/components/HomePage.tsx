@@ -1,6 +1,5 @@
 import HeroSlider from './HeroSlider'
 
-import BiographySection from './BiographySection'
 
 import BooksSection from './BooksSection'
 import VideoSection from './VideoSection'

@@ -6,7 +6,7 @@ import banner from '../../../Public/book-banner.jpg'
 
 export default function BooksSection() {
   return (
-    <div  className= bg-[url('/back2.jpg')] object-cover">
+    // <div  className= bg-[url('/back2.jpg')] object-cover">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-12">Publications</h2>
         <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] mb-12">
@@ -26,7 +26,7 @@ export default function BooksSection() {
           </Link>
         </div>
       </div>
-    </div>
+    // </div>
   )
 }
 

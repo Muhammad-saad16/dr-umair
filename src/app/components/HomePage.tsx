@@ -19,7 +19,6 @@ export default function HomePage() {
       <PosterSection />
     
       <InteractionsSection />
-{/*       <BiographySection /> */}
       <EventPosters />
       <BooksSection />
       <VideoSection />

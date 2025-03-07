@@ -34,7 +34,7 @@ export default function VideoSection() {
   const categories = ['All', 'Lectures', 'Sermons', 'Q&A']
 
   return (
-    <section className=" bg-[url('/back2.jpg')] object-cover">
+    // <section className=" bg-[url('/back2.jpg')] object-cover">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-12">Featured Lectures</h2>
         
@@ -92,6 +92,6 @@ export default function VideoSection() {
           </Link>
         </div>
       </div>
-    </section>
+    // </section>
   )
 }

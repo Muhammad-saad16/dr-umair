@@ -66,7 +66,7 @@ export default function Header() {
                     className="
                       text-white hover:text-amber-400 
                       transition-colors duration-200 
-                      text-lg font-semibold 
+                      text-sm font-semibold 
                       px-4 py-2 
                       inline-block
                       border-b-2 border-transparent hover:border-amber-400

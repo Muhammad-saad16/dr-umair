@@ -86,7 +86,7 @@ export default function InteractionsSection() {
         <div className="relative overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-out"
-            style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+            style={{ transform: `translateX(-${currentIndex * (100 / 4)}%)` }}
           >
             {interactions.map((item) => (
               <div key={item.id} className="w-full md:w-1/3 flex-shrink-0 px-4">

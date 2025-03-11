@@ -148,12 +148,17 @@ import { useMediaQuery } from "react-responsive"
 import p1 from '../../../Public/slide.jpg'
 import p2 from '../../../Public/slide1.jpg'
 import p3 from '../../../Public/slide2.jpg'
+import slide1stt from '../../../Public/slide1stt.jpg'
 // import p8 from '../../../Public/p2.jpg'
 // import p5 from '../../../Public/p5.jpg'
 
 const slides = [
-  {
+{
     id: 1,
+    image: slide1stt.src,
+  },
+ {
+    id: 2,
     image: p1.src,
   },
   {

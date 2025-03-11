@@ -195,20 +195,6 @@ const interactions = [
     image: meet1.src,
     country: "Karachi"
   },
-  {
-    id: 5,
-    leader: "Mufti Sher Muhammad Khan",
-    description: "Dr. Umair presenting his famous book to the Chief Guest, Mufti Sher Muhammad Khan",
-    image: meet5.src,
-    country: "City of Knowledge, Karachi"
-  },
-  {
-    id: 6,
-    leader: "Sahibzada Sultan Ahmad Ali",
-    description: "Sahibzada Sultan Ahmad Ali welcoming Dr. Umair Mahmood Siddiqui in a formal meeting.",
-    image: meet6.src,
-    country: "Karachi"
-  },
 ];
 
 export default function InteractionsSection() {

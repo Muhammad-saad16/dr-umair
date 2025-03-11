@@ -6,8 +6,7 @@
 // import meet2 from '../../../Public/meet2.jpg'
 // import meet3 from '../../../Public/mee3.jpg'
 // import meet4 from '../../../Public/meet3.jpg'
-// import meet5 from '../../../Public/meet5.jpg'
-// import meet6 from '../../../Public/meet6.jpg'
+
 
 // const interactions = [
 //   {
@@ -191,7 +190,7 @@ const interactions = [
   {
     id: 4,
     leader: "Sahibzada Sultan Ahmad Ali",
-    description: "Sahibzada Sultan Ahmad Ali welcoming Dr. Umair Mahmood Siddiqui in a formal meeting.",
+    description: "Meeting with His Excellency Sheikh Dr. Saleh bin Abdullah bin Humaid at the International Islamic Fiqh Academy (IIFA).",
     image: meet1.src,
     country: "Karachi"
   },

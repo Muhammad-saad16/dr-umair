@@ -51,7 +51,7 @@
 //     leader: "Sahibzada Sultan Ahmad Ali",
 //     description: "Sahibzada Sultan Ahmad Ali welcoming Dr. Umair Mahmood Siddiqui in a formal meeting.",
 //     image: meet6.src,
-//     country: "Karachi"
+//     country: "Riyadh"
 //   },
 // ];
 

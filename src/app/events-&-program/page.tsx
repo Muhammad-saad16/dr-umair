@@ -197,7 +197,7 @@ export default function EventsPage() {
                   className="bg-cover"
                   sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+{/*                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <span className="inline-block px-3 py-1 bg-amber-400 text-gray-900 text-sm rounded-full mb-3">
                       {event.category}
@@ -207,7 +207,7 @@ export default function EventsPage() {
                     <p className="text-white/80 mb-2">{event.location}</p>
                     <p className="text-gray-200 text-sm line-clamp-3">{event.description}</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

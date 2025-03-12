@@ -182,7 +182,7 @@ const interactions = [
   {
     id: 3,
     leader: "Mufti Sher Muhammad",
-    description: "Dr. Umair presenting his famous book to the Chief Guest, Mufti Sher Muhammad Khan",
+    description: "Mufti Sher Muhammad Khan is associated with Darul Ifta and Darul Uloom Muhammadia Ghousia Bhera Sharif.",
     image: meet3.src,
     country: "City of Knowledge, Karachi"
   },

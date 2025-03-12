@@ -198,8 +198,8 @@ const interactions = [
 export default function InteractionsSection() {
   return (
     <section className=" bg-[url('/back2.jpg')] object-cover">
-      <div className="container mx-auto px-4">
-        <h2 className="elegant-title text-2xl md:text-3xl text-center mb-12 mt-12 font-semibold">
+      <div className="container mx-auto ">
+        <h2 className="elegant-title text-2xl md:text-3xl text-center mb-12 mt-12 font-bold">
           <span className="gold-text">Interactions</span> with Personalities
         </h2>
 

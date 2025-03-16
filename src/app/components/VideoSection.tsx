@@ -3,27 +3,27 @@
 import { useState } from 'react'
 import { Play } from 'lucide-react'
 import Link from 'next/link'
-import event1 from '../../../Public/event1.jpg'
-import event2 from '../../../Public/event2.jpg'
-import event3 from '../../../Public/event3.jpg'
+import event1 from '../../../Public/thumbnail1.jpg'
+import event2 from '../../../Public/thumbnail2.jpg'
+import event3 from '../../../Public/thumbnail3.jpg'
 
 const videos = [
   {
     id: 1,
     thumbnail: event1.src, 
-    youtubeId: "6fRjkIeNzH0",
+    youtubeId: "LcyP_eoQDXQ",
     category: "Lectures"
   },
   {
     id: 2,
     thumbnail: event2.src,
-    youtubeId: "bKxvKGjBn0s",
+    youtubeId: "ps61pd-0xjs",
     category: "Sermons"
   },
   {
     id: 3,
     thumbnail: event3.src,
-    youtubeId: "zRsMMonXITs&t=28s",
+    youtubeId: "Wq7XnyB4DHU",
     category: "Events"
   },
   

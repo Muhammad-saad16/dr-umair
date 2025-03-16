@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import event1 from "../../../Public/event-poster1.jpg"
-import event2 from "../../../Public/event-poster2.jpg"
-import event3 from "../../../Public/event-poster4.jpg"
-import event4 from "../../../Public/event-poster6.jpg"
+import event1 from "../../../Public/post1.jpg"
+import event2 from "../../../Public/post2.jpg"
+import event3 from "../../../Public/post3.jpg"
+import event4 from "../../../Public/post4.jpg"
 
 const eventPosters = [
   {

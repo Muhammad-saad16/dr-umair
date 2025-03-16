@@ -3,6 +3,10 @@
 import { useState, useEffect } from "react"
 // import Layout from "../components/Layout"
 import Image from "next/image"
+import even1 from "../../../Public/post1.jpg"
+import even2 from "../../../Public/post2.jpg"
+import even3 from "../../../Public/post3.jpg"
+import even4 from "../../../Public/post4.jpg"
 import event1 from "../../../Public/event-poster1.jpg"
 import event2 from "../../../Public/event-poster2.jpg"
 import event3 from "../../../Public/event-poster3.jpg"
@@ -21,7 +25,7 @@ const events = [
     title: "Islamic Conference 2024",
     date: "March 15-17, 2024",
     location: "Grand Islamic Center",
-    image: event1.src,
+    image: even1.src,
     description:
       "Join us for an enlightening three-day conference featuring renowned scholars and engaging discussions on contemporary Islamic topics.",
     category: "Conference",
@@ -31,7 +35,7 @@ const events = [
     title: "Ramadan Lecture Series",
     date: "March 10-30, 2024",
     location: "City of Knowledge",
-    image: event2.src,
+    image: even2.src,
     description:
       "Daily lectures throughout Ramadan exploring the deeper meanings of the Holy Quran and Islamic teachings.",
     category: "Lecture Series",
@@ -41,7 +45,7 @@ const events = [
     title: "Youth Islamic Workshop",
     date: "April 5-6, 2024",
     location: "Islamic Cultural Center",
-    image: event3.src,
+    image: even3.src,
     description:
       "A special workshop designed for young Muslims to strengthen their understanding of Islam in the modern world.",
     category: "Workshop",
@@ -51,13 +55,54 @@ const events = [
     title: "Islamic Art Exhibition",
     date: "April 15-20, 2024",
     location: "Metropolitan Museum",
+    image: even4.src,
+    description:
+      "Experience the beauty of Islamic art through this curated exhibition featuring both classical and contemporary works.",
+    category: "Exhibition",
+  },
+  
+  {
+    id: 5,
+    title: "Islamic Conference 2024",
+    date: "March 15-17, 2024",
+    location: "Grand Islamic Center",
+    image: event1.src,
+    description:
+      "Join us for an enlightening three-day conference featuring renowned scholars and engaging discussions on contemporary Islamic topics.",
+    category: "Conference",
+  },
+  {
+    id: 6,
+    title: "Ramadan Lecture Series",
+    date: "March 10-30, 2024",
+    location: "City of Knowledge",
+    image: event2.src,
+    description:
+      "Daily lectures throughout Ramadan exploring the deeper meanings of the Holy Quran and Islamic teachings.",
+    category: "Lecture Series",
+  },
+  {
+    id: 7,
+    title: "Youth Islamic Workshop",
+    date: "April 5-6, 2024",
+    location: "Islamic Cultural Center",
+    image: event3.src,
+    description:
+      "A special workshop designed for young Muslims to strengthen their understanding of Islam in the modern world.",
+    category: "Workshop",
+  },
+  {
+    id: 8,
+    title: "Islamic Art Exhibition",
+    date: "April 15-20, 2024",
+    location: "Metropolitan Museum",
     image: event4.src,
     description:
       "Experience the beauty of Islamic art through this curated exhibition featuring both classical and contemporary works.",
     category: "Exhibition",
   },
   {
-    id: 5,
+    id: 9,
     title: "Quran Recitation Competition",
     date: "May 1, 2024",
     location: "Central Mosque",
@@ -66,7 +111,7 @@ const events = [
     category: "Competition",
   },
   {
-    id: 6,
+    id: 10,
     title: "Islamic Finance Seminar",
     date: "May 10, 2024",
     location: "Business Convention Center",
@@ -75,7 +120,7 @@ const events = [
     category: "Seminar",
   },
   {
-    id: 7,
+    id: 11,
     title: "Islamic Conference 2024",
     date: "March 15-17, 2024",
     location: "Grand Islamic Center",
@@ -85,7 +130,7 @@ const events = [
     category: "Conference",
   },
   {
-    id: 8,
+    id: 12,
     title: "Ramadan Lecture Series",
     date: "March 10-30, 2024",
     location: "City of Knowledge",
@@ -95,7 +140,7 @@ const events = [
     category: "Lecture Series",
   },
   {
-    id: 9,
+    id: 13,
     title: "Youth Islamic Workshop",
     date: "April 5-6, 2024",
     location: "Islamic Cultural Center",
@@ -105,7 +150,7 @@ const events = [
     category: "Workshop",
   },
   // {
-  //   id: 10,
+  //   id: 14,
   //   title: "Islamic Art Exhibition",
   //   date: "April 15-20, 2024",
   //   location: "Metropolitan Museum",

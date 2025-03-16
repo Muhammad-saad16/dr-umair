@@ -91,16 +91,16 @@ const events = [
       "A special workshop designed for young Muslims to strengthen their understanding of Islam in the modern world.",
     category: "Workshop",
   },
-  {
-    id: 8,
-    title: "Islamic Art Exhibition",
-    date: "April 15-20, 2024",
-    location: "Metropolitan Museum",
-    image: event4.src,
-    description:
-      "Experience the beauty of Islamic art through this curated exhibition featuring both classical and contemporary works.",
-    category: "Exhibition",
-  },
+  // {
+  //   id: 8,
+  //   title: "Islamic Art Exhibition",
+  //   date: "April 15-20, 2024",
+  //   location: "Metropolitan Museum",
+  //   image: event4.src,
+  //   description:
+  //     "Experience the beauty of Islamic art through this curated exhibition featuring both classical and contemporary works.",
+  //   category: "Exhibition",
+  // },
   {
     id: 9,
     title: "Quran Recitation Competition",

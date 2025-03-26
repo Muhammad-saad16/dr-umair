@@ -6,7 +6,7 @@ import Link from 'next/link'
 import event1 from '/Public/thumbnail1.jpg'
 import event2 from '/Public/thumbnail2.jpg'
 import event3 from '/Public/thumbnail3.jpg'
-import event4 from '/Public/saad.PNG'
+import event4 from '/Public/saad.png'
 const videos = [
   {
     id: 1,

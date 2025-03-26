@@ -6,7 +6,7 @@ import Link from 'next/link'
 import event1 from '/Public/thumbnail1.jpg'
 import event2 from '/Public/thumbnail2.jpg'
 import event3 from '/Public/thumbnail3.jpg'
-
+import event4 from '/Public/saad.PNG'
 const videos = [
   {
     id: 1,
@@ -24,6 +24,12 @@ const videos = [
     id: 3,
     thumbnail: event3.src,
     youtubeId: "Wq7XnyB4DHU",
+    category: "Events"
+  },
+   {
+    id: 4,
+    thumbnail: event4.src,
+    youtubeId: "0j-_AzgqiMI",
     category: "Events"
   },
   
@@ -54,7 +60,7 @@ export default function VideoSection() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {videos.map((video) => (
             <div
               key={video.id}

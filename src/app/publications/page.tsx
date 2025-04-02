@@ -334,7 +334,7 @@ export default function BooksPage() {
               </h3>
               <p className="text-white/80 text-sm">{book.author}</p>
               <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs bg-amber-400 text-gray-900 transform group-hover:scale-105 transition-transform duration-300">
-                {book.category}
+                {book.displayCategory}
               </span>
             </div>
           </div>

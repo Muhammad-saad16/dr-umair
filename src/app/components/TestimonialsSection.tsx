@@ -95,7 +95,7 @@ export default function TestimonialsSection() {
   }
 
   return (
-    <section className="section-padding relative overflow-hidden">
+    <div className="section-padding relative overflow-hidden">
       {/* Background with gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#001829] via-[#003] to-[#001829]"></div>
 
@@ -133,7 +133,7 @@ export default function TestimonialsSection() {
                             </svg>
                           </div>
 
-                          <p className=&quot;text-white/90 mb-6 italic leading-relaxed&quot;>&quot;{testimonial.quote}&quot;</p>
+                          <p className="text-white/90 mb-6 italic leading-relaxed">"{testimonial.quote}"</p>
 
                           <div className="flex items-center mt-auto">
                             <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4 border-2 border-accent-teal">
@@ -204,7 +204,7 @@ export default function TestimonialsSection() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

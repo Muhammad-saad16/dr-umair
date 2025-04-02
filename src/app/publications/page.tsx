@@ -25,7 +25,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A simplified collection of 40 Ahadith for children.",
     image: book1.src,
-    // category: "Islamic Studies"
+    displayCategory: "Islamic Studies"
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const books = [
     author: "Compiled by Dr. Umair Mahmood Siddiqui",
     description: "A collection of writings of Dr. Umair Mahmood Siddiqui.",
     image: book2.src,
-    // category: "Islamic Studies"
+    displayCategory: "Islamic Studies"
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An insightful account of spiritual and moral values.",
     image: book3.src,
-    // category: "Islamic Studies"
+    displayCategory: "Islamic Studies"
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An analysis of the life and teachings of Sheikh Ibn Arabi.",
     image: book4.src,
-    // category: "Biography"
+    displayCategory: "Biography"
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discourse on the meaning and significance of Pakistan.",
     image: book5.src,
-    // category: "History"
+    displayCategory: "History"
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discussion on the concept and implications of Ghazwa-e-Hind.",
     image: book6.src,
-    // category: "History"
+    displayCategory: "History"
   },
   {
     id: 7,
@@ -73,7 +73,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A tribute to the Prophet Muhammad's (PBUH) life and legacy.",
     image: book7.src,
-    // category: "Biography"
+    displayCategory: "Biography"
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A curated selection of 40 Ahadith with commentary.",
     image: book8.src,
-    // category: "Islamic Studies"
+    displayCategory: "Islamic Studies"
   },
   {
     id: 9,
@@ -89,7 +89,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An exposition on the conflict between communism and Islam.",
     image: book9.src,
-    // category: "Political Islam"
+    displayCategory: "Political Islam"
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A biography highlighting Dr. Umair Mahmood Siddiqui's scholarly contributions.",
     image: book10.src,
-    // category: "Biography"
+    displayCategory: "Biography"
   },
   {
     id: 11,
@@ -105,7 +105,7 @@ const books = [
     author: "Scholar Name",
     description: "A comprehensive guide to Islamic law and its principles.",
     image: book11.src,
-    // category: "Fiqh"
+    displayCategory: "Fiqh"
   },
   {
     id: 12,
@@ -113,7 +113,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An exploration of Islamic economic principles and practices.",
     image: book12.src,
-    // category: "Economics"
+    displayCategory: "Economics"
   },
   {
     id: 13,
@@ -121,7 +121,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A study on the theological and philosophical traditions of Islam.",
     image: book13.src,
-    // category: "Philosophy"
+    displayCategory: "Philosophy"
   },
   {
     id: 14,
@@ -129,7 +129,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discussion on the revival of Islamic thought in the modern age.",
     image: book14.src,
-    // category: "Islamic Studies"
+    displayCategory: "Islamic Studies"
   }
 ]
 

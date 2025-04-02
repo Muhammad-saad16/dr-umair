@@ -133,11 +133,127 @@ const books = [
   }
 ]
 
-// const categories = ['All', 'Islamic Studies', 'Biography', 'History', 'Political Islam', 'Fiqh', 'Economics', 'Philosophy']
+// // const categories = ['All', 'Islamic Studies', 'Biography', 'History', 'Political Islam', 'Fiqh', 'Economics', 'Philosophy']
+
+// export default function BooksPage() {
+//   const [searchTerm, setSearchTerm] = useState('')
+//   // const [selectedCategory, setSelectedCategory] = useState('All')
+//   const [filteredBooks, setFilteredBooks] = useState(books)
+//   const [isLoaded, setIsLoaded] = useState(false)
+
+//   useEffect(() => {
+//     setIsLoaded(true)
+//   }, [])
+
+//   useEffect(() => {
+//     const filtered = books.filter(book => {
+//       const matchesSearch = book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+//                           book.author.toLowerCase().includes(searchTerm.toLowerCase()) ||
+//                           book.description.toLowerCase().includes(searchTerm.toLowerCase())
+      
+//       // const matchesCategory = selectedCategory === 'All' || book.category === selectedCategory
+
+//       return matchesSearch && matchesCategory
+//     })
+//     setFilteredBooks(filtered)
+//   }, [searchTerm, selectedCategory])
+
+//   return (
+
+//       <div className="container mx-auto px-4 py-12">
+//         {/* Search and Filter Section */}
+//         <div className={`mb-12 transform transition-all duration-700 delay-300 ${
+//           isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+//         }`}>
+//           <div className="max-w-4xl mx-auto space-y-6">
+//             <input
+//               type="search"
+//               placeholder="Search books..."
+//               value={searchTerm}
+//               onChange={(e) => setSearchTerm(e.target.value)}
+//               className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all duration-300"
+//             />
+            
+// {/*             <div className="flex flex-wrap gap-3 justify-center">
+//               {categories.map((category) => (
+//                 <button
+//                   key={category}
+//                   onClick={() => setSelectedCategory(category)}
+//                   className={`px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 ${
+//                     selectedCategory === category
+//                       ? 'bg-amber-400 text-gray-900'
+//                       : 'bg-white/10 text-white hover:bg-white/20'
+//                   }`}
+//                 >
+//                   {category}
+//                 </button>
+//               ))}
+//             </div> */}
+//           </div>
+//         </div>
+
+//         {/* Books Grid */}
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+//           {filteredBooks.map((book, index) => (
+//             <div
+//               key={book.id}
+//               className={`group relative bg-white/5 rounded-lg overflow-hidden backdrop-blur-sm transition-all duration-500 hover:scale-105 transform ${
+//                 isLoaded 
+//                   ? 'translate-y-0 opacity-100' 
+//                   : 'translate-y-10 opacity-0'
+//               }`}
+//               style={{ transitionDelay: `${index * 100}ms` }}
+//             >
+//               <div className="aspect-[3/4] relative">
+//                 <Image
+//                   src={book.image || "/placeholder.svg"}
+//                   alt={book.title}
+//                   fill
+//                   className="object-cover transition-transform duration-500 group-hover:scale-110"
+//                 />
+//                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+//                   <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+//                     <p className="text-white text-sm line-clamp-3">{book.description}</p>
+//                   </div>
+//                 </div>
+//               </div>
+//               <div className="p-4 bg-gradient-to-b from-transparent to-black/20">
+//                 <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-amber-400 transition-colors duration-300">
+//                   {book.title}
+//                 </h3>
+//                 <p className="text-white/80 text-sm">{book.author}</p>
+//                 <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs bg-amber-400 text-gray-900 transform group-hover:scale-105 transition-transform duration-300">
+// {/*                   {book.category} */}
+//                 </span>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+
+//         {filteredBooks.length === 0 && (
+//           <div className="text-center text-white py-12">
+//             <p className="text-xl">No books found matching your search criteria.</p>
+//           </div>
+//         )}
+//       </div>
+//     // </Layout>
+//   )
+// }
+
+
+const categories = [
+  "All",
+  "Islamic Studies",
+  "Biography",
+  "History",
+  "Political Islam",
+  "Fiqh",
+  "Economics",
+  "Philosophy",
+]
 
 export default function BooksPage() {
-  const [searchTerm, setSearchTerm] = useState('')
-  // const [selectedCategory, setSelectedCategory] = useState('All')
+  const [searchTerm, setSearchTerm] = useState("")
   const [filteredBooks, setFilteredBooks] = useState(books)
   const [isLoaded, setIsLoaded] = useState(false)
 
@@ -146,97 +262,91 @@ export default function BooksPage() {
   }, [])
 
   useEffect(() => {
-    const filtered = books.filter(book => {
-      const matchesSearch = book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                          book.author.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                          book.description.toLowerCase().includes(searchTerm.toLowerCase())
-      
-      // const matchesCategory = selectedCategory === 'All' || book.category === selectedCategory
+    const filtered = books.filter((book) => {
+      const matchesSearch =
+        book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        book.author.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        book.description.toLowerCase().includes(searchTerm.toLowerCase())
 
-      return matchesSearch && matchesCategory
+      return matchesSearch
     })
     setFilteredBooks(filtered)
-  }, [searchTerm, selectedCategory])
+  }, [searchTerm])
 
   return (
+    <div className="container mx-auto px-4 py-12 bg-gray-900 text-white min-h-screen">
+      {/* Search and Filter Section */}
+      <div
+        className={`mb-12 transform transition-all duration-700 delay-300 ${
+          isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+        }`}
+      >
+        <div className="max-w-4xl mx-auto space-y-6">
+          <input
+            type="search"
+            placeholder="Search books..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all duration-300"
+          />
 
-      <div className="container mx-auto px-4 py-12">
-        {/* Search and Filter Section */}
-        <div className={`mb-12 transform transition-all duration-700 delay-300 ${
-          isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}>
-          <div className="max-w-4xl mx-auto space-y-6">
-            <input
-              type="search"
-              placeholder="Search books..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all duration-300"
-            />
-            
-{/*             <div className="flex flex-wrap gap-3 justify-center">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  className={`px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 ${
-                    selectedCategory === category
-                      ? 'bg-amber-400 text-gray-900'
-                      : 'bg-white/10 text-white hover:bg-white/20'
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
-            </div> */}
+          <div className="flex flex-wrap gap-3 justify-center">
+            {categories.map((category) => (
+              <button
+                key={category}
+                className={`px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 ${
+                  category === "All" ? "bg-amber-400 text-gray-900" : "bg-white/10 text-white hover:bg-white/20"
+                }`}
+              >
+                {category}
+              </button>
+            ))}
           </div>
         </div>
+      </div>
 
-        {/* Books Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {filteredBooks.map((book, index) => (
-            <div
-              key={book.id}
-              className={`group relative bg-white/5 rounded-lg overflow-hidden backdrop-blur-sm transition-all duration-500 hover:scale-105 transform ${
-                isLoaded 
-                  ? 'translate-y-0 opacity-100' 
-                  : 'translate-y-10 opacity-0'
-              }`}
-              style={{ transitionDelay: `${index * 100}ms` }}
-            >
-              <div className="aspect-[3/4] relative">
-                <Image
-                  src={book.image || "/placeholder.svg"}
-                  alt={book.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <p className="text-white text-sm line-clamp-3">{book.description}</p>
-                  </div>
+      {/* Books Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        {filteredBooks.map((book, index) => (
+          <div
+            key={book.id}
+            className={`group relative bg-white/5 rounded-lg overflow-hidden backdrop-blur-sm transition-all duration-500 hover:scale-105 transform ${
+              isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+            style={{ transitionDelay: `${index * 100}ms` }}
+          >
+            <div className="aspect-[3/4] relative">
+              <Image
+                src={book.image || "/placeholder.svg"}
+                alt={book.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white text-sm line-clamp-3">{book.description}</p>
                 </div>
               </div>
-              <div className="p-4 bg-gradient-to-b from-transparent to-black/20">
-                <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-amber-400 transition-colors duration-300">
-                  {book.title}
-                </h3>
-                <p className="text-white/80 text-sm">{book.author}</p>
-                <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs bg-amber-400 text-gray-900 transform group-hover:scale-105 transition-transform duration-300">
-{/*                   {book.category} */}
-                </span>
-              </div>
             </div>
-          ))}
-        </div>
-
-        {filteredBooks.length === 0 && (
-          <div className="text-center text-white py-12">
-            <p className="text-xl">No books found matching your search criteria.</p>
+            <div className="p-4 bg-gradient-to-b from-transparent to-black/20">
+              <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-amber-400 transition-colors duration-300">
+                {book.title}
+              </h3>
+              <p className="text-white/80 text-sm">{book.author}</p>
+              <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs bg-amber-400 text-gray-900 transform group-hover:scale-105 transition-transform duration-300">
+                {book.category}
+              </span>
+            </div>
           </div>
-        )}
+        ))}
       </div>
-    // </Layout>
+
+      {filteredBooks.length === 0 && (
+        <div className="text-center text-white py-12">
+          <p className="text-xl">No books found matching your search criteria.</p>
+        </div>
+      )}
+    </div>
   )
 }
 

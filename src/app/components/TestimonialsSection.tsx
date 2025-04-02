@@ -97,7 +97,7 @@ export default function TestimonialsSection() {
   return (
     <div className="section-padding relative overflow-hidden">
       {/* Background with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#001829] via-[#003] to-[#001829]"></div>
+      <div className="absolute inset-0 "></div>
 
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">

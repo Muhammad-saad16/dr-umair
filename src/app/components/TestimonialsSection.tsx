@@ -133,7 +133,7 @@ export default function TestimonialsSection() {
                             </svg>
                           </div>
 
-                          <p className="text-white/90 mb-6 italic leading-relaxed">"{testimonial.quote}"</p>
+                          <p className="text-white/90 mb-6 italic leading-relaxed">&quot;{testimonial.quote}&quot;</p>
 
                           <div className="flex items-center mt-auto">
                             <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4 border-2 border-accent-teal">

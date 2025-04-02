@@ -133,11 +133,11 @@ const books = [
   }
 ]
 
-const categories = ['All', 'Islamic Studies', 'Biography', 'History', 'Political Islam', 'Fiqh', 'Economics', 'Philosophy']
+// const categories = ['All', 'Islamic Studies', 'Biography', 'History', 'Political Islam', 'Fiqh', 'Economics', 'Philosophy']
 
 export default function BooksPage() {
   const [searchTerm, setSearchTerm] = useState('')
-  const [selectedCategory, setSelectedCategory] = useState('All')
+  // const [selectedCategory, setSelectedCategory] = useState('All')
   const [filteredBooks, setFilteredBooks] = useState(books)
   const [isLoaded, setIsLoaded] = useState(false)
 

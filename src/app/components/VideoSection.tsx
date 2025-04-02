@@ -6,7 +6,11 @@ import Link from 'next/link'
 import event1 from '/Public/thumbnail1.jpg'
 import event2 from '/Public/thumbnail2.jpg'
 import event3 from '/Public/thumbnail3.jpg'
-import event4 from '/Public/saad.png'
+import event4 from '/Public/thumbnail4.jpg'
+import event5 from '/Public/thumbnail5.jpg'
+import event6 from '/Public/thumbnail6.jpg'
+import event7 from '/Public/thumbnail7.jpg'
+import event8 from '/Public/thumbnail8.jpg'
 const videos = [
   {
     id: 1,
@@ -29,6 +33,30 @@ const videos = [
    {
     id: 4,
     thumbnail: event4.src,
+    youtubeId: "0j-_AzgqiMI",
+    category: "Events"
+  },
+  {
+    id: 5,
+    thumbnail: event5.src, 
+    youtubeId: "LcyP_eoQDXQ",
+    category: "Lectures"
+  },
+  {
+    id: 6,
+    thumbnail: event6.src,
+    youtubeId: "ps61pd-0xjs",
+    category: "Sermons"
+  },
+  {
+    id: 7,
+    thumbnail: event7.src,
+    youtubeId: "Wq7XnyB4DHU",
+    category: "Events"
+  },
+   {
+    id: 8,
+    thumbnail: event8.src,
     youtubeId: "0j-_AzgqiMI",
     category: "Events"
   },

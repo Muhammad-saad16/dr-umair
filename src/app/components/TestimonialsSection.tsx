@@ -105,14 +105,14 @@ export default function TestimonialsSection() {
         <div className="absolute top-1/2 -right-24 w-96 h-96 rounded-full bg-accent-gold blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+{/*       <div className="container mx-auto px-4 relative z-10">
+{/*         <div className="text-center mb-16">
           <h2 className="elegant-title text-4xl md:text-5xl mb-4">
             In My <span className="gold-text">View</span>
           </h2>
-          <div className="w-24 h-1 bg-accent-teal mx-auto"></div>
+          <div className="w-24 h-1 bg-accent-teal mx-auto"></div> */}
         </div>
-
+ */}
         <div className="relative">
           {/* Testimonial Cards Container */}
           <div className="overflow-hidden">

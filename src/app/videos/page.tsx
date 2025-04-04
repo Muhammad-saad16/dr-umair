@@ -109,51 +109,66 @@
 import { useState } from 'react'
 import Layout from '../components/Layout'
 import { Play } from 'lucide-react'
-import event1 from '../../../Public/event1.jpg' // Correctly import the image
-import event2 from '../../../Public/event2.jpg' // Correctly import the image
-import event3 from '../../../Public/event3.jpg' // Correctly import the image
-import event4 from '../../../Public/event4.jpg' // Correctly import the image
-import event5 from '../../../Public/event5.jpg' // Correctly import the image
-import event6 from '../../../Public/event6.jpg' // Correctly import the image
+import Link from 'next/link'
+import event1 from '/Public/thumbnail1.jpg'
+import event2 from '/Public/thumbnail2.jpg'
+import event3 from '/Public/thumbnail3.jpg'
+import event4 from '/Public/thumbnail4.jpg'
+import event5 from '/Public/thumbnail5.jpg'
+import event6 from '/Public/thumbnail6.jpg'
+import event7 from '/Public/thumbnail7.jpg'
+import event8 from '/Public/thumbnail8.jpg'
 const videos = [
   {
     id: 1,
     thumbnail: event1.src, 
-    youtubeId: "-b12v8nyhdI",
+    youtubeId: "LcyP_eoQDXQ",
     category: "Lectures"
   },
   {
     id: 2,
     thumbnail: event2.src,
-    youtubeId: "OGd4VjoPiqU",
+    youtubeId: "ps61pd-0xjs",
     category: "Sermons"
   },
   {
     id: 3,
     thumbnail: event3.src,
-    youtubeId: "zmjZbZhMH8k",
+    youtubeId: "Wq7XnyB4DHU",
+    category: "Events"
+  },
+   {
+    id: 4,
+    thumbnail: event4.src,
+    youtubeId: "6s4R3MYeezU",
     category: "Events"
   },
   {
-    id: 4,
-    thumbnail: event4.src,
-    youtubeId: "QbOc5W1qnq0",
-    category: "Q&A"
-  },
-  {
     id: 5,
-    thumbnail: event5.src,
-    youtubeId: "PVH6uCXYrLk",
+    thumbnail: event5.src, 
+    youtubeId: "kOV4mgl8gcA",
     category: "Lectures"
   },
   {
     id: 6,
     thumbnail: event6.src,
-    youtubeId: "CITWO2ZnnkA",
+    youtubeId: "jv12__G4tW8",
     category: "Sermons"
-  }
-];
-
+  },
+  {
+    id: 7,
+    thumbnail: event7.src,
+    youtubeId: "YdTHuYHHE54",
+    category: "Events"
+  },
+   {
+    id: 8,
+    thumbnail: event8.src,
+    youtubeId: "tudjOzDH2rk",
+    category: "Events"
+  },
+  
+]
 export default function VideosPage() {
   const [selectedCategory, setSelectedCategory] = useState('All')
 

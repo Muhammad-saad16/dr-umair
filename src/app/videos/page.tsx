@@ -109,7 +109,7 @@
 import { useState } from 'react'
 import Layout from '../components/Layout'
 import { Play } from 'lucide-react'
-import Link from 'next/link'
+// import Link from 'next/link'
 import event1 from '/Public/thumbnail1.jpg'
 import event2 from '/Public/thumbnail2.jpg'
 import event3 from '/Public/thumbnail3.jpg'

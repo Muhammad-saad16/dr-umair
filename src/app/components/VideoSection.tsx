@@ -33,31 +33,31 @@ const videos = [
    {
     id: 4,
     thumbnail: event4.src,
-    youtubeId: "0j-_AzgqiMI",
+    youtubeId: "6s4R3MYeezU",
     category: "Events"
   },
   {
     id: 5,
     thumbnail: event5.src, 
-    youtubeId: "LcyP_eoQDXQ",
+    youtubeId: "kOV4mgl8gcA",
     category: "Lectures"
   },
   {
     id: 6,
     thumbnail: event6.src,
-    youtubeId: "ps61pd-0xjs",
+    youtubeId: "jv12__G4tW8",
     category: "Sermons"
   },
   {
     id: 7,
     thumbnail: event7.src,
-    youtubeId: "Wq7XnyB4DHU",
+    youtubeId: "YdTHuYHHE54",
     category: "Events"
   },
    {
     id: 8,
     thumbnail: event8.src,
-    youtubeId: "0j-_AzgqiMI",
+    youtubeId: "tudjOzDH2rk",
     category: "Events"
   },
   

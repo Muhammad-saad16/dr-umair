@@ -107,9 +107,9 @@ export default function TestimonialsSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-{/*           <h2 className="elegant-title text-4xl md:text-5xl mb-4">
-            In My <span className="gold-text">View</span>
-          </h2> */}
+{/*           <h2 className="elegant-title text-4xl md:text-5xl mb-4"> */}
+{/*             In My <span className="gold-text">View</span> */}
+          // </h2>
           <div className="w-24 h-1 bg-accent-teal mx-auto"></div>
         </div>
 

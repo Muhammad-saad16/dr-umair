@@ -144,7 +144,7 @@ export default function Footer() {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >
-          <p>&copy; {new Date().getFullYear()} Islamic Scholar Website. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Techsoft. All rights reserved.</p>
         </div>
       </div>
     </footer>

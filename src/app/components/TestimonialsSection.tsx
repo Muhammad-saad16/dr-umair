@@ -2,7 +2,7 @@
 
 import { useEffect, useState,useCallback } from 'react'
 import Image from 'next/image'
-import ahmed from '../../../Public/dr-mohd-hasbi.png'
+import ahmed from '../../../Public/dr-mohd-hasbi.jpg'
 import majeed from '../../../Public/Dr.-Majeedullah-Qadri.png'
 import qibla from '../../../Public/qibla-Ayaz.png'
 

@@ -70,7 +70,7 @@ export default function VideoSection() {
   return (
     // <section className=" bg-[url('/back2.jpg')] object-cover">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">Featured Lectures</h2>
+
         
         <div className="flex flex-wrap gap-4 mb-12 justify-center">
           {categories.map((category) => (
@@ -122,7 +122,7 @@ export default function VideoSection() {
             href="/clip-&-videos"
             className="inline-block px-6 py-3 bg-amber-500 text-white font-semibold rounded-full hover:bg-amber-600 transition-colors"
           >
-            View All Lectures
+            View More
           </Link>
         </div>
       </div>

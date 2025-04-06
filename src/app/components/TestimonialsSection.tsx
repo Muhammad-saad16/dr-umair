@@ -2,15 +2,15 @@
 
 import { useEffect, useState,useCallback } from 'react'
 import Image from 'next/image'
-import ahmed from '../../../Public/Ahmad-Javed.png'
+import ahmed from '../../../Public/dr-mohd-hasbi.png'
 import majeed from '../../../Public/Dr.-Majeedullah-Qadri.png'
 import qibla from '../../../Public/qibla-Ayaz.png'
 
 const testimonials = [
   {
     id: 1,
-    name: "Ahmad Javed",
-    role: "Philospher & Thinker",
+    name: "Datuk Dr Mohd Hasbi Bakar",
+    role: "President Jamiyah Singapore",
     image: ahmed.src,
     quote: "Dr. Umair continues to progress both spiritually and worldly, reaching new heights. He exemplifies a man of high-spirited and resilient demeanor.",
     rating: 5

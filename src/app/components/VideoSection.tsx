@@ -134,7 +134,7 @@ export default function VideoSection() {
   const categories = ["All", "Lectures", "Sermons", "Q&A"]
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 mt-8">
       <div className="flex flex-wrap gap-4 mb-12 justify-center">
         {categories.map((category) => (
           <button

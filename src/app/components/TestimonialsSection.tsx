@@ -25,7 +25,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Pro. Dr. Qibla Ayaz",
+    name: "Prof. Dr. Qibla Ayaz",
     role: "Chairman Council of Islamic Ideology",
     image: qibla.src,
     quote: "Today, we find ourselves at the City of Knowledge enveloped in an auspicious atmosphere, spearheaded by Dr. Umair Mahmood Siddiqui.",

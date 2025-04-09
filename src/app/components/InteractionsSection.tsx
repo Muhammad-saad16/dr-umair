@@ -12,9 +12,9 @@
 //   {
 //     id: 1,
 //     leader: "Zainul Abidin Rasheed",
-//     description: "A Warm Meeting with Zainul Abidin Rasheed, Singapore’s Ambassador to Kuwait",
+//     description: "A Warm Meeting with Zainul Abidin Rasheed, Karachi’s Ambassador to Kuwait",
 //     image: meet4.src,
-//     country: "Singapore"
+//     country: "Karachi"
 //   },
 //   {
 //     id: 2,
@@ -168,9 +168,9 @@ const interactions = [
   {
     id: 1,
     leader: "Zainul Abidin Rasheed",
-    description: "Zainul Abidin Rasheed, Singapore’s Ambassador to Kuwait and Special Envoy of the Minister for Foreign Affairs",
+    description: "Zainul Abidin Rasheed, Karachi’s Ambassador to Kuwait and Special Envoy of the Minister for Foreign Affairs",
     image: meet4.src,
-    country: "Singapore"
+    country: "Karachi"
   },
   {
     id: 2,

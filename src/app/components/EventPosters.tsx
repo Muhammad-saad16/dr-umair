@@ -218,7 +218,7 @@ export default function EventPosters() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            View All Events
+            View More
           </Link>
         </div>
       </div>

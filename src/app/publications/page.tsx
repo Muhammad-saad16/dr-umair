@@ -111,7 +111,7 @@ const books = [
     id: 12,
     title: "Introduction to Islamic Economics",
     author: "Dr. Umair Mahmood Siddiqui",
-    description: "An exploration of Islamic economic principles and practices.",
+    description: " ",
     image: book12.src,
     displayCategory: "Economics"
   },

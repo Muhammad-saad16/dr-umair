@@ -39,7 +39,7 @@ const books = [
     id: 3,
     title: "Tazkira",
     author: "Dr. Umair Mahmood Siddiqui",
-    description: "An insightful account of spiritual and moral values.",
+    description: " Tazkira is a comprehensive source of knowledge exposing Qadianiat through its toxic content.",
     image: book3.src,
     displayCategory: "Islamic Studies"
   },
@@ -119,7 +119,7 @@ const books = [
     id: 13,
     title: "Islamic Theology and Philosophy",
     author: "Dr. Umair Mahmood Siddiqui",
-    description: "A study on the theological and philosophical traditions of Islam.",
+    description: " ",
     image: book13.src,
     displayCategory: "Philosophy"
   },
@@ -127,7 +127,7 @@ const books = [
     id: 14,
     title: "Revival of Muslim Thought",
     author: "Dr. Umair Mahmood Siddiqui",
-    description: "A discussion on the revival of Islamic thought in the modern age.",
+    description: " ",
     image: book14.src,
     displayCategory: "Islamic Studies"
   }

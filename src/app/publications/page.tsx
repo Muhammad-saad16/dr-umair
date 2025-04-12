@@ -93,7 +93,7 @@ const books = [
   },
   {
     id: 10,
-    title: "Dr. Umair Mahmood Siddiqui: The Ghazali of his Age",
+    title: "Dr. Fazlur Rahman Ansari",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A biography highlighting Dr. Umair Mahmood Siddiqui's scholarly contributions.",
     image: book10.src,

@@ -170,7 +170,7 @@ const interactions = [
     leader: "Zainul Abidin Rasheed",
     description: "Zainul Abidin Rasheed, Karachi’s Ambassador to Kuwait and Special Envoy of the Minister for Foreign Affairs",
     image: meet4.src,
-    country: "Karachi"
+    country: "Singapore"
   },
   {
     id: 2,
@@ -191,7 +191,7 @@ const interactions = [
     leader: "Sheikh Dr. Saleh Abdullah ",
     description: "Meeting with His Excellency Sheikh Dr. Saleh bin Abdullah bin Humaid at the International Islamic Fiqh Academy (IIFA).",
     image: meet1.src,
-    country: "Karachi"
+    country: "jeddah"
   },
 ];
 

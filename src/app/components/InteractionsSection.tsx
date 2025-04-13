@@ -191,7 +191,7 @@ const interactions = [
     leader: "Sheikh Dr. Saleh Abdullah ",
     description: "Meeting with His Excellency Sheikh Dr. Saleh bin Abdullah bin Humaid at the International Islamic Fiqh Academy (IIFA).",
     image: meet1.src,
-    country: "jeddah"
+    country: "Jeddah"
   },
 ];
 

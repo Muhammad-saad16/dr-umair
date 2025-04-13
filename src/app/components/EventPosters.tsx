@@ -12,26 +12,26 @@ const eventPosters = [
   {
     id: 1,
     image: event4.src,
-    title: "Al-Aqsa Conference",
-    date: "January 26, 2024",
+    title: "Taqwa and Ramadan
+    date: "March 8, 2025",
   },
   {
     id: 2,
     image: event1.src,
-    title: "Tajweed Course",
-    date: "Febuary 2-17, 2024",
+    title: "Al-Aqsa Conference",
+    date: "April 6, 2025",
   },
   {
     id: 3,
     image: event2.src,
-    title: "Al-Aqsa Conference",
-    date: "January 26, 2024",
+    title: "Khutba Jumma",
+    date: "Dars-e-Quran | Surah Anfal",
   },
   {
     id: 4,
     image: event3.src,
-    title: "Singapore Tour",
-    date: "Every Saturday",
+    title: "Weekly Dars-e-Quran | City of Knowledge",
+    date: "Surah Noor | 9:00 PM TO 10:00 PM",
   },
 ]
 

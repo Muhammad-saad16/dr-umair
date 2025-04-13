@@ -13,7 +13,7 @@ export default function AboutPage() {
               src={dr}
               alt="Scholar giving a lecture"
               fill
-              className="object-cover"
+              className="bg-cover"
             />
           </div>
           

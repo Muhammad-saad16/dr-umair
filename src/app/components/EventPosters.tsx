@@ -12,7 +12,7 @@ const eventPosters = [
   {
     id: 1,
     image: event4.src,
-    title: "Taqwa and Ramadan
+    title: "Taqwa and Ramadan"
     date: "March 8, 2025",
   },
   {

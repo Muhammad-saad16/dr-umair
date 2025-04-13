@@ -212,13 +212,14 @@ export default function VideosPage() {
                   alt="Video Thumbnail"
                   className="w-full h-full object-cover transition-transform group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-full bg-amber-400 flex items-center justify-center transform group-hover:scale-110 transition-transform">
-                      <Play className="w-3 h-3 text-gray-300" />
-                    </div>
-                  </div>
-                </div>
+               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors">
+  <div className="absolute inset-0 flex items-center justify-center">
+    <div className="w-12 h-12 rounded-full bg-amber-400/70 flex items-center justify-center transform group-hover:scale-105 transition-transform">
+      <Play className="w-2.5 h-2.5 text-gray-200/80" />
+    </div>
+  </div>
+</div>
+
               </div>
             </div>
           ))}

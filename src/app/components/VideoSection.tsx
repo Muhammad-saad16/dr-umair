@@ -7,7 +7,7 @@ import event1 from '/Public/thumbnail1.jpg'
 import event2 from '/Public/thumbnail10.jpg'
 import event3 from '/Public/thumbnail11.jpg'
 import event4 from '/Public/thumbnail4.jpg'
-import event5 from '/Public/thumbnail5.jpg'
+import event5 from '/Public/thumbnail12.jpg'
 import event6 from '/Public/thumbnail6.jpg'
 import event7 from '/Public/thumbnail7.jpg'
 import event8 from '/Public/thumbnail8.jpg'
@@ -39,7 +39,7 @@ const videos = [
   {
     id: 5,
     thumbnail: event5.src, 
-    youtubeId: "kOV4mgl8gcA",
+    youtubeId: "g0tLzlB5m-o",
     category: "Lectures"
   },
   {

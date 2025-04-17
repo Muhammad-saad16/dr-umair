@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         {/* Favicon Logo */}
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <Image src="/logo.png" alt="Drumairsiddl Logo" width={180} height={40} priority />
         <title>My Website</title>
       </Head>
       <body className={inter.variable}>

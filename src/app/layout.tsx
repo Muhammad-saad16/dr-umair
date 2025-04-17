@@ -3,6 +3,7 @@ import "./globals.css";
 import Layout from "./components/Layout";
 import type React from "react";
 import Head from "next/head";
+import Image from 'next/image';
 
 // Initialize English font
 const inter = Inter({

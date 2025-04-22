@@ -10,6 +10,27 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
+export const metadata: Metadata = {
+  title: "Dr Umair Mehmood Siddiqu",
+  description: "",
+  openGraph: {
+    title: "Dr Umair Mehmood Siddiqu",
+    description: "",
+    url: "https://drumairsiddiqui.com/", // Apni website ka link
+    siteName: "Dr Umair Mehmood Siddiqu",
+    images: [
+      {
+        url: "/logo.png", // ✅ Public folder wali image ka path
+        width: 1200,
+        height: 630,
+        alt: "Dr Umair Mehmood Siddiqui",
+      },
+    ],
+    type: "website",
+  },
+
+  
+}
 
 export default function RootLayout({
   children,

@@ -29,7 +29,15 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
-
+ twitter: {
+    card: "summary_large_image",
+    title: "Technova Software House",
+    description: "Professional software development services for businesses of all sizes",
+    images: ["/logo.jpeg"], // ✅ Yahan bhi local image ka path
+  },
+  icons: {
+    icon: "/favicon.ico", // ✅ Agar favicon bhi hai
+  },
   
 }
 

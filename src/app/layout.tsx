@@ -12,33 +12,21 @@ const inter = Inter({
   variable: "--font-inter",
 });
 export const metadata: Metadata = {
-  title: "Dr Umair Mehmood Siddiqu",
+  title: "Dr Uamir Mehmood Siddiqui",
   description: "",
-  openGraph: {
-    title: "Dr Umair Mehmood Siddiqu",
-    description: "",
-    url: "https://drumairsiddiqui.com/", // Apni website ka link
-    siteName: "Dr Umair Mehmood Siddiqu",
-    images: [
+  icons: {
+    icon: [
       {
-        url: "/logo.png", // ✅ Public folder wali image ka path
-        width: 1200,
-        height: 630,
-        alt: "Dr Umair Mehmood Siddiqui",
+        url: "/favicon.ico",
+        sizes: "any",
+      },
+      {
+        url: "/logo.png",
+        type: "image/png",
+        sizes: "180x180",
       },
     ],
-    type: "website",
   },
- twitter: {
-    card: "summary_large_image",
-    title: "Technova Software House",
-    description: "Professional software development services for businesses of all sizes",
-    images: ["/logo.jpeg"], // ✅ Yahan bhi local image ka path
-  },
-  icons: {
-    icon: "/favicon.ico", // ✅ Agar favicon bhi hai
-  },
-  
 }
 
 export default function RootLayout({

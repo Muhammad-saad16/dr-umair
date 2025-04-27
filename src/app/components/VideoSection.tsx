@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Play } from 'lucide-react'
 import Link from 'next/link'
-import event1 from '/Public/thumbnail1.jpg'
+import event1 from '/Public/thumbnail13.jpg'
 import event2 from '/Public/thumbnail10.jpg'
 import event3 from '/Public/thumbnail11.jpg'
 import event4 from '/Public/thumbnail4.jpg'
@@ -15,7 +15,7 @@ const videos = [
   {
     id: 1,
     thumbnail: event1.src, 
-    youtubeId: "LcyP_eoQDXQ",
+    youtubeId: "OGwsjwzzod4",
     category: "Lectures"
   },
   {

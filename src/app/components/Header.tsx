@@ -113,7 +113,7 @@ export default function Header() {
         <div className="flex items-center justify-between px-6 py-2 bg-[#05445E]/50">
           <div className="flex items-center space-x-4">
             <Image
-              src="/mylogo.png" // Place your logo inside /public folder
+              src="/logo.png" // Place your logo inside /public folder
               alt="My Logo"
               width={100}
               height={50}

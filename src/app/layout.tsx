@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/logo.png",
+        url: "/favicon.ico",
         sizes: "any",
       },
       {
         url: "logo.png",
         type: "image/png",
-        sizes: "48x48",
+        sizes: "180x180",
       },
     ],
   },
@@ -37,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
+        {/* Favicon Logo */}
       <Image src="logo.png" alt="Drumairsiddl Logo" width={180} height={40} priority />
         <title>My Website</title>
       </Head>

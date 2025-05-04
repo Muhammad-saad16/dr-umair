@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
 import { useMediaQuery } from "react-responsive"
-
+import slide4 from '../../../Public/slide4.jpg'
 import p1 from '../../../Public/slide.jpg'
 import p2 from '../../../Public/slide1.jpg'
 import p3 from '../../../Public/slide2.jpg'

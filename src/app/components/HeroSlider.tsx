@@ -12,24 +12,28 @@ import slide1stt from '../../../Public/slide1stt.jpg'
 
 
 const slides = [
- {
+  {
     id: 1,
+    image: slide4.src,
+  },
+ {
+    id: 2,
     image: slide3.src,
   },
 {
-    id: 2,
+    id: 3,
     image: slide1stt.src,
   },
  {
-    id: 3,
+    id: 4,
     image: p1.src,
   },
   {
-    id: 4,
+    id: 5,
     image: p2.src,
   },
   {
-    id: 5,
+    id: 6,
     image: p3.src,
   },
 ]

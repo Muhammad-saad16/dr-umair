@@ -23,7 +23,7 @@ export const metadata: Metadata = {
       {
         url: "logo.png",
         type: "image/png",
-        sizes: "180x180",
+        sizes: "48x48",
       },
     ],
   },

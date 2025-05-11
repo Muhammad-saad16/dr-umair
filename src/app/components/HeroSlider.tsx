@@ -9,15 +9,30 @@ import p2 from '../../../Public/slide1.jpg'
 import p3 from '../../../Public/slide2.jpg'
 import slide3 from '../../../Public/slide3.jpg'
 import slide1stt from '../../../Public/slide1stt.jpg'
+import slide5 from '../../../Public/slide5.jpg'
+import slide7 from '../../../Public/slide7.jpg'
+import slide8 from '../../../Public/slide8.jpg'
 
 
 const slides = [
-  {
+   {
     id: 1,
-    image: slide4.src,
+    image: slide8.src,
   },
  {
     id: 2,
+    image: slide7.src,
+  },
+{
+    id: 3,
+    image: slide5.src,
+  },
+  {
+    id: 4,
+    image: slide4.src,
+  },
+ {
+    id: 5,
     image: slide3.src,
   },
 {
@@ -25,15 +40,15 @@ const slides = [
     image: slide1stt.src,
   },
  {
-    id: 4,
+    id: 6,
     image: p1.src,
   },
   {
-    id: 5,
+    id: 7,
     image: p2.src,
   },
   {
-    id: 6,
+    id: 8,
     image: p3.src,
   },
 ]

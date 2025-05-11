@@ -4,9 +4,9 @@ import { useState } from 'react'
 import { Play } from 'lucide-react'
 import Link from 'next/link'
 import event1 from '/Public/thumbnail13.jpg'
-import event2 from '/Public/thumbnail10.jpg'
-import event3 from '/Public/thumbnail11.jpg'
-import event4 from '/Public/thumbnail4.jpg'
+import event2 from '/Public/thumbnail14.jpg'
+import event3 from '/Public/thumbnail15.jpg'
+import event4 from '/Public/thumbnai16.jpg'
 import event5 from '/Public/thumbnail12.jpg'
 import event6 from '/Public/thumbnail6.jpg'
 import event7 from '/Public/thumbnail7.jpg'
@@ -21,19 +21,19 @@ const videos = [
   {
     id: 2,
     thumbnail: event2.src,
-    youtubeId: "T3oTI8w-kfw",
+    youtubeId: "SIhouwuus7w-kfw",
     category: "Sermons"
   },
   {
     id: 3,
     thumbnail: event3.src,
-    youtubeId: "k25Y4XyDssA",
+    youtubeId: "CxatOC9J9po",
     category: "Events"
   },
    {
     id: 4,
     thumbnail: event4.src,
-    youtubeId: "6s4R3MYeezU",
+    youtubeId: "nrWfiAHWwRM",
     category: "Events"
   },
   {

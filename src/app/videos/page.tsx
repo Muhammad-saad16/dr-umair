@@ -4,7 +4,10 @@
 import Layout from '../components/Layout'
 import { useState } from 'react'
 import { Play } from 'lucide-react'
-
+import even1 from '/Public/thumbnail15.jpg'
+import even2 from '/Public/thumbnail16.jpg'
+import even3 from '/Public/thumbnail17.jpg'
+// import event4 from '/Public/thumbnail4.jpg'
 import event1 from '/Public/thumbnail1.jpg'
 import event2 from '/Public/thumbnail10.jpg'
 import event3 from '/Public/thumbnail11.jpg'
@@ -60,6 +63,24 @@ const videos = [
     id: 8,
     thumbnail: event8.src,
     youtubeId: "tudjOzDH2rk",
+    category: "Events"
+  },
+    {
+    id: 6,
+    thumbnail: even3.src,
+    youtubeId: "CxatOC9J9po",
+    category: "Sermons"
+  },
+  {
+    id: 7,
+    thumbnail: even2.src,
+    youtubeId: "CxatOC9J9po",
+    category: "Events"
+  },
+   {
+    id: 8,
+    thumbnail: even1.src,
+    youtubeId: "SIhouwuus7w",
     category: "Events"
   },
   

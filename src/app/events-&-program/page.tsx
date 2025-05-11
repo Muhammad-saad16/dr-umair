@@ -10,14 +10,14 @@ import even4 from "../../../Public/post4.jpg"
 import event1 from "../../../Public/event-poster1.jpg"
 import event2 from "../../../Public/event-poster2.jpg"
 import event3 from "../../../Public/event-poster3.jpg"
-// import event4 from "../../../Public/event-poster4.jpg"
+import event4 from "../../../Public/post5.jpg"
 import event5 from "../../../Public/event-poster5.jpg"
 import event6 from "../../../Public/event-poster6.jpg"
 import event7 from "../../../Public/event-poster7.jpg"
 import event8 from "../../../Public/event-poster10.jpg"
 import event9 from "../../../Public/event-poster9.jpg"
-// import event11 from "../../../Public/event-poster11.jpg"
-// import event12 from "../../../Public/event-poster12.jpg"
+import event11 from "../../../Public/event-poster7.jpg"
+import event12 from "../../../Public/event-poster8.jpg"
 // import event13 from "../../../Public/event-poster13.jpg"
 const events = [
   {
@@ -91,16 +91,16 @@ const events = [
       "A special workshop designed for young Muslims to strengthen their understanding of Islam in the modern world.",
     category: "Workshop",
   },
-  // {
-  //   id: 8,
-  //   title: "Islamic Art Exhibition",
-  //   date: "April 15-20, 2024",
-  //   location: "Metropolitan Museum",
-  //   image: event4.src,
-  //   description:
-  //     "Experience the beauty of Islamic art through this curated exhibition featuring both classical and contemporary works.",
-  //   category: "Exhibition",
-  // },
+  {
+    id: 8,
+    title: "Islamic Art Exhibition",
+    date: "April 15-20, 2024",
+    location: "Metropolitan Museum",
+    image: event4.src,
+    description:
+      "Experience the beauty of Islamic art through this curated exhibition featuring both classical and contemporary works.",
+    category: "Exhibition",
+  },
   {
     id: 9,
     title: "Quran Recitation Competition",
@@ -149,25 +149,25 @@ const events = [
       "A special workshop designed for young Muslims to strengthen their understanding of Islam in the modern world.",
     category: "Workshop",
   },
-  // {
-  //   id: 14,
-  //   title: "Islamic Art Exhibition",
-  //   date: "April 15-20, 2024",
-  //   location: "Metropolitan Museum",
-  //   image: event11.src,
-  //   description:
-  //     "Experience the beauty of Islamic art through this curated exhibition featuring both classical and contemporary works.",
-  //   category: "Exhibition",
-  // },
-  // {
-  //   id: 11,
-  //   title: "Quran Recitation Competition",
-  //   date: "May 1, 2024",
-  //   location: "Central Mosque",
-  //   image: event12.src,
-  //   description: "Annual Quran recitation competition showcasing the beautiful art of Quranic recitation.",
-  //   category: "Competition",
-  // },
+  {
+    id: 14,
+    title: "Islamic Art Exhibition",
+    date: "April 15-20, 2024",
+    location: "Metropolitan Museum",
+    image: event11.src,
+    description:
+      "Experience the beauty of Islamic art through this curated exhibition featuring both classical and contemporary works.",
+    category: "Exhibition",
+  },
+  {
+    id: 11,
+    title: "Quran Recitation Competition",
+    date: "May 1, 2024",
+    location: "Central Mosque",
+    image: event12.src,
+    description: "Annual Quran recitation competition showcasing the beautiful art of Quranic recitation.",
+    category: "Competition",
+  },
   // {
   //   id: 12,
   //   title: "Islamic Finance Seminar",

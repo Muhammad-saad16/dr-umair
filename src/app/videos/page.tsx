@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { Play } from 'lucide-react'
 import even1 from '/Public/thumbnail15.jpg'
 import even2 from '/Public/thumbnail16.jpg'
-import even3 from '/Public/thumbnail17.jpg'
+// import even3 from '/Public/thumbnail17.jpg'
 // import event4 from '/Public/thumbnail4.jpg'
 import event1 from '/Public/thumbnail1.jpg'
 import event2 from '/Public/thumbnail10.jpg'
@@ -65,12 +65,12 @@ const videos = [
     youtubeId: "tudjOzDH2rk",
     category: "Events"
   },
-    {
-    id: 6,
-    thumbnail: even3.src,
-    youtubeId: "CxatOC9J9po",
-    category: "Sermons"
-  },
+  //   {
+  //   id: 6,
+  //   thumbnail: even3.src,
+  //   youtubeId: "CxatOC9J9po",
+  //   category: "Sermons"
+  // },
   {
     id: 7,
     thumbnail: even2.src,

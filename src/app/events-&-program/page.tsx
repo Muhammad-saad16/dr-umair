@@ -17,7 +17,7 @@ import event7 from "../../../Public/event-poster7.jpg"
 import event8 from "../../../Public/event-poster10.jpg"
 import event9 from "../../../Public/event-poster9.jpg"
 import event11 from "../../../Public/event-poster7.jpg"
-// import event12 from "../../../Public/event-poster8.jpg"
+import event12 from "../../../Public/post10.jpg"
 // import event13 from "../../../Public/event-poster13.jpg"
 const events = [
   {
@@ -159,15 +159,15 @@ const events = [
       "Experience the beauty of Islamic art through this curated exhibition featuring both classical and contemporary works.",
     category: "Exhibition",
   },
-  // {
-  //   id: 11,
-  //   title: "Quran Recitation Competition",
-  //   date: "May 1, 2024",
-  //   location: "Central Mosque",
-  //   image: event12.src,
-  //   description: "Annual Quran recitation competition showcasing the beautiful art of Quranic recitation.",
-  //   category: "Competition",
-  // },
+  {
+    id: 11,
+    title: "Quran Recitation Competition",
+    date: "May 1, 2024",
+    location: "Central Mosque",
+    image: event12.src,
+    description: "Annual Quran recitation competition showcasing the beautiful art of Quranic recitation.",
+    category: "Competition",
+  },
   // {
   //   id: 12,
   //   title: "Islamic Finance Seminar",

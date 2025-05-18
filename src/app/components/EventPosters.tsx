@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from 'next/link';
-import event1 from "../../../Public/post10.jpg"
+import event1 from "../../../Public/post14.jpg"
 import event2 from "../../../Public/post13.jpg"
 import event3 from "../../../Public/post12.jpg"
 import event4 from "../../../Public/post9.jpg"

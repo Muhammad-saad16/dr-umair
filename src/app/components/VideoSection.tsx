@@ -8,8 +8,8 @@ import event2 from '/Public/thumbnail14.jpg'
 import event3 from '/Public/thumbnail15.jpg'
 import event4 from '/Public/thumbnail16.jpg'
 import event5 from '/Public/thumbnail12.jpg'
-import event6 from '/Public/thumbnail6.jpg'
-import event7 from '/Public/thumbnail7.jpg'
+import event6 from '/Public/thumbnail17.jpg'
+import event7 from '/Public/thumbnail18.jpg'
 import event8 from '/Public/thumbnail8.jpg'
 const videos = [
   {

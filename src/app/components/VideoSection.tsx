@@ -51,13 +51,13 @@ const videos = [
   {
     id: 7,
     thumbnail: event7.src,
-    youtubeId: "YdTHuYHHE54",
+    youtubeId: "qCXHnnGw6p0",
     category: "Events"
   },
    {
     id: 8,
     thumbnail: event8.src,
-    youtubeId: "tudjOzDH2rk",
+    youtubeId: "7Ef0XWi7Ncg",
     category: "Events"
   },
   

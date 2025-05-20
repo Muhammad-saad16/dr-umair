@@ -10,7 +10,7 @@ import event4 from '/Public/thumbnail16.jpg'
 import event5 from '/Public/thumbnail12.jpg'
 import event6 from '/Public/thumbnail17.jpg'
 import event7 from '/Public/thumbnail18.jpg'
-import event8 from '/Public/thumbnail8.jpg'
+import event8 from '/Public/thumbnail19.jpg'
 const videos = [
   {
     id: 1,
@@ -45,19 +45,19 @@ const videos = [
   {
     id: 6,
     thumbnail: event6.src,
-    youtubeId: "jv12__G4tW8",
+    youtubeId: "qCXHnnGw6p0",
     category: "Sermons"
   },
   {
     id: 7,
     thumbnail: event7.src,
-    youtubeId: "qCXHnnGw6p0",
+    youtubeId: "7Ef0XWi7Ncg",
     category: "Events"
   },
    {
     id: 8,
     thumbnail: event8.src,
-    youtubeId: "7Ef0XWi7Ncg",
+    youtubeId: "QQqsogDtP3s",
     category: "Events"
   },
   

@@ -158,7 +158,7 @@
 'use client'
 
 import Image from 'next/image'
-import meet1 from '../../../Public/meet7.jpg'
+import meet1 from '../../../Public/meet1.jpg'
 import meet2 from '../../../Public/meet2.jpg'
 import meet3 from '../../../Public/mee3.jpg'
 import meet4 from '../../../Public/meet3.jpg'

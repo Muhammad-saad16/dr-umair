@@ -18,7 +18,9 @@ import event8 from "../../../Public/event-poster10.jpg"
 import event9 from "../../../Public/event-poster9.jpg"
 import event11 from "../../../Public/event-poster7.jpg"
 import event12 from "../../../Public/post10.jpg"
-// import event13 from "../../../Public/event-poster13.jpg"
+import event13 from "../../../Public/post14.jpg"
+import event14 from "../../../Public/post13.jpg"
+import event15 from "../../../Public/post12.jpg"
 const events = [
   {
     id: 1,
@@ -168,15 +170,32 @@ const events = [
     description: "Annual Quran recitation competition showcasing the beautiful art of Quranic recitation.",
     category: "Competition",
   },
-  // {
-  //   id: 12,
-  //   title: "Islamic Finance Seminar",
-  //   date: "May 10, 2024",
-  //   location: "Business Convention Center",
-  //   image: event13.src,
-  //   description: "Learn about Islamic finance principles and their application in modern economic systems.",
-  //   category: "Seminar",
-  // },
+  {
+    id: 12,
+    title: "Islamic Finance Seminar",
+    date: "May 10, 2024",
+    location: "Business Convention Center",
+    image: event13.src,
+    description: "Learn about Islamic finance principles and their application in modern economic systems.",
+    category: "Seminar",
+  },
+    {
+    id: 13,
+    title: "Islamic Finance Seminar",
+    date: "May 10, 2024",
+    location: "Business Convention Center",
+    image: event14.src,
+    description: "Learn about Islamic finance principles and their application in modern economic systems.",
+    category: "Seminar",
+  },  {
+    id: 14,
+    title: "Islamic Finance Seminar",
+    date: "May 10, 2024",
+    location: "Business Convention Center",
+    image: event15.src,
+    description: "Learn about Islamic finance principles and their application in modern economic systems.",
+    category: "Seminar",
+  },
 ]
 
 const categories = ["All", "Conference", "Lecture Series", "Workshop", "Exhibition", "Competition", "Seminar"]

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react"
+import { Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
   const [isVisible, setIsVisible] = useState(false)
@@ -125,10 +125,10 @@ export default function Footer() {
           >
             <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              {[Facebook, Twitter, Instagram, Youtube].map((Icon, index) => (
+              {[Facebook, Youtube].map((Icon, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href="https://www.facebook.com/DrUmairMahmoodSiddiqui"
                   className="bg-white/10 p-3 rounded-full hover:bg-amber-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-110"
                 >
                   <Icon className="h-6 w-6" />

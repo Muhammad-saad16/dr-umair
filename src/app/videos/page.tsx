@@ -85,7 +85,7 @@ const videos = [
   },
      {
     id: 9,
-    thumbnail: even3.src,
+    thumbnail: even4.src,
     youtubeId: "CxatOC9J9po",
     category: "Sermons"
   },

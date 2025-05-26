@@ -17,7 +17,7 @@ import slide8 from '../../../Public/slide8.jpg'
 const slides = [
    {
     id: 1,
-    image: slide8.src,
+    image: slide4.src,
   },
  {
     id: 2,
@@ -29,15 +29,15 @@ const slides = [
   },
   {
     id: 4,
-    image: slide4.src,
+    image: slide8.src,
   },
  {
     id: 5,
-    image: slide3.src,
+    image: slide1stt.src,
   },
 {
     id: 3,
-    image: slide1stt.src,
+    image: slide3.src,
   },
  {
     id: 6,
@@ -52,7 +52,7 @@ const slides = [
     image: p2.src,
   },
     {
-    id: 8,
+    id: 9,
     image: p3.src,
   },
 ]

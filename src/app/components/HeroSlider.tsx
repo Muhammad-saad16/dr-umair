@@ -21,7 +21,7 @@ const slides = [
   },
  {
     id: 2,
-    image: slide3.src,
+    image: slide1stt.src,
   },
 {
     id: 3,
@@ -33,11 +33,11 @@ const slides = [
   },
  {
     id: 5,
-    image: slide1stt.src,
+    image: slide7.src,
   },
 {
     id: 3,
-    image: slide7.src,
+    image: slide3.src,
   },
  {
     id: 6,

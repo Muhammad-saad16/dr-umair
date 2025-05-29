@@ -77,7 +77,7 @@ const books = [
   },
   {
     id: 8,
-    title: "Chalees Ahadith",
+    title: "40 Ahadith",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A curated selection of 40 Ahadith with commentary.",
     image: book8.src,
@@ -117,7 +117,7 @@ const books = [
   },
   {
     id: 13,
-    title: "Islamic Theology and Philosophy",
+    title: "Islamic Theology ",
     author: "Dr. Umair Mahmood Siddiqui",
     description: " ",
     image: book13.src,

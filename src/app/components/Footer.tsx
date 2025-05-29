@@ -381,29 +381,31 @@ export default function Footer() {
       <div className="container mx-auto px-4 pt-32 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Quick Links */}
-          <div
-            className={transform transition-all duration-1000 ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }}
-          >
-            <h3 className="text-2xl font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {[ "Biography", "Publications", "Gallery", "Contact"].map((item) => (
-                <li key={item}>
-                  <Link href={/${item.toLowerCase()}} className="hover:text-amber-400 transition-colors">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+         <div
+  className={`transform transition-all duration-1000 ${
+    isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+  }`}
+>
+  <h3 className="text-2xl font-bold mb-4">Quick Links</h3>
+  <ul className="space-y-2">
+    {["Biography", "Publications", "Gallery", "Contact"].map((item) => (
+      <li key={item}>
+        <Link href={`/${item.toLowerCase()}`} className="hover:text-amber-400 transition-colors">
+          {item}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
+
 
           {/* Contact Info */}
-          <div
-            className={transform transition-all duration-1000 delay-200 ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }}
-          >
+         <div
+  className={`transform transition-all duration-1000 delay-200 ${
+    isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+  }`}
+>
+
             <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2">
               <li className="flex items-center">
@@ -427,10 +429,11 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div
-            className={transform transition-all duration-1000 delay-400 ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }}
-          >
+  className={`transform transition-all duration-1000 delay-400 ${
+    isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+  }`}
+>
+
             <h3 className="text-2xl font-bold mb-4">Newsletter</h3>
             <p className="mb-4">Stay updated with our latest news and events.</p>
             <form className="flex">
@@ -450,10 +453,11 @@ export default function Footer() {
 
           {/* Social Media */}
     <div
-  className={transform transition-all duration-1000 delay-600 ${
+  className={`transform transition-all duration-1000 delay-600 ${
     isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-  }}
+  }`}
 >
+
   <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
   <div className="flex space-x-4">
     {[
@@ -481,11 +485,12 @@ export default function Footer() {
 
 
         {/* Copyright */}
-        <div
-          className={mt-12 pt-8 border-t border-white/20 text-center transform transition-all duration-1000 delay-800 ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-          }}
-        >
+       <div
+  className={`mt-12 pt-8 border-t border-white/20 text-center transform transition-all duration-1000 delay-800 ${
+    isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+  }`}
+>
+
           <p>&copy; {new Date().getFullYear()} Dr Umair Mehmood Siddiqui. All rights reserved.</p>
         </div>
       </div>

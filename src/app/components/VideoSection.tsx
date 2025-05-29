@@ -14,49 +14,49 @@ import event8 from '/Public/thumbnail19.jpg'
 const videos = [
   {
     id: 1,
-    thumbnail: event1.src, 
+    thumbnail: event5.src, 
     youtubeId: "OGwsjwzzod4",
     category: "Lectures"
   },
   {
     id: 2,
-    thumbnail: event2.src,
+    thumbnail: event6.src,
     youtubeId: "SIhouwuus7w-kfw",
     category: "Sermons"
   },
   {
     id: 3,
-    thumbnail: event3.src,
+    thumbnail: event7.src,
     youtubeId: "CxatOC9J9po",
     category: "Events"
   },
    {
     id: 4,
-    thumbnail: event4.src,
+    thumbnail: event8.src,
     youtubeId: "nrWfiAHWwRM",
     category: "Events"
   },
   {
     id: 5,
-    thumbnail: event5.src, 
+    thumbnail: event1.src, 
     youtubeId: "g0tLzlB5m-o",
     category: "Lectures"
   },
   {
     id: 6,
-    thumbnail: event6.src,
+    thumbnail: event2.src,
     youtubeId: "qCXHnnGw6p0",
     category: "Sermons"
   },
   {
     id: 7,
-    thumbnail: event7.src,
+    thumbnail: event3.src,
     youtubeId: "7Ef0XWi7Ncg",
     category: "Events"
   },
    {
     id: 8,
-    thumbnail: event8.src,
+    thumbnail: event4.src,
     youtubeId: "QQqsogDtP3s",
     category: "Events"
   },

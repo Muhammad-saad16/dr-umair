@@ -30,7 +30,7 @@ export default function Footer() {
   }, [])
 
   return (
-    <footer className="bg-gradient-to-br from-[#05445E] via-[#189AB4] to-[#05445E] text-white relative">
+    <div className="bg-gradient-to-br from-[#05445E] via-[#189AB4] to-[#05445E] text-white relative">
       {/* Animated wave */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
         <svg
@@ -158,7 +158,7 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Dr Umair Mehmood Siddiqui. All rights reserved.</p>
         </div>
       </div>
-    </footer>
+    </div>
   )
 }
 

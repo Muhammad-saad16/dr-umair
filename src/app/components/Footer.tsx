@@ -94,7 +94,7 @@ export default function Footer() {
             </ul>
           </div>
 
-{/*           {/* Newsletter */}
+          {/* Newsletter */}
           <div
             className={`transform transition-all duration-1000 delay-400 ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
@@ -115,7 +115,7 @@ export default function Footer() {
                 Subscribe
               </button>
             </form>
-          </div> */}
+          </div>
 
           {/* Social Media */}
     <div

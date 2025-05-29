@@ -57,7 +57,7 @@ export default function Footer() {
           >
             <h3 className="text-2xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {[ "Biography", "Publications", "Gallery", "Contact"].map((item) => (
+              {["Biography", "Publications", "Gallery", "Contact"].map((item) => (
                 <li key={item}>
                   <Link href={`/${item.toLowerCase()}`} className="hover:text-amber-400 transition-colors">
                     {item}
@@ -118,36 +118,36 @@ export default function Footer() {
           </div>
 
           {/* Social Media */}
-    <div
-  className={`transform transition-all duration-1000 delay-600 ${
-    isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-  }`}
->
-  <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
-  <div className="flex space-x-4">
-    {[
-      {
-        Icon: Facebook,
-        link: "https://www.facebook.com/DrUmairMahmoodSiddiqui",
-      },
-      {
-        Icon: Youtube,
-        link: "https://www.youtube.com/@DrUmairMahmoodSiddiquiOfficial", 
-      },
-    ].map(({ Icon, link }, index) => (
-      <a
-        key={index}
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-white/10 p-3 rounded-full hover:bg-amber-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-110"
-      >
-        <Icon className="h-6 w-6" />
-      </a>
-    ))}
-  </div>
-</div>
-
+          <div
+            className={`transform transition-all duration-1000 delay-600 ${
+              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+          >
+            <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
+            <div className="flex space-x-4">
+              {[
+                {
+                  Icon: Facebook,
+                  link: "https://www.facebook.com/DrUmairMahmoodSiddiqui",
+                },
+                {
+                  Icon: Youtube,
+                  link: "https://www.youtube.com/@DrUmairMahmoodSiddiquiOfficial",
+                },
+              ].map(({ Icon, link }, index) => (
+                <a
+                  key={index}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/10 p-3 rounded-full hover:bg-amber-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-110"
+                >
+                  <Icon className="h-6 w-6" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
 
         {/* Copyright */}
         <div
@@ -161,4 +161,3 @@ export default function Footer() {
     </div>
   )
 }
-

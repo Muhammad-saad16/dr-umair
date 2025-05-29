@@ -25,7 +25,7 @@ const slides = [
   },
 {
     id: 3,
-    image: slide4.src,
+    image: slide3.src,
   },
   {
     id: 4,

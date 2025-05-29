@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 
 // import { useState, useEffect } from "react"
 // import Link from "next/link"
@@ -14,7 +14,7 @@
 //           setIsVisible(true)
 //         }
 //       },
-//       { threshold: 0.1 },
+//       { threshold: 0.1 }
 //     )
 
 //     const footer = document.querySelector("footer")
@@ -49,6 +49,7 @@
 
 //       <div className="container mx-auto px-4 pt-32 pb-12">
 //         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
 //           {/* Quick Links */}
 //           <div
 //             className={`transform transition-all duration-1000 ${
@@ -77,19 +78,19 @@
 //             <ul className="space-y-2">
 //               <li className="flex items-center">
 //                 <Mail className="mr-2 h-5 w-5 text-amber-400" />
-//                 <a href="mailto:info@example.com" className="hover:text-amber-400 transition-colors">
+//                 <a href="mailto:btm1432@gmail.com" className="hover:text-amber-400 transition-colors">
 //                   btm1432@gmail.com
 //                 </a>
 //               </li>
 //               <li className="flex items-center">
 //                 <Phone className="mr-2 h-5 w-5 text-amber-400" />
-//                 <a href="tel:+1234567890" className="hover:text-amber-400 transition-colors">
+//                 <a href="tel:+923362342386" className="hover:text-amber-400 transition-colors">
 //                   +92 336 2342386
 //                 </a>
 //               </li>
 //               <li className="flex items-center">
 //                 <MapPin className="mr-2 h-5 w-5 text-amber-400" />
-//                 <span>City of Knowledge,B/105,13D/1, Karachi, Pakistan</span>
+//                 <span>City of Knowledge, B/105, 13D/1, Karachi, Pakistan</span>
 //               </li>
 //             </ul>
 //           </div>
@@ -161,7 +162,11 @@
 //     </div>
 //   )
 // }
-// "use client"
+
+
+
+
+"use client"
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
@@ -177,7 +182,7 @@ export default function Footer() {
           setIsVisible(true)
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     )
 
     const footer = document.querySelector("footer")
@@ -212,18 +217,17 @@ export default function Footer() {
 
       <div className="container mx-auto px-4 pt-32 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
           {/* Quick Links */}
           <div
-            className={`transform transition-all duration-1000 ${
+            className={transform transition-all duration-1000 ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }`}
+            }}
           >
             <h3 className="text-2xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {["Biography", "Publications", "Gallery", "Contact"].map((item) => (
+              {[ "Biography", "Publications", "Gallery", "Contact"].map((item) => (
                 <li key={item}>
-                  <Link href={`/${item.toLowerCase()}`} className="hover:text-amber-400 transition-colors">
+                  <Link href={/${item.toLowerCase()}} className="hover:text-amber-400 transition-colors">
                     {item}
                   </Link>
                 </li>
@@ -233,36 +237,36 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div
-            className={`transform transition-all duration-1000 delay-200 ${
+            className={transform transition-all duration-1000 delay-200 ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }`}
+            }}
           >
             <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 text-amber-400" />
-                <a href="mailto:btm1432@gmail.com" className="hover:text-amber-400 transition-colors">
+                <a href="mailto:info@example.com" className="hover:text-amber-400 transition-colors">
                   btm1432@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-2 h-5 w-5 text-amber-400" />
-                <a href="tel:+923362342386" className="hover:text-amber-400 transition-colors">
+                <a href="tel:+1234567890" className="hover:text-amber-400 transition-colors">
                   +92 336 2342386
                 </a>
               </li>
               <li className="flex items-center">
                 <MapPin className="mr-2 h-5 w-5 text-amber-400" />
-                <span>City of Knowledge, B/105, 13D/1, Karachi, Pakistan</span>
+                <span>City of Knowledge,B/105,13D/1, Karachi, Pakistan</span>
               </li>
             </ul>
           </div>
 
           {/* Newsletter */}
           <div
-            className={`transform transition-all duration-1000 delay-400 ${
+            className={transform transition-all duration-1000 delay-400 ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }`}
+            }}
           >
             <h3 className="text-2xl font-bold mb-4">Newsletter</h3>
             <p className="mb-4">Stay updated with our latest news and events.</p>
@@ -282,42 +286,42 @@ export default function Footer() {
           </div>
 
           {/* Social Media */}
-          <div
-            className={`transform transition-all duration-1000 delay-600 ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }`}
-          >
-            <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              {[
-                {
-                  Icon: Facebook,
-                  link: "https://www.facebook.com/DrUmairMahmoodSiddiqui",
-                },
-                {
-                  Icon: Youtube,
-                  link: "https://www.youtube.com/@DrUmairMahmoodSiddiquiOfficial",
-                },
-              ].map(({ Icon, link }, index) => (
-                <a
-                  key={index}
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/10 p-3 rounded-full hover:bg-amber-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-110"
-                >
-                  <Icon className="h-6 w-6" />
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
+    <div
+  className={transform transition-all duration-1000 delay-600 ${
+    isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+  }}
+>
+  <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
+  <div className="flex space-x-4">
+    {[
+      {
+        Icon: Facebook,
+        link: "https://www.facebook.com/DrUmairMahmoodSiddiqui",
+      },
+      {
+        Icon: Youtube,
+        link: "https://www.youtube.com/@DrUmairMahmoodSiddiquiOfficial", 
+      },
+    ].map(({ Icon, link }, index) => (
+      <a
+        key={index}
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-white/10 p-3 rounded-full hover:bg-amber-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-110"
+      >
+        <Icon className="h-6 w-6" />
+      </a>
+    ))}
+  </div>
+</div>
+
 
         {/* Copyright */}
         <div
-          className={`mt-12 pt-8 border-t border-white/20 text-center transform transition-all duration-1000 delay-800 ${
+          className={mt-12 pt-8 border-t border-white/20 text-center transform transition-all duration-1000 delay-800 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-          }`}
+          }}
         >
           <p>&copy; {new Date().getFullYear()} Dr Umair Mehmood Siddiqui. All rights reserved.</p>
         </div>

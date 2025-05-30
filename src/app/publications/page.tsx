@@ -17,7 +17,7 @@ import book11 from '../../../Public/book11.jpeg'
 import book12 from '../../../Public/book12.jpeg'
 import book13 from '../../../Public/book13.jpeg'
 import book14 from '../../../Public/book14.jpeg'
-import book16 from '../../../Public/book16.jpeg'
+import book16 from '../../../Public/book16.jpg'
 
 const books = [
    {

@@ -22,7 +22,7 @@ import book16 from '../../../Public/book16.jpg'
 const books = [
    {
     id: 1,
-    title: "What is Ahmadiism",
+    title: "What is Ahmadism",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "",
     image: book16.src,

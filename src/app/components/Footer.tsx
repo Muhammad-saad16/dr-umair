@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Facebook, Youtube, Mail, Phone, MapPin, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
   const [isVisible, setIsVisible] = useState(false)
@@ -48,21 +48,6 @@ export default function Footer() {
       Icon: Youtube,
       href: "https://www.youtube.com/@DrUmairMahmoodSiddiquiOfficial",
       label: "YouTube",
-    },
-    {
-      Icon: Twitter,
-      href: "#",
-      label: "Twitter",
-    },
-    {
-      Icon: Instagram,
-      href: "#",
-      label: "Instagram",
-    },
-    {
-      Icon: Linkedin,
-      href: "#",
-      label: "LinkedIn",
     },
   ]
 

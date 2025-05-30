@@ -17,10 +17,19 @@ import book11 from '../../../Public/book11.jpeg'
 import book12 from '../../../Public/book12.jpeg'
 import book13 from '../../../Public/book13.jpeg'
 import book14 from '../../../Public/book14.jpeg'
+import book16 from '../../../Public/book16.jpeg'
 
 const books = [
-  {
+   {
     id: 1,
+    title: "What is Ahmadiism",
+    author: "Dr. Umair Mahmood Siddiqui",
+    description: "",
+    image: book16.src,
+    displayCategory: "Islamic Studies"
+  },
+  {
+    id: 2,
     title: "40 Ahadith for Kids",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A simplified collection of 40 Ahadith for children.",
@@ -28,7 +37,7 @@ const books = [
     displayCategory: "Islamic Studies"
   },
   {
-    id: 2,
+    id: 3,
     title: "The Beacon Light",
     author: "Compiled by Dr. Umair Mahmood Siddiqui",
     description: "A collection of writings of Dr. Umair Mahmood Siddiqui.",
@@ -36,7 +45,7 @@ const books = [
     displayCategory: "Islamic Studies"
   },
   {
-    id: 3,
+    id: 4,
     title: "Tazkira",
     author: "Dr. Umair Mahmood Siddiqui",
     description: " Tazkira is a comprehensive source of knowledge exposing Qadianiat through its toxic content.",
@@ -44,7 +53,7 @@ const books = [
     displayCategory: "Islamic Studies"
   },
   {
-    id: 4,
+    id: 5,
     title: "Sheikh Ibn Arabi",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An analysis of the life and teachings of Sheikh Ibn Arabi.",
@@ -52,7 +61,7 @@ const books = [
     displayCategory: "Biography"
   },
   {
-    id: 5,
+    id: 6,
     title: "Pakistan Ka Matlab Kya?",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discourse on the meaning and significance of Pakistan.",
@@ -60,7 +69,7 @@ const books = [
     displayCategory: "History"
   },
   {
-    id: 6,
+    id: 7,
     title: "Ghazwa-e-Hind",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discussion on the concept and implications of Ghazwa-e-Hind.",
@@ -68,7 +77,7 @@ const books = [
     displayCategory: "History"
   },
   {
-    id: 7,
+    id: 8,
     title: "Muhammad: The Glory of the Ages",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A tribute to the Prophet Muhammad's (PBUH) life and legacy.",
@@ -76,7 +85,7 @@ const books = [
     displayCategory: "Biography"
   },
   {
-    id: 8,
+    id: 9,
     title: "40 Ahadith",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A curated selection of 40 Ahadith with commentary.",
@@ -84,7 +93,7 @@ const books = [
     displayCategory: "Islamic Studies"
   },
   {
-    id: 9,
+    id: 10,
     title: "Communist Challenge to Islam",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An exposition on the conflict between communism and Islam.",
@@ -92,7 +101,7 @@ const books = [
     displayCategory: "Political Islam"
   },
   {
-    id: 10,
+    id: 11,
     title: "Dr. Fazlur Rahman Ansari",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A biography highlighting Dr. Umair Mahmood Siddiqui's scholarly contributions.",
@@ -100,7 +109,7 @@ const books = [
     displayCategory: "Biography"
   },
   {
-    id: 11,
+    id: 12,
     title: "Islamic Jurisprudence",
     author: "Scholar Name",
     description: "A comprehensive guide to Islamic law and its principles.",
@@ -108,7 +117,7 @@ const books = [
     displayCategory: "Fiqh"
   },
   {
-    id: 12,
+    id: 13,
     title: "Introduction to Islamic Economics",
     author: "Dr. Umair Mahmood Siddiqui",
     description: " ",
@@ -116,7 +125,7 @@ const books = [
     displayCategory: "Economics"
   },
   {
-    id: 13,
+    id: 14,
     title: "Islamic Theology ",
     author: "Dr. Umair Mahmood Siddiqui",
     description: " ",
@@ -124,7 +133,7 @@ const books = [
     displayCategory: "Philosophy"
   },
   {
-    id: 14,
+    id: 15,
     title: "Revival of Muslim Thought",
     author: "Dr. Umair Mahmood Siddiqui",
     description: " ",

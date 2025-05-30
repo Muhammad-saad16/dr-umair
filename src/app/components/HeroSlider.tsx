@@ -33,11 +33,11 @@ const slides = [
   },
  {
     id: 5,
-    image: slide7.src,
+    image: slide8.src,
   },
 {
     id: 3,
-    image: slide3.src,
+    image: slide7.src,
   },
  {
     id: 6,

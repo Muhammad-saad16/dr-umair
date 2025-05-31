@@ -10,10 +10,10 @@ import e5 from "../../../Public/e5.jpg"
 import e6 from "../../../Public/e6.jpg"
 import e7 from "../../../Public/e7.jpg"
 import e8 from "../../../Public/e8.jpg"
-// import e9 from "../../../Public/e9.jpg"
-// import e10 from "../../../Public/e10.jpg"
-// import e11 from "../../../Public/e11.jpg"
-// import e12 from "../../../Public/e12.jpg"
+import e9 from "../../../Public/e9.jpg"
+import e10 from "../../../Public/e10.jpg"
+import e11 from "../../../Public/e11.jpg"
+import e12 from "../../../Public/e12.jpg"
 // import e13 from "../../../Public/e13.jpg"
 // import e14 from "../../../Public/e14.jpg"
 // import e15 from "../../../Public/e15.jpg"
@@ -75,30 +75,30 @@ export default function GalleryPage() {
       alt: "Islamic Event",
       category: "Events"
     },
-    // {
-    //   id: 9,
-    //   src: e9.src,
-    //   alt: "Islamic Event",
-    //   category: "Events"
-    // },
-    // {
-    //   id: 10,
-    //   src: e10.src,
-    //   alt: "Islamic Event",
-    //   category: "Events"
-    // },
-    // {
-    //   id: 11,
-    //   src: e11.src,
-    //   alt: "Islamic Event",
-    //   category: "Events"
-    // },
-    // {
-    //   id: 12,
-    //   src: e12.src,
-    //   alt: "Islamic Event",
-    //   category: "Events"
-    // },
+    {
+      id: 9,
+      src: e9.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
+    {
+      id: 10,
+      src: e10.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
+    {
+      id: 11,
+      src: e11.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
+    {
+      id: 12,
+      src: e12.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
     // {
     //   id: 13,
     //   src: e13.src,

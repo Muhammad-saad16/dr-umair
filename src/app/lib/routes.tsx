@@ -6,7 +6,7 @@ export const routes = [
     { path: "/publications", label: "Publications" },
     { path: "/clip-&-videos", label: "Clips & Videos" },
     { path: "/gallery", label: "Gallery" },
-    { path: "/contact", label: "Stay Connected" },
+    { path: "/contact", label: "Ask Dr. Umair" },
   ] as const
   
   // Helper function to get page title from path

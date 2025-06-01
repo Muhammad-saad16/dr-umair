@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, CheckCircle, AlertCircle } from "lucide-react"
+import { MessageCircleQuestion ,MessageCircle , Email , Phone, MapPin, CheckCircle, AlertCircle } from "lucide-react"
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -45,24 +45,20 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto">
           {/* Page Title */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-white mb-4">Contact Us</h1>
-            <p className="text-white/80 text-lg">Get in touch with Dr. Umair Mehmood Siddiqui</p>
+{/*             <h1 className="text-4xl font-bold text-white mb-4">Contact Us</h1> */}
+            <h1 className="text-4xl text-white/80 text-lg">Get in touch with Dr. Umair Mehmood Siddiqui</h1>
           </div>
 
           {/* Contact Info */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {[
               {
-                icon: <Mail className="w-8 h-8" />,
-                title: "Email",
-                content: "btm1432@gmail.com",
-                link: "mailto:btm1432@gmail.com",
+                icon: <MessageCircleQuestion className="w-8 h-8" />,
+                title: "Questions",
               },
               {
-                icon: <Phone className="w-8 h-8" />,
-                title: "Phone",
-                content: "+92 336 2342386",
-                link: "tel:+923362342386",
+                icon: <MessageCircle  className="w-8 h-8" />,
+                title: "Feedback",
               },
               {
                 icon: <MapPin className="w-8 h-8" />,
@@ -81,7 +77,7 @@ export default function ContactPage() {
                   {item.icon}
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-white/80">{item.content}</p>
+{/*                 <p className="text-white/80">{item.content}</p> */}
               </a>
             ))}
           </div>

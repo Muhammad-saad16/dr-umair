@@ -4,7 +4,7 @@ export const routes = [
     { path: "/biography", label: "Biography" },
     { path: "/events-&-program", label: "Events & Programs" },
     { path: "/publications", label: "Publications" },
-    { path: "/clip-&-videos", label: "Clips & Videos" },
+    // { path: "/clip-&-videos", label: "Clips & Videos" },
     { path: "/gallery", label: "Gallery" },
     { path: "/contact", label: "Ask Dr. Umair" },
   ] as const

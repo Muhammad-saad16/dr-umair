@@ -22,6 +22,42 @@ import event13 from "../../../Public/post14.jpg"
 import event14 from "../../../Public/post13.jpg"
 import event15 from "../../../Public/post12.jpg"
 const events = [
+    {
+    id: 11,
+    title: "Quran Recitation Competition",
+    date: "May 1, 2024",
+    location: "Central Mosque",
+    image: event12.src,
+    description: "Annual Quran recitation competition showcasing the beautiful art of Quranic recitation.",
+    category: "Competition",
+  },
+  {
+    id: 12,
+    title: "Islamic Finance Seminar",
+    date: "May 10, 2024",
+    location: "Business Convention Center",
+    image: event13.src,
+    description: "Learn about Islamic finance principles and their application in modern economic systems.",
+    category: "Seminar",
+  },
+    {
+    id: 13,
+    title: "Islamic Finance Seminar",
+    date: "May 10, 2024",
+    location: "Business Convention Center",
+    image: event14.src,
+    description: "Learn about Islamic finance principles and their application in modern economic systems.",
+    category: "Seminar",
+  },  {
+    id: 14,
+    title: "Islamic Finance Seminar",
+    date: "May 10, 2024",
+    location: "Business Convention Center",
+    image: event15.src,
+    description: "Learn about Islamic finance principles and their application in modern economic systems.",
+    category: "Seminar",
+  },
+
   {
     id: 1,
     title: "Islamic Conference 2024",
@@ -160,41 +196,6 @@ const events = [
     description:
       "Experience the beauty of Islamic art through this curated exhibition featuring both classical and contemporary works.",
     category: "Exhibition",
-  },
-  {
-    id: 11,
-    title: "Quran Recitation Competition",
-    date: "May 1, 2024",
-    location: "Central Mosque",
-    image: event12.src,
-    description: "Annual Quran recitation competition showcasing the beautiful art of Quranic recitation.",
-    category: "Competition",
-  },
-  {
-    id: 12,
-    title: "Islamic Finance Seminar",
-    date: "May 10, 2024",
-    location: "Business Convention Center",
-    image: event13.src,
-    description: "Learn about Islamic finance principles and their application in modern economic systems.",
-    category: "Seminar",
-  },
-    {
-    id: 13,
-    title: "Islamic Finance Seminar",
-    date: "May 10, 2024",
-    location: "Business Convention Center",
-    image: event14.src,
-    description: "Learn about Islamic finance principles and their application in modern economic systems.",
-    category: "Seminar",
-  },  {
-    id: 14,
-    title: "Islamic Finance Seminar",
-    date: "May 10, 2024",
-    location: "Business Convention Center",
-    image: event15.src,
-    description: "Learn about Islamic finance principles and their application in modern economic systems.",
-    category: "Seminar",
   },
 ]
 

@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { MessageCircleQuestion ,MessageCircle , Email , Phone, MapPin, CheckCircle, AlertCircle } from "lucide-react"
+import { MessageCircleQuestion ,MessageCircle ,  MapPin, CheckCircle, AlertCircle } from "lucide-react"
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)

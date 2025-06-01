@@ -60,12 +60,12 @@ export default function ContactPage() {
                 icon: <MessageCircle  className="w-8 h-8" />,
                 title: "Feedback",
               },
-              {
-                icon: <MapPin className="w-8 h-8" />,
-                title: "Address",
-                content: "City of Knowledge, B/105, 13D/1, Karachi, Pakistan",
-                link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.469016694876!2d67.08149487520188!3d24.916087377893025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f0f8e914555%3A0xbb2e05271b8f3345!2sCity%20of%20Knowledge!5e0!3m2!1sen!2s!4v1736785035374!5m2!1sen!2s",
-              },
+              // {
+              //   icon: <MapPin className="w-8 h-8" />,
+              //   title: "Address",
+              //   content: "City of Knowledge, B/105, 13D/1, Karachi, Pakistan",
+              //   link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.469016694876!2d67.08149487520188!3d24.916087377893025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f0f8e914555%3A0xbb2e05271b8f3345!2sCity%20of%20Knowledge!5e0!3m2!1sen!2s!4v1736785035374!5m2!1sen!2s",
+              // },
             ].map((item, index) => (
               <a
                 key={index}

@@ -175,14 +175,14 @@ export default function VideoSection() {
         ))}
       </div>
 
-      <div className="text-center mt-12">
+{/*       <div className="text-center mt-12">
         <Link
           href="/clip-&-videos"
           className="inline-block px-6 py-3 bg-amber-500 text-white font-semibold rounded-full hover:bg-amber-600 transition-colors"
         >
           View More
         </Link>
-      </div>
+      </div> */}
     </div>
   )
 }

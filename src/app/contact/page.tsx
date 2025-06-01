@@ -229,8 +229,8 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto">
           {/* Page Title */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-white mb-4">Contact Us</h1>
-            <p className="text-white/80 text-lg">Get in touch with Dr. Umair Mehmood Siddiqui</p>
+{/*             <h1 className="font-bold text-white mb-4">Contact Us</h1> */}
+            <p className="text-4xl  text-white/80 text-lg">Get in touch with Dr. Umair Mehmood Siddiqui</p>
           </div>
 
           {/* Contact Info */}

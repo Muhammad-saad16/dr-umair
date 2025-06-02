@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { Play } from 'lucide-react'
-// import Link from 'next/link'
+
 import event1 from '/Public/thumbnail13.jpg'
 import event2 from '/Public/thumbnail14.jpg'
 import event3 from '/Public/thumbnail15.jpg'

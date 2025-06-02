@@ -6,7 +6,7 @@ import Link from 'next/link';
 import event1 from "../../../Public/post14.jpg"
 import event2 from "../../../Public/post13.jpg"
 import event3 from "../../../Public/post12.jpg"
-import event4 from "../../../Public/post9.jpg"
+import event4 from "../../../Public/post15.jpg"
 
 const eventPosters = [
   {

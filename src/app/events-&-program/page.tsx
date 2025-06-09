@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 // import Layout from "../components/Layout"
 import Image from "next/image"
+import events1 from "../../../Public/post16.jpg"
 import even1 from "../../../Public/post1.jpg"
 import even2 from "../../../Public/post2.jpg"
 import even3 from "../../../Public/post3.jpg"
@@ -22,6 +23,15 @@ import event13 from "../../../Public/post14.jpg"
 import event14 from "../../../Public/post13.jpg"
 import event15 from "../../../Public/post12.jpg"
 const events = [
+    {
+    id: 1,
+    title: "Quran Recitation Competition",
+    date: "May 1, 2024",
+    location: "Central Mosque",
+    image: events1.src,
+    description: "Annual Quran recitation competition showcasing the beautiful art of Quranic recitation.",
+    category: "Competition",
+  },
     {
     id: 11,
     title: "Quran Recitation Competition",

@@ -12,12 +12,13 @@ import slide1stt from '../../../Public/slide1stt.jpg'
 import slide5 from '../../../Public/slide5.jpg'
 import slide7 from '../../../Public/slide7.jpg'
 import slide8 from '../../../Public/slide8.jpg'
+import slide9 from '../../../Public/slide9.jpg'
 
 
 const slides = [
    {
     id: 1,
-    image: slide.src,
+    image: p1.src,
   },
  {
     id: 2,

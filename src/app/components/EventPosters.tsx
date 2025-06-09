@@ -178,7 +178,7 @@ export default function EventPosters() {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 max-w-6xl mx-auto">
           {eventPosters.map((poster, index) => (
             <div
               key={poster.id}

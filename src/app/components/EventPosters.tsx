@@ -7,6 +7,7 @@ import event1 from "../../../Public/post14.jpg"
 import event2 from "../../../Public/post13.jpg"
 import event3 from "../../../Public/post16.jpg"
 import event4 from "../../../Public/post15.jpg"
+import event5 from "../../../Public/post12.jpg"
 
 const eventPosters = [
   {
@@ -30,6 +31,12 @@ const eventPosters = [
   {
     id: 4,
     image: event3.src,
+    // title: "Weekly Dars-e-Quran | City of Knowledge",
+    // date: "Surah Noor | 9:00 PM TO 10:00 PM",
+  },
+   {
+    id: 5,
+    image: event5.src,
     // title: "Weekly Dars-e-Quran | City of Knowledge",
     // date: "Surah Noor | 9:00 PM TO 10:00 PM",
   },

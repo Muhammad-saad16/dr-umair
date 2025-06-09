@@ -12,26 +12,26 @@ const eventPosters = [
   {
     id: 1,
     image: event4.src,
-    title: "Taqwa and Ramadan",
-    date: "March 8, 2025",
+    // title: "Taqwa and Ramadan",
+    // date: "March 8, 2025",
   },
   {
     id: 2,
     image: event1.src,
-    title: "Al-Aqsa Conference",
-    date: "April 6, 2025",
+    // title: "Al-Aqsa Conference",
+    // date: "April 6, 2025",
   },
   {
     id: 3,
     image: event2.src,
-    title: "Khutba Jumma",
-    date: "Dars-e-Quran | Surah Anfal",
+    // title: "Khutba Jumma",
+    // date: "Dars-e-Quran | Surah Anfal",
   },
   {
     id: 4,
     image: event3.src,
-    title: "Weekly Dars-e-Quran | City of Knowledge",
-    date: "Surah Noor | 9:00 PM TO 10:00 PM",
+    // title: "Weekly Dars-e-Quran | City of Knowledge",
+    // date: "Surah Noor | 9:00 PM TO 10:00 PM",
   },
 ]
 
@@ -195,16 +195,16 @@ export default function EventPosters() {
                 {/* Aspect ratio for A4 (1:√2) */}
                 <Image
                   src={poster.image || "/placeholder.svg"}
-                  alt={poster.title}
+                  alt= "events"
                   fill
                   className="bg-cover rounded-lg"
                   sizes="(min-width: 768px) 33vw, 100vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
+{/*                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <h4 className="text-white font-semibold text-xl mb-2">{poster.title}</h4>
                     <p className="text-amber-400 text-lg">{poster.date}</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

@@ -162,7 +162,14 @@ export default function BooksPage() {
     setFilteredBooks(filtered)
   }, [searchTerm])
 
-  const handleDownload = (book) => {
+  const handleDownload = (book: {
+    id: number
+    title: string
+    author: string
+    description: string
+    image: string
+    downloadUrl: string
+  }) => {
     // Create a temporary anchor element to trigger download
     const link = document.createElement("a")
     link.href = book.downloadUrl

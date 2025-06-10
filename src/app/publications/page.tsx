@@ -32,7 +32,7 @@ interface Book {
 const books: Book[] = [
   {
     id: 1,
-    title: "What is Ahmadism",
+    title: "What is Ahmadism?",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "",
     image: book16.src,
@@ -48,11 +48,11 @@ const books: Book[] = [
   },
   {
     id: 3,
-    title: "Ojhri Khane Ki Sharai hesiat",
+    title: "Ojhri Khane Ki Sharai Hesiat",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "",
     image: book17.src,
-    downloadUrl: "https://drive.google.com/file/d/1Ab56hXJ_uiszdVZLzcTyumL56mUbZWxL/view?usp=sharing", // Replace with actual Google Drive link
+    downloadUrl: "https://drive.google.com/file/d/1ER4oIXQi_nqrSyCFov3v9LSC3bSkR2Ho/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
     id: 4,

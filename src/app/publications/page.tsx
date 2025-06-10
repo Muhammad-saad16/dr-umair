@@ -17,7 +17,7 @@ import book12 from "../../../Public/book12.jpeg"
 import book13 from "../../../Public/book13.jpeg"
 import book14 from "../../../Public/book14.jpeg"
 import book16 from "../../../Public/book16.jpg"
-
+import book17 from "../../../Public/book17.jpg"
 const books = [
   {
     id: 1,
@@ -25,7 +25,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "",
     image: book16.src,
-    downloadUrl: "/downloads/what-is-ahmadism.pdf",
+    downloadUrl: "../../../downloads/what-is-ahmadism.pdf",
   },
   {
     id: 2,
@@ -33,7 +33,15 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A simplified collection of 40 Ahadith for children.",
     image: book1.src,
-    downloadUrl: "/downloads/40-ahadith-for-kids.pdf",
+    downloadUrl: "../../../downloads/40-ahadith-for-kids.pdf",
+  },
+  {
+    id: 2,
+    title: "40 Ahadith for Kids",
+    author: "Dr. Umair Mahmood Siddiqui",
+    description: "",
+    image: book17.src,
+    downloadUrl: "../../../downloads/40-ahadith-for-kids.pdf",
   },
   {
     id: 3,
@@ -41,7 +49,7 @@ const books = [
     author: "Compiled by Dr. Umair Mahmood Siddiqui",
     description: "A collection of writings of Dr. Umair Mahmood Siddiqui.",
     image: book2.src,
-    downloadUrl: "/downloads/the-beacon-light.pdf",
+    downloadUrl: "../../../downloads/the-beacon-light.pdf",
   },
   {
     id: 4,
@@ -49,7 +57,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: " Tazkira is a comprehensive source of knowledge exposing Qadianiat through its toxic content.",
     image: book3.src,
-    downloadUrl: "/downloads/tazkira.pdf",
+    downloadUrl: "../../../downloads/tazkira.pdf",
   },
   {
     id: 5,
@@ -57,7 +65,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An analysis of the life and teachings of Sheikh Ibn Arabi.",
     image: book4.src,
-    downloadUrl: "/downloads/sheikh-ibn-arabi.pdf",
+    downloadUrl: "../../../downloads/sheikh-ibn-arabi.pdf",
   },
   {
     id: 6,
@@ -65,7 +73,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discourse on the meaning and significance of Pakistan.",
     image: book5.src,
-    downloadUrl: "/downloads/pakistan-ka-matlab-kya.pdf",
+    downloadUrl: "../../../downloads/pakistan-ka-matlab-kya.pdf",
   },
   {
     id: 7,
@@ -73,7 +81,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discussion on the concept and implications of Ghazwa-e-Hind.",
     image: book6.src,
-    downloadUrl: "/downloads/ghazwa-e-hind.pdf",
+    downloadUrl: "../../../downloads/ghazwa-e-hind.pdf",
   },
   {
     id: 8,
@@ -81,7 +89,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A tribute to the Prophet Muhammad's (PBUH) life and legacy.",
     image: book7.src,
-    downloadUrl: "/downloads/muhammad-glory-of-ages.pdf",
+    downloadUrl: "../../../downloads/muhammad-glory-of-ages.pdf",
   },
   {
     id: 9,
@@ -89,7 +97,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A curated selection of 40 Ahadith with commentary.",
     image: book8.src,
-    downloadUrl: "/downloads/40-ahadith.pdf",
+    downloadUrl: "../../../downloads/40-ahadith.pdf",
   },
   {
     id: 10,
@@ -97,7 +105,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An exposition on the conflict between communism and Islam.",
     image: book9.src,
-    downloadUrl: "/downloads/communist-challenge-to-islam.pdf",
+    downloadUrl: "../../../downloads/communist-challenge-to-islam.pdf",
   },
   {
     id: 11,
@@ -105,7 +113,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A biography highlighting Dr. Umair Mahmood Siddiqui's scholarly contributions.",
     image: book10.src,
-    downloadUrl: "/downloads/dr-fazlur-rahman-ansari.pdf",
+    downloadUrl: "../../../downloads/dr-fazlur-rahman-ansari.pdf",
   },
   {
     id: 12,
@@ -113,7 +121,7 @@ const books = [
     author: "Scholar Name",
     description: "A comprehensive guide to Islamic law and its principles.",
     image: book11.src,
-    downloadUrl: "/downloads/islamic-jurisprudence.pdf",
+    downloadUrl: "../../../downloads/islamic-jurisprudence.pdf",
   },
   {
     id: 13,
@@ -121,7 +129,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: " ",
     image: book12.src,
-    downloadUrl: "/downloads/introduction-to-islamic-economics.pdf",
+    downloadUrl: "../../../downloads/introduction-to-islamic-economics.pdf",
   },
   {
     id: 14,
@@ -129,7 +137,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: " ",
     image: book13.src,
-    downloadUrl: "/downloads/islamic-theology.pdf",
+    downloadUrl: "../../../downloads/islamic-theology.pdf",
   },
   {
     id: 15,
@@ -137,7 +145,7 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: " ",
     image: book14.src,
-    downloadUrl: "/downloads/revival-of-muslim-thought.pdf",
+    downloadUrl: "../../../downloads/revival-of-muslim-thought.pdf",
   },
 ]
 

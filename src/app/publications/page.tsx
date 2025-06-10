@@ -129,7 +129,7 @@ const books: Book[] = [
   {
     id: 13,
     title: "Islamic Jurisprudence",
-    author: "Scholar Name",
+    author: "Compiled by Dr. Umair Mahmood Siddiqui",
     description: "A comprehensive guide to Islamic law and its principles.",
     image: book11.src,
     downloadUrl: "https://drive.google.com/file/d/13abc123/view?usp=sharing", // Replace with actual Google Drive link

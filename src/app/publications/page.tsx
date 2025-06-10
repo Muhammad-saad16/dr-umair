@@ -18,14 +18,25 @@ import book13 from "../../../Public/book13.jpeg"
 import book14 from "../../../Public/book14.jpeg"
 import book16 from "../../../Public/book16.jpg"
 import book17 from "../../../Public/book17.jpg"
-const books = [
+
+// Define a Book interface for better type safety
+interface Book {
+  id: number
+  title: string
+  author: string
+  description: string
+  image: string
+  downloadUrl: string
+}
+
+const books: Book[] = [
   {
     id: 1,
     title: "What is Ahmadism",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "",
     image: book16.src,
-    downloadUrl: "../../../downloads/what-is-ahmadism.pdf",
+    downloadUrl: "https://drive.google.com/file/d/1abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
     id: 2,
@@ -33,119 +44,119 @@ const books = [
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A simplified collection of 40 Ahadith for children.",
     image: book1.src,
-    downloadUrl: "../../../downloads/40-ahadith-for-kids.pdf",
+    downloadUrl: "https://drive.google.com/file/d/2abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 2,
+    id: 3,
     title: "Ojhri Khane Ki Sharai hesiat",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "",
     image: book17.src,
-    downloadUrl: "../../../downloads/40-ahadith-for-kids.pdf",
+    downloadUrl: "https://drive.google.com/file/d/1Ab56hXJ_uiszdVZLzcTyumL56mUbZWxL/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 3,
+    id: 4,
     title: "The Beacon Light",
     author: "Compiled by Dr. Umair Mahmood Siddiqui",
     description: "A collection of writings of Dr. Umair Mahmood Siddiqui.",
     image: book2.src,
-    downloadUrl: "../../../downloads/the-beacon-light.pdf",
+    downloadUrl: "https://drive.google.com/file/d/4abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 4,
+    id: 5,
     title: "Tazkira",
     author: "Dr. Umair Mahmood Siddiqui",
     description: " Tazkira is a comprehensive source of knowledge exposing Qadianiat through its toxic content.",
     image: book3.src,
-    downloadUrl: "../../../downloads/tazkira.pdf",
+    downloadUrl: "https://drive.google.com/file/d/5abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 5,
+    id: 6,
     title: "Sheikh Ibn Arabi",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An analysis of the life and teachings of Sheikh Ibn Arabi.",
     image: book4.src,
-    downloadUrl: "../../../downloads/sheikh-ibn-arabi.pdf",
+    downloadUrl: "https://drive.google.com/file/d/6abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 6,
+    id: 7,
     title: "Pakistan Ka Matlab Kya?",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discourse on the meaning and significance of Pakistan.",
     image: book5.src,
-    downloadUrl: "../../../downloads/pakistan-ka-matlab-kya.pdf",
+    downloadUrl: "https://drive.google.com/file/d/7abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 7,
+    id: 8,
     title: "Ghazwa-e-Hind",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discussion on the concept and implications of Ghazwa-e-Hind.",
     image: book6.src,
-    downloadUrl: "../../../downloads/ghazwa-e-hind.pdf",
+    downloadUrl: "https://drive.google.com/file/d/8abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 8,
+    id: 9,
     title: "Muhammad: The Glory of the Ages",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A tribute to the Prophet Muhammad's (PBUH) life and legacy.",
     image: book7.src,
-    downloadUrl: "../../../downloads/muhammad-glory-of-ages.pdf",
+    downloadUrl: "https://drive.google.com/file/d/9abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 9,
+    id: 10,
     title: "40 Ahadith",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A curated selection of 40 Ahadith with commentary.",
     image: book8.src,
-    downloadUrl: "../../../downloads/40-ahadith.pdf",
+    downloadUrl: "https://drive.google.com/file/d/10abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 10,
+    id: 11,
     title: "Communist Challenge to Islam",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An exposition on the conflict between communism and Islam.",
     image: book9.src,
-    downloadUrl: "../../../downloads/communist-challenge-to-islam.pdf",
+    downloadUrl: "https://drive.google.com/file/d/11abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 11,
+    id: 12,
     title: "Dr. Fazlur Rahman Ansari",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A biography highlighting Dr. Umair Mahmood Siddiqui's scholarly contributions.",
     image: book10.src,
-    downloadUrl: "../../../downloads/dr-fazlur-rahman-ansari.pdf",
+    downloadUrl: "https://drive.google.com/file/d/12abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 12,
+    id: 13,
     title: "Islamic Jurisprudence",
     author: "Scholar Name",
     description: "A comprehensive guide to Islamic law and its principles.",
     image: book11.src,
-    downloadUrl: "../../../downloads/islamic-jurisprudence.pdf",
+    downloadUrl: "https://drive.google.com/file/d/13abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 13,
+    id: 14,
     title: "Introduction to Islamic Economics",
     author: "Dr. Umair Mahmood Siddiqui",
     description: " ",
     image: book12.src,
-    downloadUrl: "../../../downloads/introduction-to-islamic-economics.pdf",
+    downloadUrl: "https://drive.google.com/file/d/14abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 14,
+    id: 15,
     title: "Islamic Theology ",
     author: "Dr. Umair Mahmood Siddiqui",
     description: " ",
     image: book13.src,
-    downloadUrl: "../../../downloads/islamic-theology.pdf",
+    downloadUrl: "https://drive.google.com/file/d/15abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
   {
-    id: 15,
+    id: 16,
     title: "Revival of Muslim Thought",
     author: "Dr. Umair Mahmood Siddiqui",
     description: " ",
     image: book14.src,
-    downloadUrl: "../../../downloads/revival-of-muslim-thought.pdf",
+    downloadUrl: "https://drive.google.com/file/d/16abc123/view?usp=sharing", // Replace with actual Google Drive link
   },
 ]
 
@@ -170,21 +181,9 @@ export default function BooksPage() {
     setFilteredBooks(filtered)
   }, [searchTerm])
 
-  const handleDownload = (book: {
-    id: number
-    title: string
-    author: string
-    description: string
-    image: string
-    downloadUrl: string
-  }) => {
-    // Create a temporary anchor element to trigger download
-    const link = document.createElement("a")
-    link.href = book.downloadUrl
-    link.download = `${book.title.replace(/[^a-zA-Z0-9]/g, "-")}.pdf`
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+  const handleDownload = (book: Book) => {
+    // For Google Drive links, we'll open them in a new tab
+    window.open(book.downloadUrl, "_blank", "noopener,noreferrer")
   }
 
   return (
@@ -229,7 +228,7 @@ export default function BooksPage() {
                     onClick={() => handleDownload(book)}
                     className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg"
                   >
-                    Download
+                    View PDF
                   </button>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">

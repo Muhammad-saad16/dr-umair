@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         sizes: "any",
       },
       {
-        url: "logo.png",
+        url: "favicon.ico",
         type: "image/png",
         sizes: "180x180",
       },
@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         {/* Favicon Logo */}
-      <Image src="logo.png" alt="Drumairsiddl Logo" width={180} height={40} priority />
+      <Image src="favicon.ico" alt="Drumairsiddl Logo" width={180} height={40} priority />
         <title>My Website</title>
       </Head>
       <body className={inter.variable}>

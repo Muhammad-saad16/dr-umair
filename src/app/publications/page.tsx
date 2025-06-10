@@ -37,7 +37,7 @@ const books = [
   },
   {
     id: 2,
-    title: "40 Ahadith for Kids",
+    title: "Ojhri Khane Ki Sharai hesiat",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "",
     image: book17.src,

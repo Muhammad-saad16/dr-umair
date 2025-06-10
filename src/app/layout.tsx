@@ -12,7 +12,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 export const metadata: Metadata = {
-  title: "Dr Umair Mehmood Siddiqui",
+  title: "Dr Umair Mahmood Siddiqui",
   description: "",
   icons: {
     icon: [

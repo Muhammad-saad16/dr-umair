@@ -1,61 +1,61 @@
 'use client'
 import { useState } from 'react'
 import { Play } from 'lucide-react'
-import event1 from '/Public/thumbnail13.jpg'
-import event2 from '/Public/thumbnail14.jpg'
-import event3 from '/Public/thumbnail15.jpg'
-import event4 from '/Public/thumbnail16.jpg'
-import event5 from '/Public/thumbnail12.jpg'
-import event6 from '/Public/thumbnail20.jpg'
-import event7 from '/Public/thumbnail22.jpg'
-import event8 from '/Public/thumbnail21.jpg'
+import event1 from '/Public/thumbnail-1.jpg'
+import event2 from '/Public/thumbnail-2.jpg'
+import event3 from '/Public/thumbnail-3.jpg'
+import event4 from '/Public/thumbnail-4.jpg'
+import event5 from '/Public/thumbnail-5.jpg'
+import event6 from '/Public/thumbnail-6.jpg'
+import event7 from '/Public/thumbnail-7.jpg'
+import event8 from '/Public/thumbnail-8.jpg'
 const videos = [
   {
     id: 1,
-    thumbnail: event5.src, 
-    youtubeId: "OGwsjwzzod4",
+    thumbnail: event1.src, 
+    youtubeId: "6uaytbvpREU",
     category: "Lectures"
   },
   {
     id: 2,
-    thumbnail: event6.src,
-    youtubeId: "SIhouwuus7w-kfw",
+    thumbnail: event2.src,
+    youtubeId: "36mBHQtOAq8",
     category: "Sermons"
   },
   {
     id: 3,
-    thumbnail: event7.src,
-    youtubeId: "2WUFijljrnY",
+    thumbnail: event3.src,
+    youtubeId: "xtFTDnoPePk",
     category: "Events"
   },
    {
     id: 4,
-    thumbnail: event8.src,
-    youtubeId: "nrWfiAHWwRM",
+    thumbnail: event4.src,
+    youtubeId: "vbKj4TLxOZI",
     category: "Events"
   },
   {
     id: 5,
-    thumbnail: event1.src, 
-    youtubeId: "g0tLzlB5m-o",
+    thumbnail: event5.src, 
+    youtubeId: "OYuXJdZqmJo",
     category: "Lectures"
   },
   {
     id: 6,
-    thumbnail: event2.src,
-    youtubeId: "qCXHnnGw6p0",
+    thumbnail: event6.src,
+    youtubeId: "rZR3C5Giy1U",
     category: "Sermons"
   },
   {
     id: 7,
-    thumbnail: event3.src,
-    youtubeId: "7Ef0XWi7Ncg",
+    thumbnail: event7.src,
+    youtubeId: "Lku2jpF9zeU",
     category: "Events"
   },
    {
     id: 8,
-    thumbnail: event4.src,
-    youtubeId: "QQqsogDtP3s",
+    thumbnail: event8.src,
+    youtubeId: "2WUFijljrnY",
     category: "Events"
   },
   

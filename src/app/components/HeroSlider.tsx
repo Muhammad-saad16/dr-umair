@@ -18,43 +18,43 @@ import slide9 from '../../../Public/slide9.jpg'
 const slides = [
    {
     id: 1,
-    image: p1.src,
+    image: slidebest.src,
   },
  {
     id: 2,
-    image: slide9.src,
+    image: p1.src,
   },
 {
     id: 3,
-    image: slide4.src,
+    image: slide9.src,
   },
   {
     id: 4,
-    image: slide1stt.src,
+    image: slide4.src,
   },
  {
     id: 5,
-    image: slide8.src,
+    image: slide1stt.src,
   },
 {
     id: 3,
-    image: slide7.src,
+    image: slide8.src,
   },
  {
     id: 6,
-    image: slide3.src,
+    image: slide7.src,
   },
   {
     id: 7,
-    image: slide5.src,
+    image: slide3.src,
   },
   {
     id: 8,
-    image: p2.src,
+    image: slide5.src,
   },
     {
     id: 9,
-    image: p3.src,
+    image: p2.src,
   },
 ]
 
@@ -146,3 +146,4 @@ export default function HeroSlider() {
     </section>
   )
 }
+

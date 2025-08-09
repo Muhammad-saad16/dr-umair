@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive"
 import slide4 from '../../../Public/slide4.jpg'
 import p1 from '../../../Public/slide.jpg'
 import p2 from '../../../Public/slide1.jpg'
-import p3 from '../../../Public/slide2.jpg'
+import slidebest from '../../../Public/slidebest.jpg'
 import slide3 from '../../../Public/slide3.jpg'
 import slide1stt from '../../../Public/slide1stt.jpg'
 import slide5 from '../../../Public/slide5.jpg'
@@ -146,4 +146,5 @@ export default function HeroSlider() {
     </section>
   )
 }
+
 

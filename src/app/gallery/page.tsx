@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import e1 from "../../../Public/e9.jpg"
+import e1 from "../../../Public/dr.jpg"
 // import e2 from "../../../Public/e2.jpg"
 // import e3 from "../../../Public/e3.jpg"
 import e4 from "../../../Public/e11.jpg"
@@ -213,3 +213,4 @@ export default function GalleryPage() {
     // </Layout>
   )
 }
+

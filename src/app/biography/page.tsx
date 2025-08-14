@@ -45,7 +45,7 @@ export default function AboutPage() {
         Dr. Umair actively represents Pakistan at conferences and seminars organized by the International Islamic Fiqh Academy, a subsidiary body of the Organization of islamic Cooperation (OIC). He has authored numerous books and scholarly articles covering theology, comparative religion, Islamic jurisprudence, law, and Islamic history. His recent book, The Prohibition of Declaring a Muslim as an Infidel, has garnered significant acclaim Among his most notable literary contributions is his magnum opus on ibn al-Arabi, his Concept of Prophethood, and the Belief in the Finality of Prophethood. Eschewing both religious radicalism and secular extremism, Dr. Umair advocates for a balanced approach he calls dynamic orthodoxy, which is firmly rooted in the Quran and the Seerah of the Prophet Muhammad (peace be upon him). 
       </p>
       <p>
-      He is particularly distinguished for his in-depth research on Pakistan's ideology and his doctoral thesis, which examines the historical context, underlying couses, and islamic legal rulings on suicide attacks. in addition to his scholarly and research pursuits, Dr Umair frequently appears on television, offering expert insights on contemporary issues through the lens of Quranic teachings.
+      He is particularly distinguished for his in-depth research on Pakistan&apos;s ideology and his doctoral thesis, which examines the historical context, underlying couses, and islamic legal rulings on suicide attacks. in addition to his scholarly and research pursuits, Dr Umair frequently appears on television, offering expert insights on contemporary issues through the lens of Quranic teachings.
       </p>
      
     </div>
@@ -78,6 +78,7 @@ export default function AboutPage() {
     // </Layout>
   )
 }
+
 
 
 

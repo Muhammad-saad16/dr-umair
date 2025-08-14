@@ -28,7 +28,7 @@ export default function AboutPage() {
             </p>
             <h2 className="text-2xl font-semibold mb-4 text-amber-400">Our Approach</h2>
             <p className="text-white">
-            Dr. Umair's scholarship emphasizes a balance between Islamic orthodoxy and modernity. He advocates for a nuanced understanding of Islamic principles that remains firmly rooted in the Quran and the Prophetic traditions. His work addresses critical social and legislative matters, reflecting both his academic rigor and his commitment to societal betterment.
+            Dr. Umair&apos;s scholarship emphasizes a balance between Islamic orthodoxy and modernity. He advocates for a nuanced understanding of Islamic principles that remains firmly rooted in the Quran and the Prophetic traditions. His work addresses critical social and legislative matters, reflecting both his academic rigor and his commitment to societal betterment.
             </p>
           </div> */}
           {/* New Biography Section */}
@@ -78,5 +78,6 @@ export default function AboutPage() {
     // </Layout>
   )
 }
+
 
 

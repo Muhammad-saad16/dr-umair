@@ -1,6 +1,6 @@
 // import Layout from '../components/Layout'
 import Image from 'next/image'
-import dr from '../../../Public/dr.jpg'
+import dr from '../../../Public/dr-1.jpg'
 export default function AboutPage() {
   return (
     // <Layout>
@@ -39,20 +39,15 @@ export default function AboutPage() {
     </h2>
     <div className="space-y-6 text-white text-lg leading-relaxed">
       <p>
-        Dr. Umair Mahmood Siddiqui is a globally respected Islamic scholar, renowned for his academic contributions and dedication to the dissemination of authentic Islamic knowledge. Born and raised in Karachi, Pakistan, he has become an authoritative voice on critical issues affecting the Muslim world.
+       Dr. Umair Mahmood Siddiqui is an esteemed Islamic scholar of international renown and a Professor of Comparative Study of Religions in the Department of Islamic Studies at the University of Karachi, Pakistan. He has served as a member of the Council of islamic ideclogy under Pakistan&apos;s Federal Ministry of Law, where he provided invaluable guidance on legislative matters at both provincial and federal levels. He also serves as the Patron-in-Chief of City of Knowledge, a prominent research institute. 
       </p>
       <p>
-        Dr. Umair&apos;s academic journey includes his role as a Professor of Comparative Study of Religions in the Department of Islamic Studies at the University of Karachi. His notable service includes being a member of the Council of Islamic Ideology under Pakistan&apos;s Federal Ministry of Law, where he provided crucial guidance on legislative matters.
+        Dr. Umair actively represents Pakistan at conferences and seminars organized by the International Islamic Fiqh Academy, a subsidiary body of the Organization of islamic Cooperation (OIC). He has authored numerous books and scholarly articles covering theology, comparative religion, Islamic jurisprudence, law, and Islamic history. His recent book, The Prohibition of Declaring a Muslim as an Infidel, has garnered significant acclaim Among his most notable literary contributions is his magnum opus on ibn al-Arabi, his Concept of Prophethood, and the Belief in the Finality of Prophethood. Eschewing both religious radicalism and secular extremism, Dr. Umair advocates for a balanced approach he calls dynamic orthodoxy, which is firmly rooted in the Quran and the Seerah of the Prophet Muhammad (peace be upon him). 
       </p>
       <p>
-        In addition to his academic endeavors, Dr. Umair actively represents Pakistan at international conferences and seminars organized by the International Islamic Fiqh Academy, a subsidiary body of the Organization of Islamic Cooperation (OIC). He also serves as the Patron-in-Chief of the City of Knowledge, a premier research institute.
+      He is particularly distinguished for his in-depth research on Pakistan's ideology and his doctoral thesis, which examines the historical context, underlying couses, and islamic legal rulings on suicide attacks. in addition to his scholarly and research pursuits, Dr Umair frequently appears on television, offering expert insights on contemporary issues through the lens of Quranic teachings.
       </p>
-      <p>
-        Dr. Umair has authored numerous books and articles covering theology, comparative religion, Islamic jurisprudence, and history. Among his notable works are <em>The Prohibition of Declaring a Muslim as an Infidel</em> and a seminal study on <em>Ibn al-Arabi, his Concept of Prophethood, and the Belief in the Finality of Prophethood</em>. His doctoral research on the historical and legal dimensions of suicide attacks underscores his impactful scholarship.
-      </p>
-      <p>
-        Today, Dr. Umair continues to write, teach, and provide guidance, advocating for a balanced and enlightened approach to Islam that bridges the gap between traditional values and contemporary challenges. His unwavering commitment to spreading authentic Islamic knowledge and fostering mutual understanding remains a source of inspiration for Muslims worldwide.
-      </p>
+     
     </div>
   </div>
 </div>
@@ -83,4 +78,5 @@ export default function AboutPage() {
     // </Layout>
   )
 }
+
 

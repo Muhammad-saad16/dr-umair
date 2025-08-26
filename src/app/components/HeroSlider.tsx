@@ -19,7 +19,7 @@ import slidess from '../../../Public/sildess.jpg'
 const slides = [
    {
     id: 1,
-    image: slidebest.src,
+    image: slidess.src,
   },
  {
     id: 2,
@@ -27,7 +27,7 @@ const slides = [
   },
 {
     id: 3,
-    image: slidess.src,
+    image: slidebest.src,
   },
   {
     id: 4,
@@ -147,6 +147,7 @@ export default function HeroSlider() {
     </section>
   )
 }
+
 
 
 

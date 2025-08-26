@@ -3,8 +3,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import e1 from "../../../Public/dr.jpg"
-// import e2 from "../../../Public/e2.jpg"
-// import e3 from "../../../Public/e3.jpg"
+import e2 from "../../../Public/e33.jpg"
+import e3 from "../../../Public/e32.jpg"
 import e4 from "../../../Public/e11.jpg"
 import e5 from "../../../Public/e13.jpg"
 import e6 from "../../../Public/e14.jpg"
@@ -24,18 +24,37 @@ import e19 from "../../../Public/e19.jpg"
 import e20 from "../../../Public/e20.jpg"
 import e21 from "../../../Public/e21.jpg"
 import e22 from "../../../Public/e22.jpg"
-// import e23 from "../../../Public/e20.jpg"
+import e23 from "../../../Public/sildess.jpg"
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
   
   const images = [
     {
+      id: -2,
+      src: e2.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
+    {
+      id: -1,
+      src: e3.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
+    {
+      id: 0,
+      src: e23.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
+    {
       id: 1,
       src: e1.src,
       alt: "Islamic Event",
       category: "Events"
     },
+    
     {
       id: 2,
       src: e21.src,
@@ -213,4 +232,5 @@ export default function GalleryPage() {
     // </Layout>
   )
 }
+
 

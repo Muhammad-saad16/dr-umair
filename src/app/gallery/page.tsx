@@ -25,11 +25,26 @@ import e20 from "../../../Public/e20.jpg"
 import e21 from "../../../Public/e21.jpg"
 import e22 from "../../../Public/e22.jpg"
 import e23 from "../../../Public/sildess.jpg"
+import e24 from "../../../Public/e34.jpg"
+import e25 from "../../../Public/e35.jpg"
+
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
   
   const images = [
+    {
+      id: -4,
+      src: e24.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
+    {
+      id: -3,
+      src: e25.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
     {
       id: -2,
       src: e2.src,
@@ -232,5 +247,6 @@ export default function GalleryPage() {
     // </Layout>
   )
 }
+
 
 

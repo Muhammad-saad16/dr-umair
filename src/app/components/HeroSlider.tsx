@@ -14,10 +14,14 @@ import slide7 from '../../../Public/slide7.jpg'
 import slide8 from '../../../Public/slide8.jpg'
 import slide9 from '../../../Public/slide9.jpg'
 import slidess from '../../../Public/sildess.jpg'
+import slideees from '../../../Public/slideees.jpg'
 
 
 const slides = [
    {
+    id: 0,
+    image: slideees.src,
+  },{
     id: 1,
     image: slidess.src,
   },
@@ -147,6 +151,7 @@ export default function HeroSlider() {
     </section>
   )
 }
+
 
 
 

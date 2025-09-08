@@ -302,7 +302,7 @@ export default function EventsPage() {
                 {/* A4 aspect ratio */}
                 <Image
                   src={event.image || "/placeholder.svg"}
-                  alt={event.title}
+                  alt="pic"
                   fill
                   className="bg-cover"
                   sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
@@ -332,5 +332,6 @@ export default function EventsPage() {
     // </Layout>
   )
 }
+
 
 

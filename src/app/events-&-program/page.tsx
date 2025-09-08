@@ -22,7 +22,42 @@ import event12 from "../../../Public/post10.jpg"
 import event13 from "../../../Public/post14.jpg"
 import event14 from "../../../Public/post13.jpg"
 import event15 from "../../../Public/post12.jpg"
+import event16 from "../../../Public/post26.jpg"
+import event17 from "../../../Public/post20.jpg"
+import event18 from "../../../Public/post27.jpg"
+import event19 from "../../../Public/post28.jpg"
+import event20 from "../../../Public/post24.jpg"
 const events = [
+     {
+    id: 1,
+    image: event16.src,
+    // title: "Taqwa and Ramadan",
+    // date: "March 8, 2025",
+  },
+  {
+    id: 2,
+    image: event17.src,
+    // title: "Al-Aqsa Conference",
+    // date: "April 6, 2025",
+  },
+  {
+    id: 3,
+    image: event18.src,
+    // title: "Khutba Jumma",
+    // date: "Dars-e-Quran | Surah Anfal",
+  },
+  {
+    id: 4,
+    image: event19.src,
+    // title: "Weekly Dars-e-Quran | City of Knowledge",
+    // date: "Surah Noor | 9:00 PM TO 10:00 PM",
+  },
+   {
+    id: 5,
+    image: event20.src,
+    // title: "Weekly Dars-e-Quran | City of Knowledge",
+    // date: "Surah Noor | 9:00 PM TO 10:00 PM",
+  },
     {
     id: 1,
     title: "Quran Recitation Competition",
@@ -297,4 +332,5 @@ export default function EventsPage() {
     // </Layout>
   )
 }
+
 

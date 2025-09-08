@@ -23,16 +23,53 @@ import e18 from "../../../Public/e18.jpg"
 import e19 from "../../../Public/e19.jpg"
 import e20 from "../../../Public/e20.jpg"
 import e21 from "../../../Public/e21.jpg"
-import e22 from "../../../Public/e22.jpg"
+// import e22 from "../../../Public/e22.jpg"
 import e23 from "../../../Public/sildess.jpg"
 import e24 from "../../../Public/e34.jpg"
 import e25 from "../../../Public/e35.jpg"
+import e26 from "../../../Public/e38.jpg"
+import e27 from "../../../Public/e39.jpg"
+import e28 from "../../../Public/e40.jpg"
+import e29 from "../../../Public/e41.jpg"
+import e30 from "../../../Public/e44.jpg"
 
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
   
   const images = [
+    
+      {
+      id: -10,
+      src: e30.src,
+      alt: "Islamic Event",
+      category: "Events"
+    }{
+      id: -9,
+      src: e29.src,
+      alt: "Islamic Event",
+      category: "Events"
+    }{
+      id: -8,
+      src: e28.src,
+      alt: "Islamic Event",
+      category: "Events"
+    }{
+      id: -7,
+      src: e27.src,
+      alt: "Islamic Event",
+      category: "Events"
+    }{
+      id: -6,
+      src: e26.src,
+      alt: "Islamic Event",
+      category: "Events"
+    }{
+      id: -5,
+      src: e25.src,
+      alt: "Islamic Event",
+      category: "Events"
+    }
     {
       id: -4,
       src: e24.src,
@@ -76,12 +113,12 @@ export default function GalleryPage() {
       alt: "Islamic Event",
       category: "Events"
     },
-    {
-      id: 3,
-      src: e22.src,
-      alt: "Islamic Event",
-      category: "Events"
-    },
+    // {
+    //   id: 3,
+    //   src: e22.src,
+    //   alt: "Islamic Event",
+    //   category: "Events"
+    // },
     {
       id: 4,
       src: e4.src,
@@ -247,6 +284,7 @@ export default function GalleryPage() {
     // </Layout>
   )
 }
+
 
 
 

@@ -10,14 +10,14 @@ const interactions = [
   {
     id: 1,
     leader: "Zainul Abidin Rasheed",
-    description: "Zainul Abidin Rasheed, Karachi’s Ambassador to Kuwait and Special Envoy of the Minister for Foreign Affairs",
+    description: "Zainul Abidin Rasheed, Karachi’s Ambassador to Kuwait and Special Envoy of the Minister for Foreign Affairs.",
     image: meet4.src,
     country: "Singapore"
   },
   {
     id: 2,
     leader: "Dr. Muhammad Eid Al-Mansour",
-    description: "University of Damascus, Syria, Internationally recognized scholar ",
+    description: "University of Damascus, Syria, internationally recognized scholar, specialized in Hadith Sciences. ",
     image: meet2.src,
     country: "Syria"
   },

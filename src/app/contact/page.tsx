@@ -230,7 +230,7 @@ export default function ContactPage() {
           {/* Page Title */}
           <div className="text-center mb-12">
 {/*             <h1 className="font-bold text-white mb-4">Contact Us</h1> */}
-            <h1 className="text-4xl  text-white/80 text-lg">Get in touch with Dr. Umair Mehmood Siddiqui</h1>
+            <h1 className="text-4xl  text-white/80 text-lg">Get in touch with Dr. Umair Mahmood Siddiqui</h1>
           </div>
 
           {/* Contact Info */}
@@ -357,3 +357,4 @@ export default function ContactPage() {
     </div>
   )
 }
+

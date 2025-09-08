@@ -19,7 +19,7 @@ const interactions = [
     leader: "Dr. Muhammad Eid Al-Mansour",
     description: "University of Damascus, Syria, internationally recognized scholar, specialized in Hadith Sciences. ",
     image: meet2.src,
-    country: "Syria"
+    country: "City of Knowledge, Karachi"
   },
   {
     id: 3,
@@ -65,5 +65,6 @@ export default function InteractionsSection() {
     </section>
   )
 }
+
 
 

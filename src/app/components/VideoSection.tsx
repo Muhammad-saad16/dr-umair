@@ -19,7 +19,7 @@ const videos = [
   {
     id: 2,
     thumbnail: event2.src,
-    youtubeId: "LK2OhPN4O9E",
+    youtubeId: "qlO164BpYb4",
     category: "Sermons"
   },
   {
@@ -118,5 +118,6 @@ export default function VideoSection() {
     </div>
   )
 }
+
 
 

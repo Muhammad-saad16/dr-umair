@@ -44,32 +44,32 @@ export default function GalleryPage() {
       src: e30.src,
       alt: "Islamic Event",
       category: "Events"
-    }{
+    },{
       id: -9,
       src: e29.src,
       alt: "Islamic Event",
       category: "Events"
-    }{
+    },{
       id: -8,
       src: e28.src,
       alt: "Islamic Event",
       category: "Events"
-    }{
+    },{
       id: -7,
       src: e27.src,
       alt: "Islamic Event",
       category: "Events"
-    }{
+    },{
       id: -6,
       src: e26.src,
       alt: "Islamic Event",
       category: "Events"
-    }{
+    },{
       id: -5,
       src: e25.src,
       alt: "Islamic Event",
       category: "Events"
-    }
+    },
     {
       id: -4,
       src: e24.src,
@@ -284,6 +284,7 @@ export default function GalleryPage() {
     // </Layout>
   )
 }
+
 
 
 

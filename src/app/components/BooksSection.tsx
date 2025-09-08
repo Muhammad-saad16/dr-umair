@@ -22,11 +22,12 @@ export default function BooksSection() {
             href="/publications"
             className="inline-block px-6 py-3 bg-amber-500 text-white font-semibold rounded-full hover:bg-amber-600 transition-colors"
           >
-            View More
+            View More Books
           </Link>
         </div>
       </div>
     // </div>
   )
 }
+
 

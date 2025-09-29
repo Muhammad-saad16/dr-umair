@@ -46,38 +46,38 @@ export default function GalleryPage() {
   const images = [
     {
       id: -17,
-      src: e45.src,
+      src: e31.src,
       alt: "Islamic Event",
       category: "Events"
     },{
       id: -16,
-      src: e46.src,
+      src: e32.src,
       alt: "Islamic Event",
       category: "Events"
     },{
       id: -15,
-      src: e47.src,
+      src: e33.src,
       alt: "Islamic Event",
       category: "Events"
     },{
       id: -14,
-      src: e48.src,
+      src: e34.src,
       alt: "Islamic Event",
       category: "Events"
     },{
       id: -13,
-      src: e49.src,
+      src: e35.src,
       alt: "Islamic Event",
       category: "Events"
     },{
       id: -12,
-      src: e50.src,
+      src: e36.src,
       alt: "Islamic Event",
       category: "Events"
     },
     {
       id: -11,
-      src: e51.src,
+      src: e37.src,
       alt: "Islamic Event",
       category: "Events"
     },
@@ -326,6 +326,7 @@ export default function GalleryPage() {
     // </Layout>
   )
 }
+
 
 
 

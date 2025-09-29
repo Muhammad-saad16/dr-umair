@@ -32,13 +32,55 @@ import e27 from "../../../Public/e39.jpg"
 import e28 from "../../../Public/e40.jpg"
 import e29 from "../../../Public/e41.jpg"
 import e30 from "../../../Public/e44.jpg"
-
+import e31 from "../../../Public/e45.jpg"
+import e32 from "../../../Public/e46.jpg"
+import e33 from "../../../Public/e47.jpg"
+import e34 from "../../../Public/e48.jpg"
+import e35 from "../../../Public/e49.jpg"
+import e36 from "../../../Public/e50.jpg"
+import e37 from "../../../Public/e51.jpg"
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
   
   const images = [
-    
+    {
+      id: -17,
+      src: e45.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },{
+      id: -16,
+      src: e46.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },{
+      id: -15,
+      src: e47.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },{
+      id: -14,
+      src: e48.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },{
+      id: -13,
+      src: e49.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },{
+      id: -12,
+      src: e50.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
+    {
+      id: -11,
+      src: e51.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
       {
       id: -10,
       src: e30.src,
@@ -284,6 +326,7 @@ export default function GalleryPage() {
     // </Layout>
   )
 }
+
 
 
 

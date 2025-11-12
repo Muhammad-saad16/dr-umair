@@ -8,11 +8,11 @@ import p1 from '../../../Public/slide.jpg'
 import p2 from '../../../Public/slide1.jpg'
 import slidebest from '../../../Public/slidebest.jpg'
 
-import slide1stt from '../../../Public/slide1stt.jpg'
+// import slide1stt from '../../../Public/slide1stt.jpg'
 import slide5 from '../../../Public/slide5.jpg'
 import slide7 from '../../../Public/slide7.jpg'
 import slide8 from '../../../Public/slide8.jpg'
-import slide9 from '../../../Public/slide9.jpg'
+// import slide9 from '../../../Public/slide9.jpg'
 import slidess from '../../../Public/sildess.jpg'
 import slideees from '../../../Public/slideees.jpg'
 import sld from '../../../Public/sld.jpg'
@@ -27,7 +27,7 @@ const slides = [
     {
     id: -4,
     image: slide.src,
-  }
+  },
     {
     id: -3,
     image: sldeeeeeeeeee.src,
@@ -60,10 +60,10 @@ const slides = [
     id: 4,
     image: slide4.src,
   },
- {
-    id: 5,
-    image: slide1stt.src,
-  },
+ // {
+ //    id: 5,
+ //    image: slide1stt.src,
+ //  },
 {
     id: 3,
     image: slide8.src,
@@ -72,10 +72,10 @@ const slides = [
     id: 6,
     image: slide7.src,
   },
-  {
-    id: 7,
-    image: slide9.src,
-  },
+  // {
+  //   id: 7,
+  //   image: slide9.src,
+  // },
   {
     id: 8,
     image: slide5.src,
@@ -174,6 +174,7 @@ export default function HeroSlider() {
     </section>
   )
 }
+
 
 
 

@@ -1,61 +1,61 @@
 'use client'
 import { useState } from 'react'
 import { Play } from 'lucide-react'
-import event1 from '/Public/video1.jpg'
-import event2 from '/Public/video2.jpg'
-import event3 from '/Public/video3.jpg'
-import event4 from '/Public/video4.jpg'
-import event5 from '/Public/video5.jpg'
-import event6 from '/Public/video6.jpg'
-import event7 from '/Public/video7.jpg'
-import event8 from '/Public/thumb2.jpg'
+import event1 from '/Public/v1.jpg'
+import event2 from '/Public/v2.jpg'
+import event3 from '/Public/v3.jpg'
+import event4 from '/Public/v4.jpg'
+import event5 from '/Public/v5.jpg'
+import event6 from '/Public/v6.jpg'
+import event7 from '/Public/v7.jpg'
+import event8 from '/Public/v8.jpg'
 const videos = [
   {
     id: 1,
     thumbnail: event1.src, 
-    youtubeId: "28E_ZwTe00A",
+    youtubeId: "OlKXthlcco8",
     category: "Lectures"
   },
   {
     id: 2,
     thumbnail: event2.src,
-    youtubeId: "I8mCnm71NBs",
+    youtubeId: "VR5VinmsZmA",
     category: "Sermons"
   },
   {
     id: 3,
     thumbnail: event3.src,
-    youtubeId: "lXGlKezVY1o",
+    youtubeId: "ROi9vvXyPL8",
     category: "Events"
   },
    {
     id: 4,
     thumbnail: event4.src,
-    youtubeId: "5lIB-AWgPGE",
+    youtubeId: "3LAF8jUknlI",
     category: "Events"
   },
   {
     id: 5,
     thumbnail: event5.src, 
-    youtubeId: "x7ij0f5I2uA",
+    youtubeId: "w3DEopWzjQ4",
     category: "Lectures"
   },
   {
     id: 6,
     thumbnail: event6.src,
-    youtubeId: "ahHbklZPGK8",
+    youtubeId: "dOo83QeWTAk",
     category: "Sermons"
   },
   {
     id: 7,
     thumbnail: event7.src,
-    youtubeId: "2qFA9eA6NL4",
+    youtubeId: "W9BxdA6sAzI",
     category: "Events"
   },
    {
     id: 8,
     thumbnail: event8.src,
-    youtubeId: "qlO164BpYb4",
+    youtubeId: "rmXHaXeUZPU",
     category: "Events"
   },
   
@@ -118,6 +118,7 @@ export default function VideoSection() {
     </div>
   )
 }
+
 
 
 

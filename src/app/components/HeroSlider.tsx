@@ -3,15 +3,15 @@ import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
 import { useMediaQuery } from "react-responsive"
-import slide4 from '../../../Public/slide4.jpg'
+// import slide4 from '../../../Public/slide4.jpg'
 import p1 from '../../../Public/slide.jpg'
 // import p2 from '../../../Public/slide1.jpg'
 import slidebest from '../../../Public/slidebest.jpg'
 
 // import slide1stt from '../../../Public/slide1stt.jpg'
-import slide5 from '../../../Public/slide5.jpg'
+import slide5 from '../../../Public/slide2nd.jpg'
 import slide7 from '../../../Public/slide7.jpg'
-import slide8 from '../../../Public/slide8.jpg'
+import slide8 from '../../../Public/slide3rd.jpg'
 // import slide9 from '../../../Public/slide9.jpg'
 import slidess from '../../../Public/sildess.jpg'
 import slideees from '../../../Public/slideees.jpg'
@@ -25,70 +25,61 @@ import slide1 from '../../../Public/slideend.jpg'
 
 
 const slides = [
+    
     {
-    id: -5,
+    id: 1,
+    image: slide5.src,
+  },
+    {
+    id: 2,
+    image: slide8.src,
+  },
+    {
+    id: 3,
     image: slide1.src,
   },
     {
-    id: -4,
+    id: 4,
     image: slide.src,
   },
     {
-    id: -3,
+    id: 5,
     image: sldeeeeeeeeee.src,
   },{
-    id: -2,
+    id: 6,
     image: seeeeeeeeeee.src,
   },
    {
-    id: -1,
+    id: 7,
     image: s.src,
   },{
-    id: -1,
+    id: 8,
     image: sld.src,
   },{
-    id: 0,
+    id: 9,
     image: slideees.src,
   },{
-    id: 1,
+    id: 10,
     image: slidess.src,
   },
  {
-    id: 2,
+    id: 11,
     image: p1.src,
   },
 {
-    id: 3,
+    id: 12,
     image: slidebest.src,
   },
   {
-    id: 4,
+    id: 13,
     image: slide4.src,
   },
- // {
- //    id: 5,
- //    image: slide1stt.src,
- //  },
-{
-    id: 3,
-    image: slide8.src,
-  },
+
  {
     id: 6,
     image: slide7.src,
   },
-  // {
-  //   id: 7,
-  //   image: slide9.src,
-  // },
-  {
-    id: 8,
-    image: slide5.src,
-  },
-  //   {
-  //   id: 9,
-  //   image: p2.src,
-  // },
+
 ]
 
 export default function HeroSlider() {
@@ -179,6 +170,7 @@ export default function HeroSlider() {
     </section>
   )
 }
+
 
 
 

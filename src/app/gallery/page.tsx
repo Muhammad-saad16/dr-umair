@@ -43,11 +43,31 @@ import e37 from "../../../Public/e51.jpg"
 // import e39 from "../../../Public/e54.jpg"
 import e40 from "../../../Public/e56.jpg"
 import e41 from "../../../Public/e57.jpg"
+import e42 from "../../../Public/e58.jpg"
+import e43 from "../../../Public/e59.jpg"
+import e44 from "../../../Public/e60.jpg"
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
   
   const images = [
+    {
+      id: -22,
+      src: e42.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },{
+      id: -21,
+      src: e43.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
+    {
+      id: -20,
+      src: e44.src,
+      alt: "Islamic Event",
+      category: "Events"
+    },
     {
       id: -19,
       src: e40.src,
@@ -341,6 +361,7 @@ export default function GalleryPage() {
     // </Layout>
   )
 }
+
 
 
 

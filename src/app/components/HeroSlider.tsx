@@ -22,11 +22,21 @@ import seeeeeeeeeee from '../../../Public/slide456.jpg'
 import slide from '../../../Public/slide15.jpg'
 import slide1 from '../../../Public/slideend.jpg'
 import slide123456 from '../../../Public/ssslide1.jpg'
+import slode1 from '../../../Public/slode1.jpg'
+import slode2 from '../../../Public/slode2.jpg'
 
 
 
 const slides = [
-    {
+  
+  {
+    id: -2,
+    image: slode2.src,
+  },
+       {
+    id: -1,
+    image: slode1.src,
+  },    {
     id: 0,
     image: slide123456.src,
   },
@@ -175,6 +185,7 @@ export default function HeroSlider() {
     </section>
   )
 }
+
 
 
 

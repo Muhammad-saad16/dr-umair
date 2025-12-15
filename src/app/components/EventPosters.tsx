@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from 'next/link';
-import event1 from "../../../Public/post55.jpg"
+import event1 from "../../../Public/post57.jpg"
 import event2 from "../../../Public/post54.jpg"
 import event3 from "../../../Public/post53.jpg"
 import event4 from "../../../Public/post52.jpg"
@@ -232,6 +232,7 @@ export default function EventPosters() {
     </section>
   )
 }
+
 
 
 

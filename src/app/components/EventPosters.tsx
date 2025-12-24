@@ -5,9 +5,9 @@ import Image from "next/image"
 import Link from 'next/link';
 import event1 from "../../../Public/post57.jpg"
 import event2 from "../../../Public/post54.jpg"
-import event3 from "../../../Public/post53.jpg"
+import event3 from "../../../Public/post58.jpg"
 import event4 from "../../../Public/post52.jpg"
-import event5 from "../../../Public/post56.jpg"
+import event5 from "../../../Public/post59.jpg"
 
 const eventPosters = [
   {
@@ -232,6 +232,7 @@ export default function EventPosters() {
     </section>
   )
 }
+
 
 
 

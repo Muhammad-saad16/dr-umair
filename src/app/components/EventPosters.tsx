@@ -3,40 +3,47 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from 'next/link';
-import event1 from "../../../Public/post57.jpg"
-import event2 from "../../../Public/post54.jpg"
-import event3 from "../../../Public/post58.jpg"
-import event4 from "../../../Public/post60.jpg"
-import event5 from "../../../Public/post59.jpg"
+import event1 from "../../../Public/post61.jpg"
+import event2 from "../../../Public/post62.jpg"
+import event3 from "../../../Public/post63.jpg"
+import event4 from "../../../Public/post64.jpg"
+import event5 from "../../../Public/post65.jpg"
+import event6 from "../../../Public/post66.jpg"
 
 const eventPosters = [
   {
     id: 1,
-    image: event4.src,
+    image: event1.src,
     // title: "Taqwa and Ramadan",
     // date: "March 8, 2025",
   },
   {
     id: 2,
-    image: event1.src,
+    image: event2.src,
     // title: "Al-Aqsa Conference",
     // date: "April 6, 2025",
   },
   {
     id: 3,
-    image: event2.src,
+    image: event3.src,
     // title: "Khutba Jumma",
     // date: "Dars-e-Quran | Surah Anfal",
   },
   {
     id: 4,
-    image: event3.src,
+    image: event4.src,
     // title: "Weekly Dars-e-Quran | City of Knowledge",
     // date: "Surah Noor | 9:00 PM TO 10:00 PM",
   },
    {
     id: 5,
     image: event5.src,
+    // title: "Weekly Dars-e-Quran | City of Knowledge",
+    // date: "Surah Noor | 9:00 PM TO 10:00 PM",
+  },
+  {
+    id: 5,
+    image: event6.src,
     // title: "Weekly Dars-e-Quran | City of Knowledge",
     // date: "Surah Noor | 9:00 PM TO 10:00 PM",
   },
@@ -185,7 +192,7 @@ export default function EventPosters() {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {eventPosters.map((poster, index) => (
             <div
               key={poster.id}
@@ -232,6 +239,7 @@ export default function EventPosters() {
     </section>
   )
 }
+
 
 
 

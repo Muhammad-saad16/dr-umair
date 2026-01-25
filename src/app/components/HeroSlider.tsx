@@ -3,22 +3,14 @@ import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
 import { useMediaQuery } from "react-responsive"
-import slide4 from '../../../Public/slide4.jpg'
-import p1 from '../../../Public/slide.jpg'
-// import p2 from '../../../Public/slide1.jpg'
-import slidebest from '../../../Public/slidebest.jpg'
+
 
 // import slide1stt from '../../../Public/slide1stt.jpg'
 import slide5 from '../../../Public/slide2nd.jpg'
-import slide7 from '../../../Public/slide7.jpg'
+
 import slide8 from '../../../Public/slide3rd.jpg'
-// import slide9 from '../../../Public/slide9.jpg'
-import slidess from '../../../Public/sildess.jpg'
-import slideees from '../../../Public/slideees.jpg'
-import sld from '../../../Public/sld.jpg'
-import s from '../../../Public/e39.jpg'
-import sldeeeeeeeeee from '../../../Public/slide123.jpg'
-import seeeeeeeeeee from '../../../Public/slide456.jpg'
+
+
 import slide from '../../../Public/slide15.jpg'
 import slide1 from '../../../Public/slideend.jpg'
 import slide123456 from '../../../Public/ssslide1.jpg'
@@ -33,6 +25,18 @@ import slode7 from '../../../Public/slode7.jpg'
 
 
 const slides = [
+    {
+    id: -8,
+    image: slode10.src,
+  },
+  {
+    id: -7,
+    image: slode9.src,
+  },
+    {
+    id: -6,
+    image: slode8.src,
+  },
     {
     id: -5,
     image: slode6.src,
@@ -81,43 +85,7 @@ const slides = [
     id: 4,
     image: slide.src,
   },
-    {
-    id: 5,
-    image: sldeeeeeeeeee.src,
-  },{
-    id: 6,
-    image: seeeeeeeeeee.src,
-  },
-   {
-    id: 7,
-    image: s.src,
-  },{
-    id: 8,
-    image: sld.src,
-  },{
-    id: 9,
-    image: slideees.src,
-  },{
-    id: 10,
-    image: slidess.src,
-  },
- {
-    id: 11,
-    image: p1.src,
-  },
-{
-    id: 12,
-    image: slidebest.src,
-  },
-  {
-    id: 13,
-    image: slide4.src,
-  },
 
- {
-    id: 6,
-    image: slide7.src,
-  },
 
 ]
 
@@ -209,6 +177,7 @@ export default function HeroSlider() {
     </section>
   )
 }
+
 
 
 

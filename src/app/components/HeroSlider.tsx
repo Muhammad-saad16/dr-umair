@@ -21,6 +21,9 @@ import slode4 from '../../../Public/slode4.jpg'
 import slode5 from '../../../Public/slode5.jpg'
 import slode6 from '../../../Public/slode6.jpg'
 import slode7 from '../../../Public/slode7.jpg'
+import slode8 from '../../../Public/slode8.jpg'
+import slode9 from '../../../Public/slode9.jpg'
+import slode10 from '../../../Public/slode10.jpg'
 
 
 
@@ -177,6 +180,7 @@ export default function HeroSlider() {
     </section>
   )
 }
+
 
 
 

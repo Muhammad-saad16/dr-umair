@@ -36,7 +36,7 @@ const slides = [
   {
     id: -9,
     image: slode12.src,
-  }
+  },
     {
     id: -8,
     image: slode10.src,
@@ -189,6 +189,7 @@ export default function HeroSlider() {
     </section>
   )
 }
+
 
 
 

@@ -9,7 +9,8 @@ import event3 from "../../../Public/post63.jpg"
 import event4 from "../../../Public/post64.jpg"
 import event5 from "../../../Public/post65.jpg"
 import event6 from "../../../Public/post66.jpg"
-
+import event7 from "../../../Public/post66.jpg"
+import event8 from "../../../Public/post69.jpg"
 const eventPosters = [
   {
     id: 1,
@@ -42,8 +43,20 @@ const eventPosters = [
     // date: "Surah Noor | 9:00 PM TO 10:00 PM",
   },
   {
-    id: 5,
+    id: 6,
     image: event6.src,
+    // title: "Weekly Dars-e-Quran | City of Knowledge",
+    // date: "Surah Noor | 9:00 PM TO 10:00 PM",
+  },
+   {
+    id: 7,
+    image: event7.src,
+    // title: "Weekly Dars-e-Quran | City of Knowledge",
+    // date: "Surah Noor | 9:00 PM TO 10:00 PM",
+  },
+  {
+    id: 8,
+    image: event8.src,
     // title: "Weekly Dars-e-Quran | City of Knowledge",
     // date: "Surah Noor | 9:00 PM TO 10:00 PM",
   },
@@ -239,6 +252,7 @@ export default function EventPosters() {
     </section>
   )
 }
+
 
 
 

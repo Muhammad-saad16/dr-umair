@@ -19,13 +19,13 @@ const videos = [
   {
     id: 2,
     thumbnail: event2.src,
-    youtubeId: "vex0kylgPbc",
+    youtubeId: "HhaPOZLHguA",
     category: "Sermons"
   },
   {
     id: 3,
     thumbnail: event3.src,
-    youtubeId: "Jy-qYqyoi0E",
+    youtubeId: "9np5ElNQVeQ",
     category: "Events"
   },
    {
@@ -37,7 +37,7 @@ const videos = [
   {
     id: 5,
     thumbnail: event5.src, 
-    youtubeId: "r1Pe0VlPnGc",
+    youtubeId: "EJkKqwQF3D4",
     category: "Lectures"
   },
   {
@@ -55,7 +55,7 @@ const videos = [
    {
     id: 8,
     thumbnail: event8.src,
-    youtubeId: "GPUXQM3kfIw",
+    youtubeId: "1JgeaRmpN7I",
     category: "Events"
   },
   
@@ -118,6 +118,7 @@ export default function VideoSection() {
     </div>
   )
 }
+
 
 
 

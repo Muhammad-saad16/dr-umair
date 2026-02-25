@@ -26,8 +26,8 @@ import slode9 from '../../../Public/slode9.jpg'
 import slode10 from '../../../Public/slode10.jpg'
 import slode11 from '../../../Public/slode11.jpg'
 import slode12 from '../../../Public/slode12.jpg'
-import slode13 from '../../../Public/slode13.jfif'
-import slode14 from '../../../Public/slode14.jfif'
+import slode13 from '../../../Public/slode13.jpg'
+import slode14 from '../../../Public/slode14.jpg'
 
 const slides = [
       {
@@ -198,6 +198,7 @@ export default function HeroSlider() {
     </section>
   )
 }
+
 
 
 

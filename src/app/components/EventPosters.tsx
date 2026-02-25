@@ -9,8 +9,8 @@ import event3 from "../../../Public/post63.jpg"
 import event4 from "../../../Public/post64.jpg"
 import event5 from "../../../Public/post65.jpg"
 import event6 from "../../../Public/post66.jpg"
-import event7 from "../../../Public/post66.jpg"
-import event8 from "../../../Public/post69.jpg"
+import event7 from "../../../Public/post70.jpg"
+import event8 from "../../../Public/post71.jpg"
 const eventPosters = [
   {
     id: 1,
@@ -252,6 +252,7 @@ export default function EventPosters() {
     </section>
   )
 }
+
 
 
 

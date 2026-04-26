@@ -319,12 +319,17 @@ export default function TestimonialsSection() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          {/* Fixed the comment syntax here */}
-          {/* <h2 className="elegant-title text-4xl md:text-5xl mb-4">
-            In My <span className="gold-text">View</span>
-          </h2> */}
-          <div className="w-24 h-1 bg-accent-teal mx-auto"></div>
+        <div className="text-center mb-12">
+          <div className="islamic-divider mb-3">
+            <span className="text-amber-400 text-xl select-none" aria-hidden>✦</span>
+          </div>
+          <h2 className="text-2xl md:text-3xl font-bold text-white tracking-wide mb-3">
+            Words of <span className="text-amber-400">Honour</span>
+          </h2>
+          <div className="w-24 h-[3px] bg-gradient-to-r from-amber-700 via-amber-400 to-amber-700 mx-auto rounded-full" />
+          <div className="islamic-divider mt-3">
+            <span className="text-amber-400 text-xl select-none" aria-hidden>✦</span>
+          </div>
         </div>
 
         <div className="relative">
@@ -338,7 +343,8 @@ export default function TestimonialsSection() {
                 <div key={slideIndex} className="w-full flex-shrink-0 flex flex-wrap">
                   {testimonials.slice(slideIndex * 3, slideIndex * 3 + 3).map((testimonial) => (
                     <div key={testimonial.id} className="w-full md:w-1/3 p-4">
-                      <div className="bg-white/5 backdrop-filter backdrop-blur-sm rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-full flex flex-col border border-white/10 hover:border-accent-teal/30 group">
+                      <div className="bg-white/5 backdrop-filter backdrop-blur-sm rounded-xl overflow-hidden shadow-xl hover:shadow-amber-500/15 hover:shadow-2xl transition-all duration-300 h-full flex flex-col border border-white/10 hover:border-amber-400/30 group hover:-translate-y-1">
+                        <div className="h-[3px] w-full bg-gradient-to-r from-amber-700 via-amber-400 to-amber-700" />
                         <div className="p-6 flex-grow">
                           {/* Quote icon */}
                           <div className="mb-4 text-accent-gold opacity-50 group-hover:opacity-100 transition-opacity">

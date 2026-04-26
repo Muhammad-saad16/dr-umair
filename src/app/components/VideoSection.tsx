@@ -1,11 +1,11 @@
 'use client'
 import { useState } from 'react'
 import { Play } from 'lucide-react'
-import event1 from '/Public/v1.jpg'
-import event2 from '/Public/v2.jpg'
-import event3 from '/Public/v3.jpg'
-import event4 from '/Public/v4.jpg'
-import event5 from '/Public/v5.jpg'
+import event1 from '/Public/yvideo1.jpg'
+import event2 from '/Public/yvideo2.jpg'
+import event3 from '/Public/yvideo3.jpg'
+import event4 from '/Public/yvideo4.jpg'
+import event5 from '/Public/yvideo5.jpg'
 import event6 from '/Public/v6.jpg'
 import event7 from '/Public/v7.jpg'
 import event8 from '/Public/v8.jpg'
@@ -13,31 +13,31 @@ const videos = [
   {
     id: 1,
     thumbnail: event1.src, 
-    youtubeId: "ZbQYVC5Wuvg",
+    youtubeId: "PJsM7Jp3ESw",
     category: "Lectures"
   },
   {
     id: 2,
     thumbnail: event2.src,
-    youtubeId: "HhaPOZLHguA",
+    youtubeId: "efxjctbDbC4",
     category: "Sermons"
   },
   {
     id: 3,
     thumbnail: event3.src,
-    youtubeId: "9np5ElNQVeQ",
+    youtubeId: "n695niRoVLE",
     category: "Events"
   },
    {
     id: 4,
     thumbnail: event4.src,
-    youtubeId: "8MyMoEaxJMw",
+    youtubeId: "RQC_hrgPHqg",
     category: "Events"
   },
   {
     id: 5,
     thumbnail: event5.src, 
-    youtubeId: "EJkKqwQF3D4",
+    youtubeId: "Jk6GxyUE7Vg",
     category: "Lectures"
   },
   {
@@ -67,6 +67,17 @@ export default function VideoSection() {
 
   return (
     <div className="container mx-auto px-4 mt-8">
+      {/* Section Header */}
+      <div className="text-center mb-10">
+        <div className="islamic-divider mb-3">
+          <span className="text-amber-400 text-xl select-none" aria-hidden>✦</span>
+        </div>
+        <h2 className="text-4xl font-bold text-center text-white tracking-wide">Clips &amp; Videos</h2>
+        <div className="islamic-divider mt-3">
+          <span className="text-amber-400 text-xl select-none" aria-hidden>✦</span>
+        </div>
+      </div>
+
       <div className="flex flex-wrap gap-4 mb-12 justify-center">
         {categories.map((category) => (
           <button
@@ -88,17 +99,16 @@ export default function VideoSection() {
             className="group cursor-pointer"
             onClick={() => window.open(`https://www.youtube.com/watch?v=${video.youtubeId}`, "_blank")}
           >
-            <div className="relative aspect-video rounded-lg overflow-hidden">
+            <div className="relative aspect-video rounded-xl overflow-hidden border border-white/5 group-hover:border-amber-400/25 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-amber-500/10">
               <img
                 src={video.thumbnail || "/placeholder.svg"}
                 alt="Video Thumbnail"
                 className="w-full h-full object-cover transition-transform group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors">
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  {/* Smaller and more transparent play button */}
-                  <div className="w-10 h-10 rounded-full bg-amber-400/70 flex items-center justify-center transform group-hover:scale-110 transition-transform">
-                    <Play className="w-3 h-3 text-gray-900" />
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-lg shadow-amber-900/40 opacity-80 group-hover:opacity-100">
+                    <Play className="w-4 h-4 text-white" />
                   </div>
                 </div>
               </div>

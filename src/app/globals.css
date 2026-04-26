@@ -31,3 +31,40 @@ main {
   flex: 1;
 }
 
+/* Islamic decorative divider */
+.islamic-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.islamic-divider::before,
+.islamic-divider::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 1px;
+}
+
+.islamic-divider::before {
+  background: linear-gradient(to right, transparent, rgba(251, 191, 36, 0.75));
+}
+
+.islamic-divider::after {
+  background: linear-gradient(to left, transparent, rgba(251, 191, 36, 0.75));
+}
+
+/* Islamic card base style */
+.card-islamic {
+  background: linear-gradient(160deg, #0f2a42 0%, #0a1d2e 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.3s ease;
+}
+
+.card-islamic:hover {
+  border-color: rgba(251, 191, 36, 0.3);
+  box-shadow: 0 20px 40px -10px rgba(245, 158, 11, 0.18), 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+

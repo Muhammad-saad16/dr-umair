@@ -4,6 +4,8 @@ import type React from "react"
 import { usePathname } from "next/navigation"
 import Header from "./Header"
 import Footer from "./Footer"
+import ScrollToTop from "./ScrollToTop"
+import WhatsAppButton from "./WhatsAppButton"
 import { getPageTitle } from "../lib/routes"
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -31,6 +33,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <Footer />
+      <ScrollToTop />
+      <WhatsAppButton />
     </div>
   )
 }

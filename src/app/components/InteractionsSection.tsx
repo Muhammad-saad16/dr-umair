@@ -10,7 +10,7 @@ const interactions = [
   {
     id: 1,
     leader: "Zainul Abidin Rasheed",
-    description: "Zainul Abidin Rasheed, Karachi’s Ambassador to Kuwait and Special Envoy of the Minister for Foreign Affairs.",
+    description: "Zainul Abidin Rasheed, Karachi's Ambassador to Kuwait and Special Envoy of the Minister for Foreign Affairs.",
     image: meet4.src,
     country: "Singapore"
   },
@@ -31,30 +31,53 @@ const interactions = [
   {
     id: 4,
     leader: "Sheikh Dr. Saleh Abdullah ",
-    description: "Meeting with His Excellency Sheikh Dr. Saleh bin Abdullah bin Humaid at the International Islamic Fiqh Academy (IIFA).",
+    description: "Meeting with His Excellency Sheikh Dr. Saleh bin Abdullah bin Humaid at the International Islamic Fiqh Academy (IIFA).",
     image: meet1.src,
     country: "Jeddah"
   },
-];
+]
 
 export default function InteractionsSection() {
   return (
-    <section className=" bg-[url('/back2.jpg')] object-cover">
-      <div className="container mx-auto ">
-        <h2 className="elegant-title text-2xl md:text-3xl text-center mb-12 mt-12 font-bold">
-          <span className="gold-text">Interactions</span> with Personalities
-        </h2>
+    <section className="py-16">
+      <div className="container mx-auto px-4">
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <div className="islamic-divider mb-3">
+            <span className="text-amber-400 text-xl select-none" aria-hidden>✦</span>
+          </div>
+          <h2 className="text-2xl md:text-3xl text-center font-bold tracking-wide">
+            <span className="text-amber-400">Interactions</span> with Personalities
+          </h2>
+          <div className="islamic-divider mt-3">
+            <span className="text-amber-400 text-xl select-none" aria-hidden>✦</span>
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {interactions.map((item) => (
-            <div key={item.id} className="bg-white/5 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <div key={item.id} className="card-islamic group rounded-xl overflow-hidden shadow-lg">
+              {/* Gold top accent bar */}
+              <div className="h-[3px] w-full bg-gradient-to-r from-amber-700 via-amber-400 to-amber-700" />
+
               <div className="relative h-60">
-                <Image src={item.image || "/placeholder.svg"} alt={item.leader} fill className="object-cover" />
+                <Image
+                  src={item.image || "/placeholder.svg"}
+                  alt={item.leader}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a1d2e]/75 to-transparent" />
               </div>
-              <div className="p-6 bg-[#1a4f7a]">
-                <h3 className="text-xl font-semibold mb-2 text-white">{item.leader}</h3>
-                <p className="text-gray-300 mb-4">{item.description}</p>
-                <span className="inline-block px-3 py-1 bg-accent-teal/20 border border-accent-teal rounded-full text-sm text-accent-teal">
+
+              <div className="p-5">
+                <div className="w-8 h-[2px] bg-gradient-to-r from-amber-400 to-transparent mb-3" />
+                <h3 className="text-lg font-semibold mb-2 text-white leading-snug">{item.leader}</h3>
+                <p className="text-gray-300/90 mb-4 text-sm leading-relaxed">{item.description}</p>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-500/10 border border-amber-400/25 rounded-full text-xs text-amber-300">
+                  <svg className="w-3 h-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  </svg>
                   {item.country}
                 </span>
               </div>
@@ -65,6 +88,3 @@ export default function InteractionsSection() {
     </section>
   )
 }
-
-
-

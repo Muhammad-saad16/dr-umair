@@ -58,7 +58,7 @@ export default function IslamicQuoteBanner() {
           style={{ fontSize: '10rem', lineHeight: 1, fontFamily: 'Georgia, serif' }}
           aria-hidden
         >
-          "
+          &quot
         </div>
 
         <div

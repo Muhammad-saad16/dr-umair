@@ -1,6 +1,6 @@
 import HeroSlider from './HeroSlider'
-import IslamicQuoteBanner from './IslamicQuoteBanner'
-import StatsSection from './StatsSection'
+// import IslamicQuoteBanner from './IslamicQuoteBanner'
+// import StatsSection from './StatsSection'
 import BooksSection from './BooksSection'
 import VideoSection from './VideoSection'
 import TestimonialsSection from './TestimonialsSection'

@@ -4,7 +4,10 @@ import meet1 from '../../../Public/meet1.jpg'
 import meet2 from '../../../Public/e33.jpg'
 import meet3 from '../../../Public/mee3.jpg'
 import meet4 from '../../../Public/meet3.jpg'
-
+import meet8 from '../../../Public/meet8.jpg'
+import meet9 from '../../../Public/meet9.jpg'
+import meet10 from '../../../Public/meet10.jpg'
+import meet11 from '../../../Public/meet11.jpg'
 
 const interactions = [
   {
@@ -33,6 +36,34 @@ const interactions = [
     leader: "Sheikh Dr. Saleh Abdullah ",
     description: "Meeting with His Excellency Sheikh Dr. Saleh bin Abdullah bin Humaid at the International Islamic Fiqh Academy (IIFA).",
     image: meet1.src,
+    country: "Jeddah"
+  },
+    {
+    id: 5,
+    leader: "Hazrat Pir Syed Lakht-e-Hasanian",
+    description: "Hazrat Pir Syed Lakht-e-Hasanian, Founder & Chairman of Muslim Hands UK.",
+    image: meet8.src,
+    country: "Singapore"
+  },
+  {
+    id: 6,
+    leader: "Mufti Sher Muhammad Khan Sahib",
+    description: "The scholar and Sheikh of Hadith, Mufti Sher Muhammad Khan Sahib. ",
+    image: meet9.src,
+    country: "City of Knowledge, Karachi"
+  },
+  {
+    id: 7,
+    leader: "Sheikh Muhammad Al-Khamis Suleiman Usman",
+    description: "Sheikh Muhammad Al-Khamis Suleiman Uthman, Professor of Al-Hadith and Jurisprudence at the University of Egypt.",
+    image: meet10.src,
+    country: "City of Knowledge, Karachi"
+  },
+  {
+    id: 8,
+    leader: "Prof Imam Syed Badiuddin Soharwardy",
+    description: "Prof Imam Syed Badiuddin Soharwardy, founder of Islamic Supreme Council of Canada",
+    image: meet11.src,
     country: "Jeddah"
   },
 ]

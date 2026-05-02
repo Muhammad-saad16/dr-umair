@@ -1,19 +1,19 @@
 'use client'
 import { useState } from 'react'
 import { Play } from 'lucide-react'
-import event1 from '/Public/yvideo1.jpg'
+import event1 from '/Public/yvideo6.jpg'
 import event2 from '/Public/yvideo2.jpg'
 import event3 from '/Public/yvideo3.jpg'
 import event4 from '/Public/yvideo4.jpg'
 import event5 from '/Public/yvideo5.jpg'
 import event6 from '/Public/v6.jpg'
 import event7 from '/Public/v7.jpg'
-import event8 from '/Public/v8.jpg'
+import event8 from '/Public/yvideo1.jpg'
 const videos = [
   {
     id: 1,
     thumbnail: event1.src, 
-    youtubeId: "PJsM7Jp3ESw",
+    youtubeId: "PJsM7Jp3ESw", //59XdnvzIsMw
     category: "Lectures"
   },
   {
@@ -55,7 +55,7 @@ const videos = [
    {
     id: 8,
     thumbnail: event8.src,
-    youtubeId: "1JgeaRmpN7I",
+    youtubeId: "PJsM7Jp3ESw",
     category: "Events"
   },
   

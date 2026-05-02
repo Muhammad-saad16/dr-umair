@@ -10,62 +10,64 @@ import meet10 from '../../../Public/meet10.jpg'
 import meet11 from '../../../Public/meet11.jpg'
 
 const interactions = [
-  {
-    id: 1,
-    leader: "Zainul Abidin Rasheed",
-    description: "Zainul Abidin Rasheed, Karachi's Ambassador to Kuwait and Special Envoy of the Minister for Foreign Affairs.",
-    image: meet4.src,
-    country: "Singapore"
-  },
-  {
-    id: 2,
-    leader: "Dr. Muhammad Eid Al-Mansour",
-    description: "University of Damascus, Syria, internationally recognized scholar, specialized in Hadith Sciences. ",
-    image: meet2.src,
-    country: "City of Knowledge, Karachi"
-  },
-  {
-    id: 3,
-    leader: "Mufti Sher Muhammad",
-    description: "Mufti Sher Muhammad Khan is associated with Darul Ifta and Darul Uloom Muhammadia Ghousia Bhera Sharif.",
-    image: meet3.src,
-    country: "City of Knowledge, Karachi"
-  },
-  {
-    id: 4,
-    leader: "Sheikh Dr. Saleh Abdullah ",
-    description: "Meeting with His Excellency Sheikh Dr. Saleh bin Abdullah bin Humaid at the International Islamic Fiqh Academy (IIFA).",
-    image: meet1.src,
-    country: "Jeddah"
-  },
+  
     {
-    id: 5,
+    id: 1,
     leader: "Hazrat Pir Syed Lakht-e-Hasanian",
     description: "Hazrat Pir Syed Lakht-e-Hasanian, Founder & Chairman of Muslim Hands UK.",
     image: meet8.src,
     country: "Singapore"
   },
   {
-    id: 6,
+    id: 2,
     leader: "Mufti Sher Muhammad Khan Sahib",
     description: "The scholar and Sheikh of Hadith, Mufti Sher Muhammad Khan Sahib. ",
     image: meet9.src,
     country: "City of Knowledge, Karachi"
   },
   {
-    id: 7,
+    id: 3,
     leader: "Sheikh Muhammad Al-Khamis Suleiman Usman",
     description: "Sheikh Muhammad Al-Khamis Suleiman Uthman, Professor of Al-Hadith and Jurisprudence at the University of Egypt.",
     image: meet10.src,
     country: "City of Knowledge, Karachi"
   },
   {
-    id: 8,
+    id: 5,
     leader: "Prof Imam Syed Badiuddin Soharwardy",
     description: "Prof Imam Syed Badiuddin Soharwardy, founder of Islamic Supreme Council of Canada",
     image: meet11.src,
     country: "Jeddah"
   },
+  {
+    id: 6,
+    leader: "Zainul Abidin Rasheed",
+    description: "Zainul Abidin Rasheed, Karachi's Ambassador to Kuwait and Special Envoy of the Minister for Foreign Affairs.",
+    image: meet4.src,
+    country: "Singapore"
+  },
+  {
+    id: 7,
+    leader: "Dr. Muhammad Eid Al-Mansour",
+    description: "University of Damascus, Syria, internationally recognized scholar, specialized in Hadith Sciences. ",
+    image: meet2.src,
+    country: "City of Knowledge, Karachi"
+  },
+  {
+    id: 8,
+    leader: "Mufti Sher Muhammad",
+    description: "Mufti Sher Muhammad Khan is associated with Darul Ifta and Darul Uloom Muhammadia Ghousia Bhera Sharif.",
+    image: meet3.src,
+    country: "City of Knowledge, Karachi"
+  },
+  {
+    id: 9,
+    leader: "Sheikh Dr. Saleh Abdullah ",
+    description: "Meeting with His Excellency Sheikh Dr. Saleh bin Abdullah bin Humaid at the International Islamic Fiqh Academy (IIFA).",
+    image: meet1.src,
+    country: "Jeddah"
+  },
+
 ]
 
 export default function InteractionsSection() {

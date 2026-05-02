@@ -14,8 +14,9 @@ export default function HomePage() {
       <HeroSlider />
       {/* <IslamicQuoteBanner /> */}
       {/* <StatsSection /> */}
-      <PosterSection />
       <InteractionsSection />
+      <PosterSection />
+      
       <EventPosters />
       <BooksSection />
       <VideoSection />

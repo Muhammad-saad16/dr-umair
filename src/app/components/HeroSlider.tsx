@@ -5,14 +5,7 @@ import Image from "next/image"
 import { useMediaQuery } from "react-responsive"
 
 
-// import slide1stt from '../../../Public/slide1stt.jpg'
-import slide5 from '../../../Public/slide2nd.jpg'
 
-import slide8 from '../../../Public/slide3rd.jpg'
-
-
-import slide from '../../../Public/slide15.jpg'
-import slide1 from '../../../Public/slideend.jpg'
 import slide123456 from '../../../Public/ssslide1.jpg'
 import slode1 from '../../../Public/slode1.jpg'
 import slode2 from '../../../Public/slode2.jpg'
@@ -108,24 +101,7 @@ const slides = [
   },    {
     id: 0,
     image: slide123456.src,
-  },
-       {
-    id: 1,
-    image: slide8.src,
-  },
-    {
-    id: 2,
-    image: slide5.src,
-  },
- 
-    {
-    id: 3,
-    image: slide1.src,
-  },
-    {
-    id: 4,
-    image: slide.src,
-  },
+  }
 
 
 ]

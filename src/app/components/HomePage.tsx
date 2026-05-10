@@ -15,9 +15,9 @@ export default function HomePage() {
       {/* <IslamicQuoteBanner /> */}
       {/* <StatsSection /> */}
       <InteractionsSection />
-      <PosterSection />
       
       <EventPosters />
+      <PosterSection />
       <BooksSection />
       <VideoSection />
       <TestimonialsSection />

@@ -15,11 +15,11 @@ export default function HomePage() {
       {/* <IslamicQuoteBanner /> */}
       {/* <StatsSection /> */}
       <InteractionsSection />
-      
+      <VideoSection />
       <EventPosters />
       <PosterSection />
       <BooksSection />
-      <VideoSection />
+      
       <TestimonialsSection />
     </main>
   )

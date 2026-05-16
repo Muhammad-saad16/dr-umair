@@ -5,7 +5,7 @@ import Link from 'next/link'
 import banner from '../../../Public/book-banner.jpg'
 import bookCover from '../../../Public/book-banner1.png'
 
-const PDF_PATH = '/Hizb ul bahar FOR PRINT.pdf'
+const PDF_PATH = '../../../Public/Hizb ul bahar FOR PRINT.pdf'
 
 export default function BooksSection() {
   return (

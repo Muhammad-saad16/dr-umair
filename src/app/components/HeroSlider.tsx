@@ -25,8 +25,13 @@ import slode15 from '../../../Public/slode15.jpg'
 import slode16 from '../../../Public/slode16.jpg'
 import slode17 from '../../../Public/slode17.jpg'
 import slode18 from '../../../Public/slode18.jpg'
+import slode19 from '../../../Public/slode19.jpg'
 
 const slides = [
+    {
+    id: -16,
+    image: slode19.src,
+  },
   {
     id: -16,
     image: slode17.src,

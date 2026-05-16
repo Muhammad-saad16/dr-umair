@@ -3,6 +3,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import banner from '../../../Public/book-banner.jpg'
+import bookCover from '../../../Public/book-banner1.png'
+
+const PDF_PATH = '/Hizb ul bahar FOR PRINT.pdf'
 
 export default function BooksSection() {
   return (
@@ -24,6 +27,32 @@ export default function BooksSection() {
           className="object-cover"
         />
       </div>
+
+      {/* Clickable book card — opens/downloads the PDF */}
+      <div className="flex justify-center mb-12">
+        <a
+          href={PDF_PATH}
+          target="_blank"
+          rel="noopener noreferrer"
+          download
+          className="group relative w-[220px] md:w-[260px] rounded-xl overflow-hidden shadow-2xl border border-amber-400/20 ring-1 ring-white/5 hover:scale-105 transform transition-all duration-300 cursor-pointer"
+          title="Click to open / download PDF"
+        >
+          <Image
+            src={bookCover}
+            alt="Hizb ul Bahar — click to download"
+            className="object-cover w-full h-auto"
+          />
+          {/* Hover overlay */}
+          <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2">
+            <svg className="w-10 h-10 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            <span className="text-white text-sm font-semibold tracking-wide">Download PDF</span>
+          </div>
+        </a>
+      </div>
+
       <div className="text-center">
         <Link
           href="/publications"

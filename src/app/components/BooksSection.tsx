@@ -5,7 +5,6 @@ import Link from 'next/link'
 import banner from '../../../Public/book-banner.jpg'
 import bookCover from '../../../Public/book-banner1.png'
 
-const PDF_PATH = '../../../Public/Hizb ul bahar FOR PRINT.pdf'
 
 export default function BooksSection() {
   return (
@@ -30,11 +29,11 @@ export default function BooksSection() {
 
       {/* Clickable book card — opens/downloads the PDF */}
       <a
-        href={PDF_PATH}
-        target="_blank"
+        // href={PDF_PATH}
+        // target="_blank"
         rel="noopener noreferrer"
         download
-        className="group relative block w-full h-[300px] md:h-[400px] lg:h-[500px] mb-12 rounded-xl overflow-hidden shadow-2xl border border-amber-400/20 ring-1 ring-white/5 hover:scale-[1.02] transform transition-all duration-300 cursor-pointer bg-[#0d0d0d]"
+        className="group relative block w-full h-[300px] md:h-[400px] lg:h-[500px] mb-12 rounded-xl overflow-hidden shadow-2xl border border-amber-400/20 ring-1 ring-white/5  bg-[#0d0d0d]"
         title="Click to open / download PDF"
       >
         <Image

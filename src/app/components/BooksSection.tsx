@@ -34,7 +34,7 @@ export default function BooksSection() {
         rel="noopener noreferrer"
         download
         className="group relative block w-full h-[300px] md:h-[400px] lg:h-[500px] mb-12 rounded-xl overflow-hidden shadow-2xl border border-amber-400/20 ring-1 ring-white/5  bg-[#0d0d0d]"
-        title="Click to open / download PDF"
+        title=""
       >
         <Image
           src={bookCover}
@@ -43,12 +43,12 @@ export default function BooksSection() {
           className="object-contain"
         />
         {/* Hover overlay */}
-        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-3">
+        {/* <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-3">
           <svg className="w-14 h-14 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
           </svg>
           <span className="text-white text-lg font-semibold tracking-wide">Download PDF</span>
-        </div>
+        </div> */}
       </a>
 
       <div className="text-center">

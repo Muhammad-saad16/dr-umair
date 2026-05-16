@@ -34,14 +34,14 @@ export default function BooksSection() {
         target="_blank"
         rel="noopener noreferrer"
         download
-        className="group relative block w-full h-[300px] md:h-[400px] lg:h-[500px] mb-12 rounded-xl overflow-hidden shadow-2xl border border-amber-400/20 ring-1 ring-white/5 hover:scale-[1.02] transform transition-all duration-300 cursor-pointer"
+        className="group relative block w-full h-[300px] md:h-[400px] lg:h-[500px] mb-12 rounded-xl overflow-hidden shadow-2xl border border-amber-400/20 ring-1 ring-white/5 hover:scale-[1.02] transform transition-all duration-300 cursor-pointer bg-[#0d0d0d]"
         title="Click to open / download PDF"
       >
         <Image
           src={bookCover}
           alt="Hizb ul Bahar — click to download"
           fill
-          className="object-cover"
+          className="object-contain"
         />
         {/* Hover overlay */}
         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-3">

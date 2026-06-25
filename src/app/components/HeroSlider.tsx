@@ -26,8 +26,66 @@ import slode16 from '../../../Public/slode16.jpg'
 import slode17 from '../../../Public/slode17.jpg'
 import slode18 from '../../../Public/slode18.jpg'
 import slode19 from '../../../Public/slode19.jpg'
+import slode20 from '../../../Public/slode20.jpg'
+import slode21 from '../../../Public/slode21.jpg'
+import slode22 from '../../../Public/slode22.jpg'
+import slode23 from '../../../Public/slode23.jpg'
+import slode24 from '../../../Public/slode24.jpg'
+import slode26 from '../../../Public/slode26.jpg'
+import slode28 from '../../../Public/slode28.jpg'
+import slode27 from '../../../Public/slode27.jpg'
+import slode29 from '../../../Public/slode29.jpg'
+import slode30 from '../../../Public/slode30.jpg'
+import slode31 from '../../../Public/slode31.jpg'
+
 
 const slides = [
+         {
+    id: -14,
+    image: slode26.src,
+  },
+  {
+    id: -13,
+    image: slode27.src,
+  },
+  {
+    id: -16,
+    image: slode28.src,
+  }, 
+  
+  {
+    id: -11,
+    image: slode30.src,
+  },
+    {
+    id: -10,
+    image: slode29.src,
+  },
+  {
+    id: -12,
+    image: slode31.src,
+  }, 
+
+      {
+    id: -12,
+    image: slode22.src,
+  },
+  {
+    id: -11,
+    image: slode21.src,
+  },
+    {
+    id: -10,
+    image: slode20.src,
+  },
+          {
+    id: -14,
+    image: slode24.src,
+  },
+  {
+    id: -13,
+    image: slode23.src,
+  },
     {
     id: -16,
     image: slode19.src,

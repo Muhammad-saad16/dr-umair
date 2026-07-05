@@ -1,11 +1,11 @@
 'use client'
 import { useState } from 'react'
 import { Play } from 'lucide-react'
-import event1 from '/Public/u1.jpg'
-import event2 from '/Public/u2.jpg'
-import event3 from '/Public/u3.jpg'
-import event4 from '/Public/u4.jpg'
-import event5 from '/Public/u5.jpg'
+import event1 from '/Public/mv1.jpg'
+import event2 from '/Public/mv2.jpg'
+import event3 from '/Public/mv3.jpg'
+import event4 from '/Public/mv4.jpg'
+import event5 from '/Public/mv5.jpg'
 import event6 from '/Public/v6.jpg'
 import event7 from '/Public/u6.jpg'
 import event8 from '/Public/yvideo1.jpg'
@@ -13,31 +13,31 @@ const videos = [
   {
     id: 1,
     thumbnail: event1.src, 
-    youtubeId: "PJsM7Jp3ESw", //59XdnvzIsMw
+    youtubeId: "XhlxnTJ2s5s", 
     category: "Lectures"
   },
   {
     id: 2,
     thumbnail: event2.src,
-    youtubeId: "efxjctbDbC4",
+    youtubeId: "Qe0PoOtn1UE",
     category: "Sermons"
   },
   {
     id: 3,
     thumbnail: event3.src,
-    youtubeId: "n695niRoVLE",
+    youtubeId: "dfiefCpuqlE",
     category: "Events"
   },
    {
     id: 4,
     thumbnail: event4.src,
-    youtubeId: "RQC_hrgPHqg",
+    youtubeId: "xrwL2SDxCxo",
     category: "Events"
   },
   {
     id: 5,
     thumbnail: event5.src, 
-    youtubeId: "Jk6GxyUE7Vg",
+    youtubeId: "BmaGDmbteyc",
     category: "Lectures"
   },
   {

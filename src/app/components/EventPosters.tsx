@@ -3,14 +3,15 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from 'next/link'
-import event1 from "../../../Public/post77.jpg"
-import event2 from "../../../Public/post73.jpg"
-import event3 from "../../../Public/posts1.jpg"
-import event4 from "../../../Public/posts2.jpg"
-import event5 from "../../../Public/post74.jpg"
-import event6 from "../../../Public/post66.jpg"
-import event7 from "../../../Public/post78.jpg"
-import event8 from "../../../Public/post71.jpg"
+import event1 from "../../../Public/pic1.jpg"
+import event2 from "../../../Public/pic2.jpg"
+import event3 from "../../../Public/pic3.jpg"
+import event4 from "../../../Public/pic4.jpg"
+import event5 from "../../../Public/pic5.jpg"
+import event6 from "../../../Public/pic6.jpg"
+import event7 from "../../../Public/pic7.jpg"
+import event8 from "../../../Public/pic8.jpg"
+
 
 const eventPosters = [
   { id: 1, image: event1.src },

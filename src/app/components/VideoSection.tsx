@@ -6,7 +6,7 @@ import event2 from '/Public/mv2.jpg'
 import event3 from '/Public/mv3.jpg'
 import event4 from '/Public/mv4.jpg'
 import event5 from '/Public/mv5.jpg'
-import event6 from '/Public/v6.jpg'
+import event6 from '/Public/vd1.jpg'
 import event7 from '/Public/u6.jpg'
 import event8 from '/Public/yvideo1.jpg'
 const videos = [
@@ -43,7 +43,7 @@ const videos = [
   {
     id: 6,
     thumbnail: event6.src,
-    youtubeId: "qlbVP_huK1Q",
+    youtubeId: "4aQUf0p9kFI",
     category: "Sermons"
   },
   {

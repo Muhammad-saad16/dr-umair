@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from 'next/link'
 import event1 from "../../../Public/pic1.jpg"
 import event2 from "../../../Public/pic2.jpg"
-import event3 from "../../../Public/pic3.jpg"
+import event3 from "../../../Public/post79.jpg"
 import event4 from "../../../Public/pic4.jpg"
 import event5 from "../../../Public/pic5.jpg"
 import event6 from "../../../Public/pic6.jpg"

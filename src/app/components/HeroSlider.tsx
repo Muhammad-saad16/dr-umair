@@ -39,9 +39,28 @@ import slode30 from '../../../Public/slode30.jpg'
 import slode31 from '../../../Public/slode31.jpg'
 import slode32 from '../../../Public/slode32.jpg'
 import slode33 from '../../../Public/slode33.jpg'
-
+import slode34 from '../../../Public/slode81.jpg'
+import slode35 from '../../../Public/slode82.jpg'
+import slode36 from '../../../Public/slode83.jpg'
+import slode37 from '../../../Public/slode84.jpg'
 
 const slides = [
+  {
+    id: -20,
+    image: slode34.src,
+  },
+  {
+    id: -19,
+    image: slode35.src,
+  },  
+  {
+    id: -18,
+    image: slode36.src,
+  },
+  {
+    id: -17,
+    image: slode37.src,
+  },
   {
     id: -16,
     image: slode33.src,

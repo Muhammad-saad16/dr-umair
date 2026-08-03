@@ -3,13 +3,13 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from 'next/link'
-import event1 from "../../../Public/pic1.jpg"
-import event2 from "../../../Public/pic2.jpg"
-import event3 from "../../../Public/post79.jpg"
-import event4 from "../../../Public/pic4.jpg"
-import event5 from "../../../Public/pic5.jpg"
-import event6 from "../../../Public/pic6.jpg"
-import event7 from "../../../Public/pic7.jpg"
+import event1 from "../../../Public/post81.jpg"
+import event2 from "../../../Public/post82.jpg"
+import event3 from "../../../Public/post83.jpg"
+import event4 from "../../../Public/post84.jpg"
+import event5 from "../../../Public/post85.jpg"
+import event6 from "../../../Public/post86.jpg"
+import event7 from "../../../Public/post87.jpg"
 import event8 from "../../../Public/pic8.jpg"
 
 

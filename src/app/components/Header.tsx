@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import banner from '../../../Public/new-banner1.jpg'
+import banner from '../../../Public/bann2.jpeg'
 import { routes } from "../lib/routes"
 
 export default function Header() {

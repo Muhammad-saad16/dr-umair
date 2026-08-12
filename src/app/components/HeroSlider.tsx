@@ -6,19 +6,7 @@ import { useMediaQuery } from "react-responsive"
 
 
 
-import slide123456 from '../../../Public/ssslide1.jpg'
-import slode1 from '../../../Public/slode1.jpg'
-import slode2 from '../../../Public/slode2.jpg'
-import slode3 from '../../../Public/slode3.jpg'
-import slode4 from '../../../Public/slode4.jpg'
-import slode5 from '../../../Public/slode5.jpg'
-import slode6 from '../../../Public/slode6.jpg'
-import slode7 from '../../../Public/slode7.jpg'
-import slode8 from '../../../Public/slode8.jpg'
-import slode9 from '../../../Public/slode9.jpg'
-import slode10 from '../../../Public/slode10.jpg'
-import slode11 from '../../../Public/slode11.jpg'
-import slode12 from '../../../Public/slode12.jpg'
+
 import slode13 from '../../../Public/slode13.jpg'
 import slode14 from '../../../Public/slode14.jpg'
 import slode15 from '../../../Public/slode15.jpg'
@@ -46,8 +34,32 @@ import slode37 from '../../../Public/slode84.jpg'
 import slode38 from '../../../Public/slode34.jpg'
 import slode39 from '../../../Public/slode35.jpg'
 import slode40 from '../../../Public/slode36.jpg'
-
+import slode41 from '../../../Public/slode37.jpg'
+import slode42 from '../../../Public/slode38.jpg'
+import slode43 from '../../../Public/slode39.jpg'
+import slode44 from '../../../Public/slode41.jpg'
+import slode45 from '../../../Public/slode42.jpg'
 const slides = [
+  {
+    id: -27,
+    image: slode44.src,
+  },
+  {
+    id: -26,
+    image: slode42.src,
+  },
+  {
+    id: -25,
+    image: slode43.src,
+  },
+  {
+    id: -25,
+    image: slode45.src,
+  },
+  {
+    id: -24,
+    image: slode41.src,
+  },
   {
     id: -23,
     image: slode40.src,
@@ -158,57 +170,7 @@ const slides = [
     id: -11,
     image: slode14.src,
   },
-    {
-    id: -10,
-    image: slode11.src,
-  },
-  {
-    id: -9,
-    image: slode12.src,
-  },
-    {
-    id: -8,
-    image: slode10.src,
-  },
-  {
-    id: -7,
-    image: slode9.src,
-  },
-    {
-    id: -6,
-    image: slode8.src,
-  },
-    {
-    id: -5,
-    image: slode6.src,
-  },
-  {
-    id: -4,
-    image: slode7.src,
-  },
-    {
-    id: -3,
-    image: slode5.src,
-  },
-  {
-    id: -2,
-    image: slode4.src,
-  },
-  {
-    id: -3,
-    image: slode3.src,
-  },
-  {
-    id: -2,
-    image: slode2.src,
-  },
-       {
-    id: -1,
-    image: slode1.src,
-  },    {
-    id: 0,
-    image: slide123456.src,
-  }
+   
 
 
 ]

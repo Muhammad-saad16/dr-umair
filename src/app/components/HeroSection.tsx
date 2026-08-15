@@ -4,9 +4,10 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+const words = ['Knowledge', 'Wisdom', 'Guidance', 'Understanding']
+
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
-  const words = ['Knowledge', 'Wisdom', 'Guidance', 'Understanding']
   const [currentWord, setCurrentWord] = useState(0)
 
   useEffect(() => {

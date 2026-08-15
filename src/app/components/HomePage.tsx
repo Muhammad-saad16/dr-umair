@@ -7,11 +7,13 @@ import TestimonialsSection from './TestimonialsSection'
 import InteractionsSection from './InteractionsSection'
 import EventPosters from './EventPosters'
 import PosterSection from './PosterSection'
+import FeaturedVideoSection from './FeaturedVideoSection'
 
 export default function HomePage() {
   return (
     <main>
       <HeroSlider />
+      <FeaturedVideoSection />
       {/* <IslamicQuoteBanner /> */}
       {/* <StatsSection /> */}
       <InteractionsSection />

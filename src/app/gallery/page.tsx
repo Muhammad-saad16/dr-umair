@@ -358,7 +358,7 @@ export default function GalleryPage() {
       alt: "Islamic Event",
       category: "Events"
     },
-  ]
+  ].map((image, index) => ({ ...image, id: index }))
 
   // const categories = ['All', 'Events', 'Lectures', 'Community', 'Historical']
 
@@ -402,7 +402,7 @@ export default function GalleryPage() {
         </div>
 
         {/* Modal */}
-        {selectedImage && (
+        {selectedImage !== null && (
           <div
             className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
             onClick={() => setSelectedImage(null)}

@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { Play } from 'lucide-react'
+import Image from 'next/image'
 import event1 from '/Public/w1.jpg'
 import event2 from '/Public/w2.jpg'
 import event3 from '/Public/w3.jpg'
@@ -12,53 +13,69 @@ import event8 from '/Public/w8.jpg'
 const videos = [
   {
     id: 1,
-    thumbnail: event1.src, 
-    youtubeId: "p0aU2nHEITM", 
-    category: "Lectures"
+    thumbnail: event1.src,
+    youtubeId: "p0aU2nHEITM",
+    category: "Lectures",
+    title: "Lecture 1",
+    description: "An insightful Islamic lecture by Dr. Umair Mahmood Siddiqui."
   },
   {
     id: 2,
     thumbnail: event2.src,
     youtubeId: "rspwczpoag0",
-    category: "Sermons"
+    category: "Sermons",
+    title: "Friday Sermon 1",
+    description: "A Friday sermon (Khutbah) delivered by Dr. Umair Mahmood Siddiqui."
   },
   {
     id: 3,
     thumbnail: event3.src,
     youtubeId: "HjhNUTbkepc",
-    category: "Events"
+    category: "Events",
+    title: "Event Highlight 1",
+    description: "Highlights from an Islamic event featuring Dr. Umair Mahmood Siddiqui."
   },
    {
     id: 4,
     thumbnail: event4.src,
     youtubeId: "iBvTbgqSWdw",
-    category: "Events"
+    category: "Events",
+    title: "Event Highlight 2",
+    description: "Highlights from an Islamic event featuring Dr. Umair Mahmood Siddiqui."
   },
   {
     id: 5,
-    thumbnail: event5.src, 
+    thumbnail: event5.src,
     youtubeId: "zKSCALl6Az8",
-    category: "Lectures"
+    category: "Lectures",
+    title: "Lecture 2",
+    description: "An insightful Islamic lecture by Dr. Umair Mahmood Siddiqui."
   },
   {
     id: 6,
     thumbnail: event6.src,
     youtubeId: "6H84LdW1Fas",
-    category: "Sermons"
+    category: "Sermons",
+    title: "Friday Sermon 2",
+    description: "A Friday sermon (Khutbah) delivered by Dr. Umair Mahmood Siddiqui."
   },
   {
     id: 7,
     thumbnail: event7.src,
     youtubeId: "I0RX-wkGeFM",
-    category: "Events"
+    category: "Events",
+    title: "Event Highlight 3",
+    description: "Highlights from an Islamic event featuring Dr. Umair Mahmood Siddiqui."
   },
    {
     id: 8,
     thumbnail: event8.src,
     youtubeId: "nmBqWuMtJsg",
-    category: "Events"
+    category: "Events",
+    title: "Event Highlight 4",
+    description: "Highlights from an Islamic event featuring Dr. Umair Mahmood Siddiqui."
   },
-  
+
 ]
 
 export default function VideoSection() {
@@ -96,14 +113,16 @@ export default function VideoSection() {
         {videos.map((video) => (
           <div
             key={video.id}
-            className="group cursor-pointer"
+            className="group cursor-pointer card-islamic rounded-xl overflow-hidden"
             onClick={() => window.open(`https://www.youtube.com/watch?v=${video.youtubeId}`, "_blank")}
           >
-            <div className="relative aspect-video rounded-xl overflow-hidden border border-white/5 group-hover:border-amber-400/25 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-amber-500/10">
-              <img
+            <div className="relative aspect-video overflow-hidden border-b border-white/5 group-hover:border-amber-400/25 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-amber-500/10">
+              <Image
                 src={video.thumbnail || "/placeholder.svg"}
-                alt="Video Thumbnail"
-                className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                alt={video.title}
+                fill
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                className="object-cover transition-transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors">
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -112,6 +131,10 @@ export default function VideoSection() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="p-4">
+              <h3 className="text-white font-semibold leading-snug mb-1">{video.title}</h3>
+              <p className="text-gray-300/90 text-sm leading-relaxed">{video.description}</p>
             </div>
           </div>
         ))}

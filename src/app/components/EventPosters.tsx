@@ -14,14 +14,14 @@ import event8 from "../../../Public/pic16.jpg"
 
 
 const eventPosters = [
-  { id: 1, image: event1.src },
-  { id: 2, image: event2.src },
-  { id: 3, image: event3.src },
-  { id: 4, image: event4.src },
-  { id: 5, image: event5.src },
-  { id: 6, image: event6.src },
-  { id: 7, image: event7.src },
-  { id: 8, image: event8.src },
+  { id: 1, image: event8.src },
+  { id: 2, image: event7.src },
+  { id: 3, image: event6.src },
+  { id: 4, image: event5.src },
+  { id: 5, image: event4.src },
+  { id: 6, image: event3.src },
+  { id: 7, image: event2.src },
+  { id: 8, image: event1.src },
 ]
 
 export default function EventPosters() {

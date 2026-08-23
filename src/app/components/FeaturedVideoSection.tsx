@@ -3,7 +3,7 @@ const FACEBOOK_VIDEO_URL = "https://www.facebook.com/reel/1690236688861835/"
 export default function FeaturedVideoSection() {
   const embedSrc = `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(
     FACEBOOK_VIDEO_URL
-  )}&show_text=false&width=476&t=0`
+  )}&show_text=false&width=500&t=0`
 
   return (
     <section className="py-12">
@@ -20,7 +20,7 @@ export default function FeaturedVideoSection() {
           </div>
         </div>
 
-        <div className="max-w-sm mx-auto card-islamic rounded-xl overflow-hidden shadow-lg">
+        <div className="max-w-lg mx-auto card-islamic rounded-xl overflow-hidden shadow-lg">
           <div className="h-[3px] w-full bg-gradient-to-r from-amber-700 via-amber-400 to-amber-700" />
           <div className="relative w-full aspect-[9/16] bg-black/20">
             <iframe

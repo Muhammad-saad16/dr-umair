@@ -132,10 +132,6 @@ export default function VideoSection() {
                 </div>
               </div>
             </div>
-            <div className="p-4">
-              <h3 className="text-white font-semibold leading-snug mb-1">{video.title}</h3>
-              <p className="text-gray-300/90 text-sm leading-relaxed">{video.description}</p>
-            </div>
           </div>
         ))}
       </div>

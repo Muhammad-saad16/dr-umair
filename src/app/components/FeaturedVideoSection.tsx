@@ -1,7 +1,4 @@
-const FEATURED_VIDEOS = [
-  { type: "facebook", url: "https://www.facebook.com/reel/1690236688861835/" },
-  { type: "youtube", id: "Pb02utyudnY" },
-] as const
+const YOUTUBE_VIDEO_ID = "Pb02utyudnY"
 
 export default function FeaturedVideoSection() {
   return (
@@ -19,40 +16,19 @@ export default function FeaturedVideoSection() {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-8">
-          {FEATURED_VIDEOS.map((video, index) => {
-            const embedSrc =
-              video.type === "facebook"
-                ? `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(
-                    video.url
-                  )}&show_text=false&width=500&t=0`
-                : `https://www.youtube.com/embed/${video.id}`
-
-            return (
-              <div
-                key={index}
-                className="w-full max-w-lg card-islamic rounded-xl overflow-hidden shadow-lg"
-              >
-                <div className="h-[3px] w-full bg-gradient-to-r from-amber-700 via-amber-400 to-amber-700" />
-                <div
-                  className={`relative w-full bg-black/20 ${
-                    video.type === "facebook" ? "aspect-[9/16]" : "aspect-video"
-                  }`}
-                >
-                  <iframe
-                    src={embedSrc}
-                    className="absolute inset-0 h-full w-full"
-                    style={{ border: "none", overflow: "hidden" }}
-                    scrolling="no"
-                    frameBorder="0"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    allowFullScreen
-                    title="Featured video"
-                  />
-                </div>
-              </div>
-            )
-          })}
+        <div className="w-full card-islamic rounded-xl overflow-hidden shadow-lg">
+          <div className="h-[3px] w-full bg-gradient-to-r from-amber-700 via-amber-400 to-amber-700" />
+          <div className="relative w-full aspect-video bg-black/20">
+            <iframe
+              src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}`}
+              className="absolute inset-0 h-full w-full"
+              style={{ border: "none", overflow: "hidden" }}
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowFullScreen
+              title="Featured video"
+            />
+          </div>
         </div>
       </div>
     </section>

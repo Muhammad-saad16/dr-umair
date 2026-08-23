@@ -6,6 +6,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 import ScrollToTop from "./ScrollToTop"
 import WhatsAppButton from "./WhatsAppButton"
+import ChatBot from "./ChatBot"
 import { getPageTitle } from "../lib/routes"
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -35,6 +36,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Footer />
       <ScrollToTop />
       <WhatsAppButton />
+      <ChatBot />
     </div>
   )
 }

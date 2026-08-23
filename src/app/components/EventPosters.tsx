@@ -7,10 +7,10 @@ import event1 from "../../../Public/pic9.jpg"
 import event2 from "../../../Public/pic10.jpg"
 import event3 from "../../../Public/pic11.jpg"
 import event4 from "../../../Public/pic12.jpg"
-import event5 from "../../../Public/post85.jpg"
-import event6 from "../../../Public/post86.jpg"
-import event7 from "../../../Public/post87.jpg"
-import event8 from "../../../Public/pic8.jpg"
+import event5 from "../../../Public/pic13.jpg"
+import event6 from "../../../Public/pic14.jpg"
+import event7 from "../../../Public/pic15.jpg"
+import event8 from "../../../Public/pic16.jpg"
 
 
 const eventPosters = [

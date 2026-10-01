@@ -44,7 +44,7 @@ export default function Home() {
               <span className="h-px flex-1 bg-gold/60" />
             </div>
             <p className="mt-4 font-serif text-xl text-gold-dark sm:text-2xl">
-              Islamic Scholar &nbsp;|&nbsp; Author &nbsp;|&nbsp; Educator
+              Islamic Scholar &nbsp;|&nbsp; Author &nbsp;|&nbsp; Educationist
             </p>
             <p className="mx-auto mt-4 max-w-lg leading-relaxed text-muted">
               Authentic knowledge from the Qur&rsquo;an and Sunnah — a balanced voice of <em>dynamic orthodoxy</em>, free from

@@ -41,7 +41,7 @@ export default function BiographyPage() {
               <div className="pattern-dark p-6 text-center">
                 <p className="font-arabic text-2xl text-gold-light" lang="ar" dir="rtl">{site.arabicName}</p>
                 <h2 className="mt-1 font-serif text-2xl font-semibold text-cream">{site.name}</h2>
-                <p className="mt-1 text-xs tracking-[0.2em] text-gold-light uppercase">Islamic Scholar • Author • Educator</p>
+                <p className="mt-1 text-xs tracking-[0.2em] text-gold-light uppercase">Islamic Scholar • Author • Educationist</p>
               </div>
               <ul className="space-y-3 p-6 text-sm">
                 <li className="flex items-center gap-3">

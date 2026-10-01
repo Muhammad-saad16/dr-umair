@@ -1,70 +1,84 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 5, 68, 94;
-  --background-end-rgb: 24, 154, 180;
-}
+@theme {
+  --color-emerald-deep: #062a20;
+  --color-emerald: #0b3d2e;
+  --color-emerald-soft: #12503d;
+  --color-gold: #c39a45;
+  --color-gold-light: #e3c57d;
+  --color-gold-dark: #9a7631;
+  --color-cream: #faf6ec;
+  --color-cream-2: #f2ead8;
+  --color-ink: #1c2a24;
+  --color-muted: #5b6660;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to right, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
-}
+  --font-serif: var(--font-cormorant), "Georgia", serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-arabic: var(--font-amiri), "Traditional Arabic", serif;
 
-/* Custom hover effect for navigation */
-@layer utilities {
-  .hover-underline {
-    @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full;
+  --animate-marquee: marquee 80s linear infinite;
+  --animate-fade-up: fade-up 0.8s ease-out both;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 }
 
-/* Ensure the footer stays at the bottom */
-#__next {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+html {
+  scroll-behavior: smooth;
 }
 
-main {
-  flex: 1;
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
 }
 
-/* Islamic decorative divider */
-.islamic-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
+/* Islamic geometric pattern backgrounds */
+.pattern-dark {
+  background-color: var(--color-emerald);
+  background-image: url("/pattern-gold.svg");
+  background-size: 96px 96px;
+}
+.pattern-light {
+  background-color: var(--color-cream);
+  background-image: url("/pattern-cream.svg");
+  background-size: 120px 120px;
 }
 
-.islamic-divider::before,
-.islamic-divider::after {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 1px;
+.text-gold-gradient {
+  background: linear-gradient(180deg, #f0d891 0%, #c39a45 55%, #9a7631 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.islamic-divider::before {
-  background: linear-gradient(to right, transparent, rgba(251, 191, 36, 0.75));
+@layer components {
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-md border border-gold bg-emerald px-6 py-3 text-sm font-medium tracking-[0.15em] text-gold-light uppercase shadow-md transition hover:bg-emerald-soft hover:shadow-lg;
+}
+.btn-gold {
+  @apply inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-sm font-medium tracking-[0.15em] text-emerald-deep uppercase shadow-md transition hover:bg-gold-light;
+}
+.btn-outline {
+  @apply inline-flex items-center gap-2 rounded-md border border-gold px-6 py-3 text-sm font-medium tracking-[0.15em] text-gold-dark uppercase transition hover:bg-gold hover:text-emerald-deep;
 }
 
-.islamic-divider::after {
-  background: linear-gradient(to left, transparent, rgba(251, 191, 36, 0.75));
 }
 
-/* Islamic card base style */
-.card-islamic {
-  background: linear-gradient(160deg, #0f2a42 0%, #0a1d2e 100%);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  transition: all 0.3s ease;
+.arch {
+  border-radius: 999px 999px 1.25rem 1.25rem;
 }
 
-.card-islamic:hover {
-  border-color: rgba(251, 191, 36, 0.3);
-  box-shadow: 0 20px 40px -10px rgba(245, 158, 11, 0.18), 0 4px 12px rgba(0, 0, 0, 0.3);
-  transform: translateY(-3px);
-}
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
 
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee { animation: none; }
+  html { scroll-behavior: auto; }
+}

@@ -13,7 +13,7 @@ import {
   site,
   testimonials,
 } from "@/lib/data";
-import BookCard from "@/components/BookCard";
+import BookShowcase from "@/components/BookShowcase";
 import PhotoGrid from "@/components/PhotoGrid";
 import VideoGallery from "@/components/VideoGallery";
 import WeeklyPrograms from "@/components/WeeklyPrograms";
@@ -246,37 +246,12 @@ export default function Home() {
       </section>
 
       {/* ───────── PUBLICATIONS (design 2) ───────── */}
-      <section className="bg-cream-2/60 py-20 sm:py-28">
+      <section id="books" className="scroll-mt-20 bg-cream-2/60 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Book Library" title="Authored Works for Seekers of Knowledge" />
-          <div className="mt-12 grid gap-6 lg:grid-cols-2">
-            <Image
-              src="/images/book-banner.jpg"
-              alt="What is Ahmadism? — featured book"
-              width={1380}
-              height={503}
-              sizes="(min-width:1024px) 50vw, 100vw"
-              className="h-full w-full rounded-xl border border-gold/40 object-cover shadow-lg"
-            />
-            <Image
-              src="/images/book-banner1.png"
-              alt="Hizb ul Bahr — featured publication"
-              width={1376}
-              height={768}
-              sizes="(min-width:1024px) 50vw, 100vw"
-              className="h-full w-full rounded-xl border border-gold/40 object-cover shadow-lg"
-            />
-          </div>
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
-            {books.slice(0, 4).map((b) => (
-              <BookCard key={b.title} book={b} />
-            ))}
-          </div>
-          <div className="mt-10 text-center">
-            <Link href="/publications" className="btn-outline">
-              View all {books.length} books <IconArrow className="h-4 w-4" />
-            </Link>
-          </div>
+          <SectionHeading eyebrow="Book Library" title="Authored Works for Seekers of Knowledge">
+            {books.length} books on theology, comparative religion, Islamic jurisprudence and history.
+          </SectionHeading>
+          <BookShowcase />
         </div>
       </section>
 

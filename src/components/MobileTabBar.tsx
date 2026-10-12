@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IconBook, IconCalendar, IconHome, IconMail, IconUser } from "./icons";
+import { IconBook, IconCalendar, IconHome, IconMail, IconYoutube } from "./icons";
 import { isActive } from "./Header";
 
 const tabs = [
   { href: "/", label: "Home", Icon: IconHome },
-  { href: "/biography", label: "About", Icon: IconUser },
+  { href: "/videos", label: "Videos", Icon: IconYoutube },
   { href: "/events-programs", label: "Events", Icon: IconCalendar },
   { href: "/publications", label: "Books", Icon: IconBook },
   { href: "/contact", label: "Contact", Icon: IconMail },

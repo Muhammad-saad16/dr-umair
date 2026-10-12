@@ -9,7 +9,7 @@ export const site = {
   phone: "+92 336 2342386",
   phoneHref: "tel:+923362342386",
   whatsapp: "https://wa.me/923362342386",
-  address: "City of Knowledge, B/105, 13D/1, Karachi, Pakistan",
+  address: "City of Knowledge, B-105, 13D/1, Gulshan-e-Iqbal, Karachi, Pakistan",
   social: {
     facebook: "https://www.facebook.com/DrUmairMahmoodSiddiqui",
     youtube: "https://www.youtube.com/@DrUmairMahmoodSiddiquiOfficial",
@@ -19,7 +19,8 @@ export const site = {
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/biography", label: "Biography" },
-  { href: "/events-programs", label: "Events & Programs" },
+  { href: "/videos", label: "Videos" },
+  { href: "/events-programs", label: "Events" },
   { href: "/publications", label: "Publications" },
   { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },
@@ -46,25 +47,56 @@ export const pillars = [
   { title: "Global Voice", text: "OIC Fiqh Academy & beyond", icon: "globe" },
 ] as const;
 
-export const featuredVideoId = "Pb02utyudnY";
+// Latest uploads from the YouTube channel (fetched 12 Oct 2026). Thumbnails live in public/videos/.
+export const featuredVideoId = "cD7_pTbXP24";
 
-export type VideoCategory = "Lectures" | "Sermons" | "Events";
+export const videoCategories = ["Lectures", "Shama'il", "Q&A & Panels", "Dars-e-Quran"] as const;
+export type VideoCategory = (typeof videoCategories)[number];
 
-export const videos: {
-  id: string;
-  thumbnail: string;
-  category: VideoCategory;
-  title: string;
-  description: string;
-}[] = [
-  { id: "p0aU2nHEITM", thumbnail: "/images/w1.jpg", category: "Lectures", title: "Lecture 1", description: "An insightful Islamic lecture by Dr. Umair Mahmood Siddiqui." },
-  { id: "rspwczpoag0", thumbnail: "/images/w2.jpg", category: "Sermons", title: "Friday Sermon 1", description: "Jumu'ah khutbah delivered by Dr. Umair Mahmood Siddiqui." },
-  { id: "HjhNUTbkepc", thumbnail: "/images/w3.jpg", category: "Events", title: "Event Highlight 1", description: "Highlights from an Islamic event featuring Dr. Umair Mahmood Siddiqui." },
-  { id: "iBvTbgqSWdw", thumbnail: "/images/w4.jpg", category: "Events", title: "Event Highlight 2", description: "Highlights from an Islamic event featuring Dr. Umair Mahmood Siddiqui." },
-  { id: "zKSCALl6Az8", thumbnail: "/images/w5.jpg", category: "Lectures", title: "Lecture 2", description: "An insightful Islamic lecture by Dr. Umair Mahmood Siddiqui." },
-  { id: "6H84LdW1Fas", thumbnail: "/images/w6.jpg", category: "Sermons", title: "Friday Sermon 2", description: "Jumu'ah khutbah delivered by Dr. Umair Mahmood Siddiqui." },
-  { id: "I0RX-wkGeFM", thumbnail: "/images/w7.jpg", category: "Events", title: "Event Highlight 3", description: "Highlights from an Islamic event featuring Dr. Umair Mahmood Siddiqui." },
-  { id: "nmBqWuMtJsg", thumbnail: "/images/w8.jpg", category: "Events", title: "Event Highlight 4", description: "Highlights from an Islamic event featuring Dr. Umair Mahmood Siddiqui." },
+export type Video = { id: string; title: string; category: VideoCategory; date: string; views?: string };
+
+export const videos: Video[] = [
+  { id: "cD7_pTbXP24", title: "Shaykh Abdul Qadir Jilani and Imam al-Dhahabi | Siyar A‘lam al-Nubala’", category: "Lectures", date: "2026-10-11", views: "2.9K" },
+  { id: "y187n8xABu8", title: "Ibn-e-Taymiyyah on Sheikh Abdul Qadir Jilani (RA)? | Majmoo-al-Fatawa", category: "Lectures", date: "2026-10-10", views: "7.6K" },
+  { id: "4Q3EQXtMACk", title: "Sirr’ul Asrar & Futuh al-Ghaib | Shaykh Abdul Qadir Jilani", category: "Lectures", date: "2026-10-08", views: "19K" },
+  { id: "bRKS9gzQIvE", title: "How did The Prophet Muhammad ﷺ Recline on a Pillow", category: "Shama'il", date: "2026-10-08", views: "579" },
+  { id: "BOCrZ0bF70Y", title: "The Prophet Muhammad ﷺ Spoke at Night | Al-Shamā'il Al-Muḥammadiyyah", category: "Shama'il", date: "2026-10-07", views: "389" },
+  { id: "yt7L5atFgRc", title: "The Age of Prophet Muhammad ﷺ | Dars-e-Shama’il Muhammadiyah ﷺ| Part 46", category: "Shama'il", date: "2026-10-06", views: "154" },
+  { id: "KU1PY7Aejac", title: "The Lifestyle of Prophet Muhammad ﷺ|Shama’il al-Muhammadiyyah ﷺ|Part 45", category: "Shama'il", date: "2026-10-02", views: "285" },
+  { id: "ODAg-i40y0Q", title: "The Blessed Names of Prophet Muhammad ﷺ|Shama’il al-MuhammadiyyahﷺPart 44", category: "Shama'il", date: "2026-10-01", views: "220" },
+  { id: "XyC7D1v11fE", title: "What Ibn Arabi Says About Ghaus-e-Azam | Al-Futuhat al-Makkiyyah", category: "Lectures", date: "2026-09-30", views: "20K" },
+  { id: "HKgXwWCR1TU", title: "Performing Hijama (Wet Cupping) & the Sunnah | Shama’il al-Muhammadiyyah", category: "Shama'il", date: "2026-09-30", views: "238" },
+  { id: "1SpuundMA2I", title: "The Modesty of Prophet Muhammad ﷺ | Haya of the Prophet ﷺ", category: "Shama'il", date: "2026-09", views: "198" },
+  { id: "SoEaAkXHrZk", title: "Q&A Session | Religious or Secular Extremism? | University of Karachi", category: "Q&A & Panels", date: "2026-09", views: "309" },
+  { id: "jr9gw2MC3sk", title: "The Noble Character of Prophet Muhammad ﷺ| Dars-e-Shama’il Muhammadiyahﷺ", category: "Shama'il", date: "2026-09", views: "172" },
+  { id: "JcEYySPP1tM", title: "Q&A Session | Religion & Media | University of Karachi", category: "Q&A & Panels", date: "2026-09", views: "333" },
+  { id: "lteCbURq6nc", title: "Q&A Session | Gen Z & Internet Addiction | University of Karachi", category: "Q&A & Panels", date: "2026-09", views: "443" },
+  { id: "VNQto8gLBHM", title: "The Humility & Humbleness of Prophet Muhammadﷺ| Shama’il al-Muhammadiyah", category: "Shama'il", date: "2026-09", views: "204" },
+  { id: "ZflizDdJoxA", title: "The Noble Character of Prophet Muhammad ﷺ| Dars-e-Shama’il Muhammadiyahﷺ", category: "Shama'il", date: "2026-09", views: "232" },
+  { id: "r2Z9KCrvRqI", title: "The Humility & Humbleness of Prophet Muhammadﷺ| Shama’il al-Muhammadiyah", category: "Shama'il", date: "2026-09", views: "313" },
+  { id: "lYvZ4RE1ixY", title: "Artificial Intelligence & Seerat un Nabi | AI Ethics in Islam", category: "Lectures", date: "2026-09", views: "2.4K" },
+  { id: "T1jFm3LvbTI", title: "Milad-un-Nabi ﷺ Kids Program | Children & the Internet", category: "Q&A & Panels", date: "2026-09", views: "391" },
+  { id: "ZXy_GAkuJXg", title: "Human Rights, Gaza & Pakistan | Panel Discussion | University of Karachi", category: "Q&A & Panels", date: "2026-09", views: "361" },
+  { id: "RB2tuwB2MF4", title: "The Miracle of the Fly | Proof of Existence of God", category: "Lectures", date: "2026-09", views: "575" },
+  { id: "aKkAbCAMR88", title: "The Prophet Muhammad ﷺ Washed His Hands Before Eating | Sunnah Explained", category: "Shama'il", date: "2026-09", views: "338" },
+  { id: "OcgSwww9buU", title: "Youth Identity Crisis | Panel Discussion Part 02 | University of Karachi", category: "Q&A & Panels", date: "2026-09", views: "518" },
+  { id: "YdjWeqPRzQo", title: "The Blessed Weeping of Prophet Muhammad ﷺ| Dars-e-Shamail Muhammadiyah ﷺ", category: "Shama'il", date: "2026-09", views: "337" },
+  { id: "a2Zk6RHHYv0", title: "Violence Against Women and AI | IIFA & Muslim World League Symposium", category: "Q&A & Panels", date: "2026-09", views: "2.4K" },
+  { id: "Y7kwPlq1vnE", title: "The Thirty Liars, Dajjal & Khatm-e-Nabuwwat ﷺ", category: "Lectures", date: "2026-09", views: "469" },
+  { id: "jGhF1LhRTSI", title: "Why Didn’t Zafarullah Khan Qadiyani Pray Janazah for Quaid-e-Azam?", category: "Lectures", date: "2026-09", views: "483" },
+  { id: "yIBJ-foBf9w", title: "The Thirty Liars, Dajjal & Khatm-e-Nabuwwat", category: "Lectures", date: "2026-09", views: "146" },
+  { id: "kUtLFt5dZf8", title: "What Is Ahmadism? | Book Introduction", category: "Lectures", date: "2026-09", views: "536" },
+  { id: "uOrLSC9vX1g", title: "Surah Naba to Surah Naas", category: "Dars-e-Quran", date: "2026-04", views: "277" },
+  { id: "nprlwyzpyZ8", title: "Surah Al Mujadalah to Surah An Naba", category: "Dars-e-Quran", date: "2026-04", views: "162" },
+  { id: "ue_jh3Ip56Q", title: "Surah Qaaf to Surah Al Hadeed", category: "Dars-e-Quran", date: "2026-04", views: "271" },
+  { id: "ZJThYHR5Np8", title: "Surah Muhammad to Hujrat", category: "Dars-e-Quran", date: "2026-04", views: "218" },
+  { id: "8G3bxiSwdEw", title: "Surah Ghafir to Surah Al Fateh", category: "Dars-e-Quran", date: "2026-04", views: "131" },
+  { id: "CqzMu8iOKoA", title: "Surah Saffat to Surah Zumar", category: "Dars-e-Quran", date: "2026-03", views: "138" },
+  { id: "FwNg7O8T7b0", title: "Surah Sajdah to Surah Yaseen", category: "Dars-e-Quran", date: "2026-03", views: "195" },
+  { id: "445uimzL80o", title: "Surah Qasas & Ankaboot &  Rome & Luqman", category: "Dars-e-Quran", date: "2026-03", views: "202" },
+  { id: "Lyehlf_waz8", title: "Surah Namal", category: "Dars-e-Quran", date: "2026-03", views: "162" },
+  { id: "8UVFs8zYowY", title: "Surah Noor", category: "Dars-e-Quran", date: "2026-03", views: "141" },
+  { id: "r30OMP6jQwA", title: "Surah Anbiya Surah Hajj and Surah Mominoon", category: "Dars-e-Quran", date: "2026-03", views: "197" },
 ];
 
 export const personalities = [
@@ -142,3 +174,33 @@ export const testimonials = [
     image: "/images/qibla-Ayaz.png",
   },
 ];
+
+// Recurring programs, from the latest posters on the Facebook page (Oct 2026).
+export const weeklyPrograms = [
+  {
+    title: "Jumu'ah Khutbah & Dars-e-Quran",
+    subtitle: "Currently: Surah Hud",
+    day: "Every Friday",
+    time: "Dars 1:00 – 1:45 pm · Jumu'ah 2:00 pm",
+    venue: "Jamia Masjid Ali Haider Karrar",
+    address: "Bilawal Chowrangi, Clifton, Karachi",
+    note: "Organised by Anjuman Qamar-ul-Islam Sulemania. Purdah arrangement for women.",
+    poster: "/images/fb/poster-surah-hud.jpg",
+  },
+  {
+    title: "Weekly Dars-e-Quran",
+    subtitle: "Currently: Surah Al-Jinn · with Du'a Hizb al-Bahr & Mehfil-e-Durood",
+    day: "Every Saturday",
+    time: "9:00 – 10:00 pm",
+    venue: "City of Knowledge Islamic Research Institute",
+    address: "B-105, 13D/1, Gulshan-e-Iqbal, Karachi",
+    note: "Families welcome. Separate arrangement for women.",
+    poster: "/images/fb/poster-surah-jinn.jpg",
+  },
+];
+
+// Latest photos from the Facebook page — City of Knowledge gathering, 28 Sep 2026.
+export const latestPhotos = Array.from(
+  { length: 32 },
+  (_, i) => `/images/fb/cok-2026-09-28-${String(i + 1).padStart(2, "0")}.jpg`,
+);

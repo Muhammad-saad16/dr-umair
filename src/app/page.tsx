@@ -6,6 +6,7 @@ import {
   designations,
   featuredVideoId,
   latestEvents,
+  latestPhotos,
   moments,
   personalities,
   pillars,
@@ -15,10 +16,14 @@ import {
 import BookCard from "@/components/BookCard";
 import PhotoGrid from "@/components/PhotoGrid";
 import VideoGallery from "@/components/VideoGallery";
+import WeeklyPrograms from "@/components/WeeklyPrograms";
 import { ArchEdge, Ornament, SectionHeading } from "@/components/ornaments";
 import { IconArrow, IconBook, IconChevron, IconGlobe, IconMosque, IconQuote } from "@/components/icons";
 
 const pillarIcons = { book: IconBook, mosque: IconMosque, globe: IconGlobe };
+
+// Newest Facebook photos first, then the archive.
+const strip = [...latestPhotos.slice(0, 14), ...moments];
 
 export default function Home() {
   return (
@@ -159,9 +164,12 @@ export default function Home() {
             <VideoGallery />
           </div>
 
-          <div className="mt-10 text-center">
-            <a href={site.social.youtube} target="_blank" rel="noopener noreferrer" className="btn-gold">
-              Browse all on YouTube <IconArrow className="h-4 w-4" />
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <Link href="/videos" className="btn-gold">
+              All videos <IconArrow className="h-4 w-4" />
+            </Link>
+            <a href={site.social.youtube} target="_blank" rel="noopener noreferrer" className="btn-outline !text-gold-light">
+              YouTube channel <IconArrow className="h-4 w-4" />
             </a>
           </div>
         </div>
@@ -202,8 +210,13 @@ export default function Home() {
       {/* ───────── LATEST EVENTS ───────── */}
       <section className="bg-cream-2/60 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Majalis & Programs" title="Latest Events & Programs" />
-          <PhotoGrid images={latestEvents} alt="Event poster" className="mt-12" />
+          <SectionHeading eyebrow="Majalis & Programs" title="Weekly Programs">
+            Join Dr. Umair every Friday and Saturday in Karachi.
+          </SectionHeading>
+          <WeeklyPrograms className="mt-12" />
+          <h3 className="mt-20 text-center font-serif text-3xl font-semibold text-emerald">Recent Events</h3>
+          <Ornament className="mt-3" />
+          <PhotoGrid images={latestEvents} alt="Event poster" className="mt-10" />
           <div className="mt-10 text-center">
             <Link href="/events-programs" className="btn-primary">
               View all events <IconArrow className="h-4 w-4" />
@@ -303,11 +316,11 @@ export default function Home() {
       {/* ───────── MOMENTS MARQUEE ───────── */}
       <section className="overflow-hidden border-y border-gold/30 bg-cream py-10" aria-label="Moments">
         <div className="flex w-max animate-marquee gap-4 hover:[animation-play-state:paused]">
-          {[...moments, ...moments].map((src, i) => (
+          {[...strip, ...strip].map((src, i) => (
             <div
               key={i}
               className="relative h-40 w-60 shrink-0 overflow-hidden rounded-lg border border-gold/40 sm:h-48 sm:w-72"
-              aria-hidden={i >= moments.length}
+              aria-hidden={i >= strip.length}
             >
               <Image src={src} alt="" fill sizes="288px" className="object-cover" />
             </div>

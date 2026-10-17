@@ -69,12 +69,12 @@ export default function Home() {
           <div className="relative order-1 -mx-4 h-[360px] sm:-mx-6 sm:h-[460px] lg:order-2 lg:mx-0 lg:h-auto lg:min-h-[640px] lg:self-stretch">
             <div className="absolute inset-0 lg:right-[calc(-2rem_-_max(0px,(100vw_-_80rem)/2))]">
               <Image
-                src="/images/dr.jpg"
+                src="/images/dr-hero.jpg"
                 alt={site.name}
                 fill
                 priority
                 sizes="(min-width:1024px) 55vw, 100vw"
-                className="object-cover object-[50%_15%] [mask-image:linear-gradient(to_bottom,black_65%,transparent)] lg:object-[48%_25%] lg:[mask-image:linear-gradient(to_bottom,black_70%,transparent),linear-gradient(to_right,transparent,black_35%)] lg:[mask-composite:intersect]"
+                className="object-cover object-[50%_14%] [mask-image:linear-gradient(to_bottom,black_65%,transparent)] lg:object-[50%_18%] lg:[mask-image:linear-gradient(to_bottom,black_70%,transparent),linear-gradient(to_right,transparent,black_35%)] lg:[mask-composite:intersect]"
               />
             </div>
           </div>

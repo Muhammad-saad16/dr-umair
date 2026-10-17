@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "quote": "Dr. Umair continues to progress both spiritually and worldly, reaching new heights. He exemplifies a man of high-spirited and resilient demeanor.",
+      "name": "Datuk Dr Mohd Hasbi Bakar",
+      "role": "President, Jamiyah Singapore",
+      "image": "/images/dr-mohd-hasbi.jpg"
+    },
+    {
+      "quote": "Dr. Umair made significant contributions as an esteemed member of the Council of Islamic Ideology at a remarkably young age.",
+      "name": "Prof. Dr. Majeedullah Qadri",
+      "role": "Ex-Dean, University of Karachi",
+      "image": "/images/Dr.-Majeedullah-Qadri.png"
+    },
+    {
+      "quote": "Today, we find ourselves at the City of Knowledge enveloped in an auspicious atmosphere, spearheaded by Dr. Umair Mahmood Siddiqui.",
+      "name": "Prof. Dr. Qibla Ayaz",
+      "role": "Chairman, Council of Islamic Ideology",
+      "image": "/images/qibla-Ayaz.png"
+    }
+  ]
+}

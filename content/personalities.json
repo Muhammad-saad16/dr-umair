@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "name": "Sheikh Dr. Saleh bin Abdullah bin Humaid",
+      "image": "/images/meet1.jpg",
+      "text": "Meeting with His Excellency at the International Islamic Fiqh Academy (IIFA).",
+      "place": "Jeddah"
+    },
+    {
+      "name": "Hazrat Pir Syed Lakht-e-Hasanian",
+      "image": "/images/meet8.jpg",
+      "text": "Founder & Chairman of Muslim Hands UK.",
+      "place": "Singapore"
+    },
+    {
+      "name": "Mufti Sher Muhammad Khan Sahib",
+      "image": "/images/meet9.jpg",
+      "text": "The scholar and Sheikh of Hadith.",
+      "place": "City of Knowledge, Karachi"
+    },
+    {
+      "name": "Sheikh Muhammad Al-Khamis Suleiman Uthman",
+      "image": "/images/meet10.jpg",
+      "text": "Professor of Al-Hadith and Jurisprudence at the University of Egypt.",
+      "place": "City of Knowledge, Karachi"
+    },
+    {
+      "name": "Prof. Imam Syed Badiuddin Soharwardy",
+      "image": "/images/meet11.jpg",
+      "text": "Founder of the Islamic Supreme Council of Canada.",
+      "place": "Jeddah"
+    },
+    {
+      "name": "Zainul Abidin Rasheed",
+      "image": "/images/meet3.jpg",
+      "text": "Ambassador to Kuwait and Special Envoy of the Minister for Foreign Affairs.",
+      "place": "Singapore"
+    },
+    {
+      "name": "Dr. Muhammad Eid Al-Mansour",
+      "image": "/images/e33.jpg",
+      "text": "University of Damascus, Syria — internationally recognised scholar of Hadith Sciences.",
+      "place": "City of Knowledge, Karachi"
+    },
+    {
+      "name": "Mufti Sher Muhammad",
+      "image": "/images/mee3.jpg",
+      "text": "Associated with Darul Ifta and Darul Uloom Muhammadia Ghousia, Bhera Sharif.",
+      "place": "City of Knowledge, Karachi"
+    }
+  ]
+}

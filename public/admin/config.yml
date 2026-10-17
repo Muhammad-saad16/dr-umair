@@ -1,0 +1,138 @@
+# Decap CMS — edits the JSON files in /content and commits them to GitHub.
+# Every save triggers a Vercel rebuild; changes are live in about 1–2 minutes.
+backend:
+  name: github
+  repo: Muhammad-saad16/dr-umair
+  branch: main
+  base_url: https://drumairsiddiqui.com
+  auth_endpoint: api/decap/auth
+
+# Lets `npx decap-server` edit files directly when the site runs on localhost.
+local_backend: true
+
+site_url: https://drumairsiddiqui.com
+display_url: https://drumairsiddiqui.com
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: content
+    label: Website Content
+    editor: { preview: false }
+    files:
+      - name: videos
+        label: Videos
+        file: content/videos.json
+        fields:
+          - label: Videos
+            name: items
+            widget: list
+            collapsed: true
+            summary: "{{fields.date}} — {{fields.title}}"
+            hint: Newest videos appear first automatically (sorted by date).
+            fields:
+              - { label: YouTube video ID, name: id, widget: string, hint: "The part after watch?v= — e.g. for youtube.com/watch?v=cD7_pTbXP24 enter cD7_pTbXP24" }
+              - { label: Title, name: title, widget: string }
+              - label: Category
+                name: category
+                widget: select
+                options: ["Lectures", "Shama'il", "Q&A & Panels", "Dars-e-Quran"]
+              - { label: Date, name: date, widget: string, pattern: ['^\d{4}-\d{2}(-\d{2})?$', "Use YYYY-MM-DD, or YYYY-MM if you only know the month"], hint: "YYYY-MM-DD, e.g. 2026-10-15" }
+              - { label: Views (optional), name: views, widget: string, required: false, hint: "e.g. 2.9K" }
+              - { label: Thumbnail (optional), name: thumbnail, widget: image, required: false, hint: "Leave empty to use YouTube's own thumbnail" }
+
+      - name: programs
+        label: Weekly Programs
+        file: content/programs.json
+        fields:
+          - label: Programs
+            name: items
+            widget: list
+            summary: "{{fields.day}} — {{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string, hint: "e.g. Currently: Surah Al-Jinn" }
+              - { label: Day, name: day, widget: string, hint: "e.g. Every Saturday" }
+              - { label: Time, name: time, widget: string, hint: "e.g. 9:00 – 10:00 pm" }
+              - { label: Venue, name: venue, widget: string }
+              - { label: Address, name: address, widget: string }
+              - { label: Note, name: note, widget: text, required: false }
+              - { label: Poster, name: poster, widget: image }
+
+      - name: books
+        label: Books
+        file: content/books.json
+        fields:
+          - label: Books
+            name: items
+            widget: list
+            collapsed: true
+            summary: "{{fields.title}}"
+            hint: The book marked Featured is shown large on the home page; the next six appear on the shelf. Drag to reorder.
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Cover, name: image, widget: image }
+              - { label: Description, name: description, widget: text, required: false }
+              - { label: Author line, name: by, widget: string, default: "Dr. Umair Mahmood Siddiqui" }
+              - { label: PDF / Read link (optional), name: url, widget: string, required: false }
+              - { label: Featured on home page, name: featured, widget: boolean, default: false, required: false }
+              - { label: Introduction video link (optional), name: videoUrl, widget: string, required: false }
+
+      - name: gallery
+        label: Photos & Posters
+        file: content/gallery.json
+        fields:
+          - { label: Latest photos (top of Gallery and Events pages), name: latestPhotos, widget: list, field: { label: Photo, name: photo, widget: image } }
+          - { label: Latest event posters (home page), name: latestEvents, widget: list, field: { label: Poster, name: poster, widget: image } }
+          - { label: Past event posters (Events page archive), name: eventPosters, widget: list, collapsed: true, field: { label: Poster, name: poster, widget: image } }
+          - { label: Moments (home photo strip and Gallery), name: moments, widget: list, collapsed: true, field: { label: Photo, name: photo, widget: image } }
+          - { label: Gallery archive, name: galleryImages, widget: list, collapsed: true, field: { label: Photo, name: photo, widget: image } }
+
+      - name: personalities
+        label: Interactions with Personalities
+        file: content/personalities.json
+        fields:
+          - label: Personalities
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Photo, name: image, widget: image }
+              - { label: Description, name: text, widget: text }
+              - { label: Place, name: place, widget: string }
+
+      - name: testimonials
+        label: Words of Honour
+        file: content/testimonials.json
+        fields:
+          - label: Testimonials
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Quote, name: quote, widget: text }
+              - { label: Name, name: name, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Photo, name: image, widget: image }
+
+      - name: site
+        label: Biography & Contact
+        file: content/site.json
+        fields:
+          - { label: Full name, name: name, widget: string }
+          - { label: Short name, name: shortName, widget: string }
+          - { label: Name in Arabic, name: arabicName, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Phone, name: phone, widget: string, hint: "Also used for the WhatsApp link" }
+          - { label: Address, name: address, widget: string }
+          - label: Social links
+            name: social
+            widget: object
+            fields:
+              - { label: Facebook, name: facebook, widget: string }
+              - { label: YouTube, name: youtube, widget: string }
+          - { label: Positions, name: designations, widget: list, field: { label: Position, name: position, widget: string } }
+          - { label: Biography paragraphs, name: biography, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - { label: Featured video ID (Videos page), name: featuredVideoId, widget: string }

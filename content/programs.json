@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "title": "Jumu'ah Khutbah & Dars-e-Quran",
+      "subtitle": "Currently: Surah Hud",
+      "day": "Every Friday",
+      "time": "Dars 1:00 – 1:45 pm · Jumu'ah 2:00 pm",
+      "venue": "Jamia Masjid Ali Haider Karrar",
+      "address": "Bilawal Chowrangi, Clifton, Karachi",
+      "note": "Organised by Anjuman Qamar-ul-Islam Sulemania. Purdah arrangement for women.",
+      "poster": "/images/fb/poster-surah-hud.jpg"
+    },
+    {
+      "title": "Weekly Dars-e-Quran",
+      "subtitle": "Currently: Surah Al-Jinn · with Du'a Hizb al-Bahr & Mehfil-e-Durood",
+      "day": "Every Saturday",
+      "time": "9:00 – 10:00 pm",
+      "venue": "City of Knowledge Islamic Research Institute",
+      "address": "B-105, 13D/1, Gulshan-e-Iqbal, Karachi",
+      "note": "Families welcome. Separate arrangement for women.",
+      "poster": "/images/fb/poster-surah-jinn.jpg"
+    }
+  ]
+}

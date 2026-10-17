@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { videoCategories, videos, type Video } from "@/lib/data";
+import { videoCategories, videos, videoThumb, type Video } from "@/lib/data";
 import Honorific from "./Honorific";
 import { IconPlay } from "./icons";
 import Modal, { YouTubeEmbed } from "./Modal";
@@ -53,7 +53,7 @@ export default function VideoGallery({ initial = 8, step = 8 }: { initial?: numb
           >
             <div className="relative aspect-video">
               <Image
-                src={`/videos/${v.id}.jpg`}
+                src={videoThumb(v)}
                 alt={v.title}
                 fill
                 sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw"

@@ -1,0 +1,118 @@
+{
+  "items": [
+    {
+      "title": "What is Ahmadism?",
+      "image": "/images/book16.jpg",
+      "description": "An in-depth study of Qadianism — its beliefs, its claims, and why the true seeker should understand it clearly. A treasure for the pursuers of truth.",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": true,
+      "videoUrl": "https://www.youtube.com/watch?v=kUtLFt5dZf8"
+    },
+    {
+      "title": "Muhammad: The Glory of the Ages",
+      "image": "/images/book7.jpeg",
+      "description": "A tribute to the Prophet Muhammad's ﷺ life and legacy.",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "Sheikh Ibn Arabi",
+      "image": "/images/book4.jpeg",
+      "description": "An analysis of the life and teachings of Sheikh Ibn Arabi.",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "40 Ahadith for Kids",
+      "image": "/images/book1.jpeg",
+      "description": "A simplified collection of 40 Ahadith for children.",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "The Beacon Light",
+      "image": "/images/book2.jpeg",
+      "description": "A collection of writings of Dr. Umair Mahmood Siddiqui.",
+      "by": "Compiled by Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "Islamic Jurisprudence",
+      "image": "/images/book11.jpeg",
+      "description": "A comprehensive guide to Islamic law and its principles.",
+      "by": "Compiled by Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "Communist Challenge to Islam",
+      "image": "/images/book9.jpeg",
+      "description": "An exposition on the conflict between communism and Islam.",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "Ojhri Khane Ki Sharai Hesiat",
+      "image": "/images/book17.jpg",
+      "description": "",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "url": "https://drive.google.com/file/d/1ER4oIXQi_nqrSyCFov3v9LSC3bSkR2Ho/view?usp=sharing",
+      "featured": false
+    },
+    {
+      "title": "Tazkira",
+      "image": "/images/book3.jpeg",
+      "description": "A comprehensive source of knowledge exposing Qadianiat through its own content.",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "Pakistan Ka Matlab Kya?",
+      "image": "/images/book5.jpeg",
+      "description": "A discourse on the meaning and significance of Pakistan.",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "Ghazwa-e-Hind",
+      "image": "/images/book6.jpeg",
+      "description": "A discussion on the concept and implications of Ghazwa-e-Hind.",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "40 Ahadith",
+      "image": "/images/book8.jpeg",
+      "description": "A curated selection of 40 Ahadith with commentary.",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "Dr. Fazlur Rahman Ansari",
+      "image": "/images/book10.jpeg",
+      "description": "A biography highlighting Dr. Fazlur Rahman Ansari's scholarly contributions.",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "Introduction to Islamic Economics",
+      "image": "/images/book12.jpeg",
+      "description": "",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "Islamic Theology",
+      "image": "/images/book13.jpeg",
+      "description": "",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    },
+    {
+      "title": "Revival of Muslim Thought",
+      "image": "/images/book14.jpeg",
+      "description": "",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": false
+    }
+  ]
+}

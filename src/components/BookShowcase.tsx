@@ -3,19 +3,10 @@ import Link from "next/link";
 import { books } from "@/lib/data";
 import { IconArrow, IconPlay } from "./icons";
 
-const featured = books.find((b) => b.title === "What is Ahmadism?")!;
-const FEATURED_VIDEO = "https://www.youtube.com/watch?v=kUtLFt5dZf8"; // "What Is Ahmadism? | Book Introduction"
-
-const shelfTitles = [
-  "Muhammad: The Glory of the Ages",
-  "Sheikh Ibn Arabi",
-  "40 Ahadith for Kids",
-  "The Beacon Light",
-  "Islamic Jurisprudence",
-  "Communist Challenge to Islam",
-];
-const shelf = shelfTitles.map((t) => books.find((b) => b.title === t)!);
-const rows = [shelf.slice(0, 3), shelf.slice(3, 6)];
+// Editors pick the featured book with the "Featured" switch in the CMS; the shelf shows the next six.
+const featured = books.find((b) => b.featured) ?? books[0];
+const shelf = books.filter((b) => b !== featured).slice(0, 6);
+const rows = [shelf.slice(0, 3), shelf.slice(3, 6)].filter((r) => r.length);
 
 /** Home-page book section: a featured title beside a two-row bookshelf. */
 export default function BookShowcase() {
@@ -37,13 +28,14 @@ export default function BookShowcase() {
             </span>
             <h3 className="mt-4 font-serif text-3xl font-semibold text-cream sm:text-4xl">{featured.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-cream/75">
-              An in-depth study of Qadianism — its beliefs, its claims, and why the true seeker should understand it
-              clearly. A treasure for the pursuers of truth.
+              {featured.description}
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
-              <a href={FEATURED_VIDEO} target="_blank" rel="noopener noreferrer" className="btn-gold !px-5 !py-2.5 whitespace-nowrap">
-                <IconPlay className="h-4 w-4" /> Book introduction
-              </a>
+              {featured.videoUrl && (
+                <a href={featured.videoUrl} target="_blank" rel="noopener noreferrer" className="btn-gold !px-5 !py-2.5 whitespace-nowrap">
+                  <IconPlay className="h-4 w-4" /> Book introduction
+                </a>
+              )}
             </div>
           </div>
         </div>

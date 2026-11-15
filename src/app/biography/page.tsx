@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 };
 
 const highlights = [
-  { value: "OIC", label: "Fiqh Academy Researcher" },
-  { value: "CII", label: "Former Council Member" },
+  { value: "OIC", label: "Fiqh Academy Researcher", logo: "/logos/iifa.png" },
+  { value: "CII", label: "Former Council Member", logo: "/logos/cii.png" },
   { value: "16+", label: "Published Books" },
-  { value: "KU", label: "University of Karachi" },
+  { value: "KU", label: "University of Karachi", logo: "/logos/ku.png" },
 ];
 
 export default function BiographyPage() {
@@ -57,11 +57,17 @@ export default function BiographyPage() {
           </aside>
 
           <div>
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <div className="grid gap-4 sm:grid-cols-2">
               {highlights.map((h) => (
-                <div key={h.label} className="rounded-xl border border-gold/40 bg-white/60 p-4 text-center">
-                  <p className="font-serif text-3xl font-bold text-emerald">{h.value}</p>
-                  <p className="mt-1 text-xs tracking-wider text-gold-dark uppercase">{h.label}</p>
+                <div key={h.label} className="relative flex min-h-28 items-center overflow-hidden rounded-xl border border-gold/40 bg-white/60 px-6 py-5">
+                  {h.logo && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={h.logo} alt="" aria-hidden className="pointer-events-none absolute right-4 top-1/2 h-[78%] w-auto -translate-y-1/2 object-contain opacity-[0.22]" />
+                  )}
+                  <div className="relative">
+                    <p className="font-serif text-4xl font-bold text-emerald">{h.value}</p>
+                    <p className="mt-1 text-xs tracking-wider text-gold-dark uppercase">{h.label}</p>
+                  </div>
                 </div>
               ))}
             </div>

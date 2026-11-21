@@ -133,6 +133,7 @@ collections:
             fields:
               - { label: Facebook, name: facebook, widget: string }
               - { label: YouTube, name: youtube, widget: string }
+              - { label: Instagram, name: instagram, widget: string, required: false }
           - { label: Positions, name: designations, widget: list, field: { label: Position, name: position, widget: string } }
           - { label: Biography paragraphs, name: biography, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
           - { label: Featured video ID (Videos page), name: featuredVideoId, widget: string }

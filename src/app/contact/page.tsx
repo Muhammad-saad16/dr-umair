@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { site } from "@/lib/data";
 import ContactForm from "@/components/ContactForm";
 import PageHero from "@/components/PageHero";
-import { IconFacebook, IconMail, IconPhone, IconPin, IconWhatsapp, IconYoutube } from "@/components/icons";
+import { IconFacebook, IconInstagram, IconMail, IconPhone, IconPin, IconWhatsapp, IconYoutube } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Ask Dr. Umair",
@@ -51,6 +51,7 @@ export default function ContactPage() {
                 {[
                   { href: site.social.youtube, Icon: IconYoutube, label: "YouTube" },
                   { href: site.social.facebook, Icon: IconFacebook, label: "Facebook" },
+                  { href: site.social.instagram, Icon: IconInstagram, label: "Instagram" },
                 ].map(({ href, Icon, label }) => (
                   <a
                     key={label}

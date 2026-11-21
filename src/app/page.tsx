@@ -1,3 +1,4 @@
+import RotatingPortrait from "@/components/RotatingPortrait";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -12,6 +13,7 @@ import {
   pillars,
   site,
   testimonials,
+  portraits,
 } from "@/lib/data";
 import BookShowcase from "@/components/BookShowcase";
 import PhotoGrid from "@/components/PhotoGrid";
@@ -68,14 +70,7 @@ export default function Home() {
           {/* Portrait: stacked on mobile, bleeds to the right edge on desktop */}
           <div className="relative order-1 -mx-4 h-[360px] sm:-mx-6 sm:h-[460px] lg:order-2 lg:mx-0 lg:h-auto lg:min-h-[640px] lg:self-stretch">
             <div className="absolute inset-0 lg:right-[calc(-2rem_-_max(0px,(100vw_-_80rem)/2))]">
-              <Image
-                src="/images/dr-hero.jpg"
-                alt={site.name}
-                fill
-                priority
-                sizes="(min-width:1024px) 55vw, 100vw"
-                className="object-cover object-[50%_14%] [mask-image:linear-gradient(to_bottom,black_65%,transparent)] lg:object-[50%_18%] lg:[mask-image:linear-gradient(to_bottom,black_70%,transparent),linear-gradient(to_right,transparent,black_35%)] lg:[mask-composite:intersect]"
-              />
+              <RotatingPortrait images={portraits} alt={site.name} priority sizes="(min-width:1024px) 55vw, 100vw" className="object-cover object-[50%_32%] [mask-image:linear-gradient(to_bottom,black_65%,transparent)] lg:object-[50%_32%] lg:[mask-image:linear-gradient(to_bottom,black_70%,transparent),linear-gradient(to_right,transparent,black_35%)] lg:[mask-composite:intersect]" />
             </div>
           </div>
         </div>
@@ -204,6 +199,11 @@ export default function Home() {
               </article>
             ))}
           </div>
+          <div className="mt-10 text-center">
+            <Link href="/personalities" className="btn-primary">
+              View all interactions <IconArrow className="h-4 w-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -259,7 +259,7 @@ export default function Home() {
       <section className="pattern-dark py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Words of Honour" title="What Scholars Say" tone="dark" />
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2">
             {testimonials.map((t) => (
               <figure
                 key={t.name}

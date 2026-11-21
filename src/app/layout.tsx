@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Dr. Umair Mahmood Siddiqui",
-    images: ["/images/dr.jpg"],
+    images: ["/images/dr-portrait-1.jpg"],
   },
 };
 

@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { navLinks, site } from "@/lib/data";
 import { Logo } from "./Header";
-import { IconFacebook, IconMail, IconPhone, IconPin, IconWhatsapp, IconYoutube } from "./icons";
+import { IconFacebook, IconInstagram, IconMail, IconPhone, IconPin, IconWhatsapp, IconYoutube } from "./icons";
 import { StarMark } from "./ornaments";
 
 export default function Footer() {
   const socials = [
     { href: site.social.youtube, label: "YouTube", Icon: IconYoutube },
     { href: site.social.facebook, label: "Facebook", Icon: IconFacebook },
+    { href: site.social.instagram, label: "Instagram", Icon: IconInstagram },
     { href: site.whatsapp, label: "WhatsApp", Icon: IconWhatsapp },
   ];
 

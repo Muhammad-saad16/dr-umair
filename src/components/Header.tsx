@@ -12,8 +12,8 @@ export function Logo({ light = false }: { light?: boolean }) {
     <Link href="/" className="flex items-center gap-3" aria-label={`${site.name} — home`}>
       <StarMark className={`h-11 w-11 shrink-0 ${light ? "text-gold-light" : "text-gold"}`} />
       <span className="leading-tight">
-        <span className={`block font-serif text-xl font-semibold tracking-wide sm:text-2xl ${light ? "text-cream" : "text-emerald"}`}>
-          Dr. Umair Siddiqui
+        <span className={`block font-serif text-lg font-semibold tracking-wide whitespace-nowrap sm:text-xl ${light ? "text-cream" : "text-emerald"}`}>
+          {site.name}
         </span>
         <span className={`block text-[10px] tracking-[0.25em] whitespace-nowrap uppercase ${light ? "text-gold-light" : "text-gold-dark"}`}>
           {site.tagline}
@@ -50,7 +50,7 @@ export default function Header() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
         <Logo />
 
-        <nav className="hidden items-center gap-5 lg:flex xl:gap-7" aria-label="Main">
+        <nav className="hidden items-center gap-6 xl:flex" aria-label="Main">
           {navLinks.map((l) => {
             const active = isActive(pathname, l.href);
             return (
@@ -75,13 +75,13 @@ export default function Header() {
             href={site.social.youtube}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary hidden !px-5 !py-2.5 whitespace-nowrap xl:inline-flex"
+            className="btn-primary hidden !px-5 !py-2.5 whitespace-nowrap 2xl:inline-flex"
           >
             Listen / Watch <IconYoutube className="h-4 w-4" />
           </a>
           <button
             onClick={() => setOpen(true)}
-            className="rounded-md p-2 text-emerald lg:hidden"
+            className="rounded-md p-2 text-emerald xl:hidden"
             aria-label="Open menu"
             aria-expanded={open}
           >
@@ -92,7 +92,7 @@ export default function Header() {
 
       {/* Mobile drawer */}
       <div
-        className={`fixed inset-0 z-50 overflow-hidden lg:hidden ${open ? "visible" : "invisible delay-300"}`}
+        className={`fixed inset-0 z-50 overflow-hidden xl:hidden ${open ? "visible" : "invisible delay-300"}`}
         aria-hidden={!open}
       >
         <div

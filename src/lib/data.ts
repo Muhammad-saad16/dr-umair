@@ -20,10 +20,13 @@ export const designations: string[] = siteJson.designations;
 export const biography: string[] = siteJson.biography;
 export const featuredVideoId: string = siteJson.featuredVideoId;
 
+export const portraits = ["/images/dr-portrait-1.jpg", "/images/dr-portrait-2.jpg", "/images/dr-portrait-3.jpg"];
+
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/biography", label: "Biography" },
   { href: "/videos", label: "Videos" },
+  { href: "/personalities", label: "Personalities" },
   { href: "/events-programs", label: "Events" },
   { href: "/publications", label: "Publications" },
   { href: "/gallery", label: "Gallery" },

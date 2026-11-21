@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { biography, designations, site, testimonials } from "@/lib/data";
+import { biography, designations, portraits, site, testimonials } from "@/lib/data";
+import RotatingPortrait from "@/components/RotatingPortrait";
 import PageHero from "@/components/PageHero";
 import { Ornament } from "@/components/ornaments";
 import { IconArrow, IconMail, IconPhone, IconQuote } from "@/components/icons";
@@ -29,14 +30,7 @@ export default function BiographyPage() {
           <aside className="lg:sticky lg:top-28 lg:self-start">
             <div className="overflow-hidden rounded-2xl border border-gold/40 bg-white/80 shadow-xl">
               <div className="relative aspect-[4/5]">
-                <Image
-                  src="/images/dr.jpg"
-                  alt={site.name}
-                  fill
-                  priority
-                  sizes="380px"
-                  className="object-cover object-[50%_25%]"
-                />
+                <RotatingPortrait images={portraits} alt={site.name} priority sizes="380px" className="object-cover object-[50%_20%]" />
               </div>
               <div className="pattern-dark p-6 text-center">
                 <p className="font-arabic text-2xl text-gold-light" lang="ar" dir="rtl">{site.arabicName}</p>
@@ -90,7 +84,7 @@ export default function BiographyPage() {
               <Ornament className="mt-3 !justify-start" />
               <div className="mt-6 space-y-5 text-[17px] leading-relaxed text-ink/85">
                 {biography.map((p, i) => (
-                  <p key={i} className={i === 0 ? "first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-6xl first-letter:leading-none first-letter:text-gold-dark" : ""}>
+                  <p key={i}>
                     {p}
                   </p>
                 ))}

@@ -124,7 +124,7 @@ export default function Home() {
           <div className="relative mx-auto w-full max-w-md">
             <div className="arch absolute -inset-3 border-2 border-gold/60" aria-hidden />
             <div className="arch relative aspect-[4/5] overflow-hidden border-4 border-gold shadow-2xl">
-              <RotatingPortrait images={[portraits[1]]} alt="Dr. Umair Mahmood Siddiqui" sizes="(min-width:1024px) 450px, 90vw" className="object-cover object-[50%_20%]" />
+              <Image src="/images/dr-profile.jpg" alt="Dr. Umair Mahmood Siddiqui" fill sizes="(min-width:1024px) 450px, 90vw" className="object-cover object-[45%_25%]" />
             </div>
           </div>
         </div>

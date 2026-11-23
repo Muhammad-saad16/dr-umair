@@ -7,7 +7,7 @@ import { IconChevron } from "./icons";
 type Slide = { name: string; image: string; text: string; place: string };
 
 /** Full-width photo slider: Dr. Umair with scholars and dignitaries, each with a short caption. */
-export default function EventSlider({ slides, interval = 6000 }: { slides: Slide[]; interval?: number }) {
+export default function EventSlider({ slides, interval = 6000, aspect = "aspect-[4/3] sm:aspect-[16/8] lg:aspect-[16/7]", className = "mx-auto max-w-7xl" }: { slides: Slide[]; interval?: number; aspect?: string; className?: string }) {
   const [i, setI] = useState(0);
   const [paused, setPaused] = useState(false);
   const n = slides.length;
@@ -22,14 +22,14 @@ export default function EventSlider({ slides, interval = 6000 }: { slides: Slide
 
   return (
     <div
-      className="relative mx-auto max-w-7xl overflow-hidden rounded-2xl border-2 border-gold/60 bg-black shadow-2xl"
+      className={`relative overflow-hidden ${className} rounded-2xl border-2 border-gold/60 bg-black shadow-2xl`}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       role="region"
       aria-roledescription="carousel"
       aria-label="Dr. Umair with scholars and dignitaries"
     >
-      <div className="relative aspect-[4/3] sm:aspect-[16/8] lg:aspect-[16/7]">
+      <div className={`relative ${aspect}`}>
         {slides.map((s, k) => (
           <div
             key={s.image}
@@ -45,7 +45,7 @@ export default function EventSlider({ slides, interval = 6000 }: { slides: Slide
               className="object-cover object-[50%_30%]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 p-5 sm:p-8 lg:max-w-3xl">
+            <div className="absolute inset-x-0 bottom-0 p-5 pb-12 sm:p-7 sm:pb-12">
               <span className="inline-block rounded bg-gold px-2.5 py-1 text-[10px] font-semibold tracking-[0.2em] text-emerald-deep uppercase">
                 {s.place}
               </span>

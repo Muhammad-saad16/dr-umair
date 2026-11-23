@@ -68,11 +68,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Portrait: stacked on mobile, bleeds to the right edge on desktop */}
-          <div className="relative order-1 -mx-4 h-[360px] sm:-mx-6 sm:h-[460px] lg:order-2 lg:mx-0 lg:h-auto lg:min-h-[640px] lg:self-stretch">
-            <div className="absolute inset-0 lg:right-[calc(-2rem_-_max(0px,(100vw_-_80rem)/2))]">
-              <RotatingPortrait images={portraits} alt={site.name} priority sizes="(min-width:1024px) 55vw, 100vw" className="object-cover object-[50%_32%] [mask-image:linear-gradient(to_bottom,black_65%,transparent)] lg:object-[50%_32%] lg:[mask-image:linear-gradient(to_bottom,black_70%,transparent),linear-gradient(to_right,transparent,black_35%)] lg:[mask-composite:intersect]" />
-            </div>
+          {/* Events slider: Dr. Umair with scholars and dignitaries */}
+          <div className="relative order-1 pb-20 lg:order-2 lg:py-16 lg:pb-24 lg:pl-6">
+            <EventSlider slides={personalities} className="w-full" aspect="aspect-[4/3] sm:aspect-[16/10] lg:aspect-[5/4]" />
           </div>
         </div>
 
@@ -97,13 +95,6 @@ export default function Home() {
               })}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ───────── EVENTS SLIDER ───────── */}
-      <section className="pattern-light pt-6 pb-16 sm:pb-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <EventSlider slides={personalities} />
         </div>
       </section>
 

@@ -36,7 +36,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-6 px-4 pt-10 sm:px-6 lg:grid-cols-[1.05fr_1fr] lg:gap-0 lg:px-8 lg:pt-0">
           <div className="animate-fade-up relative z-10 order-2 pb-24 text-center lg:order-1 lg:py-24">
             <p
-              className="text-gold-gradient font-arabic text-6xl leading-[1.35] font-bold sm:text-7xl lg:text-8xl"
+              className="text-gold-gradient font-arabic px-4 py-6 text-6xl leading-[1.6] font-bold sm:text-7xl lg:text-8xl"
               lang="ar"
               dir="rtl"
             >
@@ -124,7 +124,7 @@ export default function Home() {
           <div className="relative mx-auto w-full max-w-md">
             <div className="arch absolute -inset-3 border-2 border-gold/60" aria-hidden />
             <div className="arch relative aspect-[4/5] overflow-hidden border-4 border-gold shadow-2xl">
-              <RotatingPortrait images={portraits} alt="Dr. Umair Mahmood Siddiqui" sizes="(min-width:1024px) 450px, 90vw" className="object-cover object-[50%_20%]" />
+              <RotatingPortrait images={[portraits[1]]} alt="Dr. Umair Mahmood Siddiqui" sizes="(min-width:1024px) 450px, 90vw" className="object-cover object-[50%_20%]" />
             </div>
           </div>
         </div>

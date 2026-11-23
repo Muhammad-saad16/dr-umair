@@ -24,7 +24,7 @@ export default function BookShowcase() {
           </div>
           <div className="text-center sm:text-left">
             <span className="inline-block rounded-full border border-gold/60 px-3 py-1 text-[10px] font-semibold tracking-[0.25em] text-gold-light uppercase">
-              Featured Book
+              {featured.comingSoon ? "Coming Soon" : "Featured Book"}
             </span>
             <h3 className="mt-4 font-serif text-3xl font-semibold text-cream sm:text-4xl">{featured.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-cream/75">
@@ -70,7 +70,7 @@ export default function BookShowcase() {
 
         <div className="mt-10 text-center">
           <Link href="/publications" className="btn-primary">
-            Browse all {books.length} books <IconArrow className="h-4 w-4" />
+            Browse all {books.filter((b) => !b.comingSoon).length} books <IconArrow className="h-4 w-4" />
           </Link>
         </div>
       </div>

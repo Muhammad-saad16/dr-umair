@@ -242,7 +242,7 @@ export default function Home() {
       <section id="books" className="scroll-mt-20 bg-cream-2/60 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Book Library" title="Authored Works for Seekers of Knowledge">
-            {books.length} books on theology, comparative religion, Islamic jurisprudence and history.
+            {books.filter((b) => !b.comingSoon).length} books on theology, comparative religion, Islamic jurisprudence and history.
           </SectionHeading>
           <BookShowcase />
         </div>

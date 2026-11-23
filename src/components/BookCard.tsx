@@ -13,12 +13,17 @@ export default function BookCard({ book }: { book: (typeof books)[number] }) {
           sizes="(min-width:1024px) 25vw, (min-width:640px) 33vw, 50vw"
           className="object-cover transition duration-500 group-hover:scale-105"
         />
+        {book.comingSoon && (
+          <span className="absolute top-3 left-0 bg-gold px-3 py-1 text-[10px] font-semibold tracking-[0.2em] text-emerald-deep uppercase shadow">
+            Coming Soon
+          </span>
+        )}
       </div>
       <div className="flex flex-1 flex-col p-4 text-center sm:p-5">
         <h3 className="font-serif text-lg leading-snug font-semibold text-emerald sm:text-xl">{book.title}</h3>
         {book.description && <p className="mt-2 line-clamp-2 text-sm text-muted sm:line-clamp-3">{book.description}</p>}
         <p className="mt-3 text-[10px] tracking-[0.08em] text-gold-dark uppercase sm:text-[11px] sm:tracking-[0.18em]">{book.by}</p>
-        {book.url && (
+        {book.url && !book.comingSoon && (
           <a
             href={book.url}
             target="_blank"

@@ -65,6 +65,7 @@ export type Book = {
   by: string;
   url?: string;
   featured?: boolean;
+  comingSoon?: boolean;
   videoUrl?: string;
 };
 export const books: Book[] = booksJson.items;

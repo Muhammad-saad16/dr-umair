@@ -1,11 +1,19 @@
 {
   "items": [
     {
+      "title": "The Good News of Jesus Christ",
+      "image": "/images/book-good-news-of-jesus-christ.jpg",
+      "description": "An Islamic perspective on the life, teachings and second coming of Jesus Christ — a gift for Christians on the birthday of the Messiah. Published by Itqan Publishers.",
+      "by": "Dr. Umair Mahmood Siddiqui",
+      "featured": true,
+      "comingSoon": true
+    },
+    {
       "title": "What is Ahmadism?",
       "image": "/images/book16.jpg",
       "description": "An in-depth study of Qadianism — its beliefs, its claims, and why the true seeker should understand it clearly. A treasure for the pursuers of truth.",
       "by": "Dr. Umair Mahmood Siddiqui",
-      "featured": true,
+      "featured": false,
       "videoUrl": "https://www.youtube.com/watch?v=kUtLFt5dZf8"
     },
     {

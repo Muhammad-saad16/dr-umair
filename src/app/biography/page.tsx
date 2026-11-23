@@ -30,7 +30,7 @@ export default function BiographyPage() {
           <aside className="lg:sticky lg:top-28 lg:self-start">
             <div className="overflow-hidden rounded-2xl border border-gold/40 bg-white/80 shadow-xl">
               <div className="relative aspect-[4/5]">
-                <RotatingPortrait images={portraits} alt={site.name} priority sizes="380px" className="object-cover object-[50%_20%]" />
+                <RotatingPortrait images={[portraits[0]]} alt={site.name} priority sizes="380px" className="object-cover object-[50%_20%]" />
               </div>
               <div className="pattern-dark p-6 text-center">
                 <p className="font-arabic text-2xl text-gold-light" lang="ar" dir="rtl">{site.arabicName}</p>

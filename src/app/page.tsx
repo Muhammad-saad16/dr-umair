@@ -1,3 +1,4 @@
+import EventSlider from "@/components/EventSlider";
 import RotatingPortrait from "@/components/RotatingPortrait";
 import Image from "next/image";
 import Link from "next/link";
@@ -96,6 +97,13 @@ export default function Home() {
               })}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ───────── EVENTS SLIDER ───────── */}
+      <section className="pattern-light pt-6 pb-16 sm:pb-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <EventSlider slides={personalities} />
         </div>
       </section>
 

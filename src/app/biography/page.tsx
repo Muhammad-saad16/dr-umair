@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { biography, designations, portraits, site, testimonials } from "@/lib/data";
-import RotatingPortrait from "@/components/RotatingPortrait";
+import { biography, designations, site, testimonials } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import { Ornament } from "@/components/ornaments";
 import { IconArrow, IconMail, IconPhone, IconQuote } from "@/components/icons";
@@ -30,7 +29,7 @@ export default function BiographyPage() {
           <aside className="lg:sticky lg:top-28 lg:self-start">
             <div className="overflow-hidden rounded-2xl border border-gold/40 bg-white/80 shadow-xl">
               <div className="relative aspect-[4/5]">
-                <RotatingPortrait images={[portraits[0]]} alt={site.name} priority sizes="380px" className="object-cover object-[50%_20%]" />
+                <Image src="/images/dr-biography.jpg" alt={site.name} fill priority sizes="380px" className="object-cover object-[50%_20%]" />
               </div>
               <div className="pattern-dark p-6 text-center">
                 <p className="font-arabic text-2xl text-gold-light" lang="ar" dir="rtl">{site.arabicName}</p>
